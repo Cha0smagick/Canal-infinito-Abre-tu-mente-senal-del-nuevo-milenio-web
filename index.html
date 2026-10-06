@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canal Infinito — Abre tu Mente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:#0a0a0f;
+  color:#e8e0d0;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9999;
+}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:0.02em}
+
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(201,168,76,0.15);
+  padding:0 24px;height:64px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Playfair Display',serif;font-size:1.2rem;color:#c9a84c;text-decoration:none;
+}
+.nav-logo svg{width:28px;height:28px;fill:#c9a84c}
+.nav-links{display:flex;gap:4px;list-style:none;align-items:center}
+.nav-links a{
+  color:#7a6c5a;text-decoration:none;font-size:0.78rem;font-weight:500;
+  padding:6px 12px;border-radius:6px;transition:all 0.3s;letter-spacing:0.5px;text-transform:uppercase;
+  white-space:nowrap;
+}
+.nav-links a:hover{color:#f0d060;background:rgba(201,168,76,0.08)}
+.nav-links a.active{color:#c9a84c;background:rgba(201,168,76,0.12)}
+.nav-toggle{display:none;background:none;border:none;color:#c9a84c;font-size:1.5rem;cursor:pointer;padding:8px}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+#particle-canvas{position:absolute;inset:0;z-index:0}
+.hero-content{position:relative;z-index:1;text-align:center;padding:80px 24px 60px}
+.hero-logo{margin:0 auto 30px;width:160px;height:160px;position:relative}
+.hero-logo svg{width:100%;height:100%}
+.hero-logo-glow{
+  position:absolute;inset:-20px;
+  background:radial-gradient(circle,rgba(201,168,76,0.15) 0%,transparent 70%);
+  animation:pulseGlow 3s ease-in-out infinite;
+}
+@keyframes pulseGlow{
+  0%,100%{opacity:0.4;transform:scale(1)}
+  50%{opacity:0.8;transform:scale(1.1)}
+}
+@keyframes floatGlow{
+  0%,100%{filter:drop-shadow(0 0 20px rgba(201,168,76,0.3)) drop-shadow(0 0 60px rgba(201,168,76,0.1))}
+  50%{filter:drop-shadow(0 0 30px rgba(201,168,76,0.5)) drop-shadow(0 0 80px rgba(201,168,76,0.2))}
+}
+.hero-logo svg{animation:floatGlow 4s ease-in-out infinite}
+.hero h1{
+  font-size:clamp(2.5rem,7vw,5rem);font-weight:900;color:#c9a84c;
+  letter-spacing:0.08em;margin-bottom:8px;
+}
+.hero-tagline{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:clamp(1rem,2.5vw,1.5rem);color:#d4af37;letter-spacing:0.3em;text-transform:uppercase;
+  margin-bottom:16px;opacity:0.8;
+}
+.hero-sub{
+  font-size:1.05rem;color:#8a7c6a;max-width:550px;margin:0 auto 40px;line-height:1.8;
+}
+.hero-nav-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.hero-btn{
+  padding:14px 28px;border-radius:50px;text-decoration:none;font-weight:600;
+  font-size:0.9rem;transition:all 0.3s;display:inline-flex;align-items:center;gap:8px;
+}
+.hero-btn-primary{
+  background:rgba(201,168,76,0.15);color:#c9a84c;border:1px solid rgba(201,168,76,0.3);
+}
+.hero-btn-primary:hover{background:rgba(201,168,76,0.25);border-color:#c9a84c;transform:translateY(-2px)}
+.hero-btn-secondary{
+  background:rgba(255,255,255,0.035);color:#a09080;border:1px solid rgba(255,255,255,0.08);
+}
+.hero-btn-secondary:hover{background:rgba(255,255,255,0.06);color:#e8e0d0;transform:translateY(-2px)}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;padding:40px 24px 24px;
+  border-top:1px solid rgba(201,168,76,0.08);
+}
+footer p{color:#5a4c3a;font-size:0.85rem;margin-bottom:4px}
+footer .footer-tagline{font-family:'Playfair Display',serif;font-style:italic;color:#7a6c5a;font-size:0.95rem;margin:8px 0}
+
+@media(max-width:768px){
+  .nav-links{
+    display:none;position:absolute;top:64px;left:0;right:0;
+    background:rgba(10,10,15,0.96);backdrop-filter:blur(12px);
+    flex-direction:column;padding:16px;border-bottom:1px solid rgba(201,168,76,0.15);
+    gap:4px;
+  }
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+  .hero-logo{width:120px;height:120px}
+  nav{padding:0 16px}
+  .hero-nav-buttons{flex-direction:column;align-items:center}
+}
+@media(max-width:480px){.hero-logo{width:100px;height:100px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30,30 C30,11 54,8 60,27 C66,8 90,11 90,30 C90,49 66,52 60,33 C54,52 30,49 30,30 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    Infinito
+  </a>
+  <button class="nav-toggle" aria-label="Menú">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Inicio</a></li>
+    <li><a href="canal.html">El Canal</a></li>
+    <li><a href="programas.html">Programas</a></li>
+    <li><a href="videoteca.html">Videoteca</a></li>
+    <li><a href="tv.html">TV Channel</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-logo">
+      <div class="hero-logo-glow"></div>
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50,50 C50,15 90,15 100,50 C110,85 150,85 150,50 C150,15 110,15 100,50 C90,85 50,85 50,50 Z" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.3"/>
+        <path d="M50,50 C50,18 88,12 100,45 C112,12 150,18 150,50 C150,82 112,88 100,55 C88,88 50,82 50,50 Z" fill="none" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M50,50 C50,22 84,18 100,48 C116,18 150,22 150,50 C150,78 116,82 100,52 C84,82 50,78 50,50 Z" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+      </svg>
+    </div>
+    <h1>CANAL INFINITO</h1>
+    <p class="hero-tagline">Abre tu Mente</p>
+    <p class="hero-sub">Realidad que supera la ficción. Un ícono de la televisión por cable argentina que marcó a toda una generación explorando los misterios del universo, el esoterismo y lo paranormal.</p>
+    <div class="hero-nav-buttons">
+      <a href="videoteca.html" class="hero-btn hero-btn-primary">🎬 Explorar Videoteca</a>
+      <a href="tv.html" class="hero-btn hero-btn-secondary">📺 TV Channel</a>
+      <a href="canal.html" class="hero-btn hero-btn-secondary">📜 Historia</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#7a6c5a">Canal Infinito</p>
+  <p class="footer-tagline">"Realidad que supera la ficción"</p>
+  <p style="margin:6px 0 16px">1994 — 2015</p>
+  <p style="font-size:0.75rem;color:#3a2c1a">Sitio tributo sin fines de lucro</p>
+</footer>
+
+<script>
+(function(){
+  const canvas = document.getElementById('particle-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let particles = [], w, h;
+  function resize(){ w=canvas.width=window.innerWidth; h=canvas.height=window.innerHeight; }
+  window.addEventListener('resize', resize);
+  resize();
+  for(let i=0;i<200;i++) particles.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.5+0.3,speed:Math.random()*0.15+0.02,opacity:Math.random()*0.8+0.2});
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    for(const p of particles){
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(201,168,76,${p.opacity*0.6})`; ctx.fill();
+      p.opacity+=(Math.random()-0.5)*0.02; p.opacity=Math.max(0.1,Math.min(1,p.opacity));
+      p.y-=p.speed; if(p.y<-10){p.y=h+10;p.x=Math.random()*w}
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+document.querySelector('.nav-toggle')?.addEventListener('click',function(){document.querySelector('.nav-links').classList.toggle('open')});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.nav-links')?.classList.remove('open')}));
+</script>
+</body>
+</html>

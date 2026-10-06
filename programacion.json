@@ -1,0 +1,371 @@
+{
+  "canal": {
+    "nombre": "Canal Infinito",
+    "tipo": "Televisión por suscripción",
+    "pais": "Argentina",
+    "fundacion": "4 de noviembre de 1994",
+    "cierre": "10 de marzo de 2015 (Argentina), 17 de marzo de 2015 (resto de Latinoamérica)",
+    "fundador": "Imagen Satelital (Alberto González)",
+    "propietarios": [
+      {"periodo": "1994-1997", "nombre": "Imagen Satelital"},
+      {"periodo": "1997-2007", "nombre": "Claxson Interactive Group (Cisneros)"},
+      {"periodo": "2007-2015", "nombre": "Time Warner / Turner Broadcasting System"}
+    ],
+    "reemplazado_por": "TNT Series",
+    "programacion_movida_a": "TruTV",
+    "locutores": [
+      {"nombre": "Diego Guerrero", "periodo": "1997-2009"},
+      {"nombre": "Jaime Alfredo Núñez", "periodo": "2009-2015"}
+    ],
+    "esloganes": [
+      {"periodo": "1994-1995", "eslogan": "24 horas de documentales"},
+      {"periodo": "1995-1996", "eslogan": "El primer canal latinoamericano de documentales"},
+      {"periodo": "1997", "eslogan": "Señal del nuevo milenio"},
+      {"periodo": "1998", "eslogan": "Experimenta lo desconocido"},
+      {"periodo": "1999-2003", "eslogan": "Existe otra realidad y solo un canal te la muestra / Existe otra realidad"},
+      {"periodo": "2004-2008", "eslogan": "Abre tu mente"},
+      {"periodo": "2009-2015", "eslogan": "Realidad que supera la ficción"}
+    ]
+  },
+  "bloques_programacion": [
+    {"nombre": "Terror Infinito", "descripcion": "Bloque de terror y suspenso"},
+    {"nombre": "Noche de Sábado", "descripcion": "Programación de entretenimiento sabatino"},
+    {"nombre": "Documentales de Infinito", "descripcion": "Bloque documental"},
+    {"nombre": "Especiales de Infinito", "descripcion": "Programas especiales y eventos"},
+    {"nombre": "Infinito Complots", "descripcion": "Teorías conspirativas"},
+    {"nombre": "Infinito Místico", "descripcion": "Temas místicos y espirituales"},
+    {"nombre": "Infinito Insólito", "descripcion": "Hechos insólitos y sorprendentes"},
+    {"nombre": "Infinito Oculto", "descripcion": "Ciencias ocultas y esoterismo"},
+    {"nombre": "Infinito Paranormal", "descripcion": "Fenómenos paranormales"},
+    {"nombre": "Infinito Original", "descripcion": "Producciones originales del canal"},
+    {"nombre": "Infinito Alternativo", "descripcion": "Contenido alternativo"},
+    {"nombre": "Infinito Ovni", "descripcion": "Avistamientos OVNI y vida extraterrestre"},
+    {"nombre": "Infinito Esotérico", "descripcion": "Temas esotéricos"},
+    {"nombre": "Infinito Films", "descripcion": "Películas y cine"},
+    {"nombre": "Infinito Asombro", "descripcion": "Historias asombrosas"},
+    {"nombre": "Infinito Good For You", "descripcion": "Bienestar y estilo de vida"},
+    {"nombre": "Infinito Inspiración", "descripcion": "Historias inspiradoras"},
+    {"nombre": "Infinito Crimen", "descripcion": "Crimen y justicia"},
+    {"nombre": "Infinito Docs", "descripcion": "Documentales"},
+    {"nombre": "Infinito Complot", "descripcion": "Teorías de conspiración"}
+  ],
+  "programas": {
+    "originales": [
+      {
+        "nombre": "Zona Infinito",
+        "tipo": "Producción original",
+        "genero": "Paranormal / Misterio",
+        "descripcion": "El programa emblemático del canal. Exploraba fenómenos paranormales, avistamientos OVNI, misterios sin resolver y casos imposibles. Un referente del periodismo de misterio en Latinoamérica.",
+        "era": "1999-2008"
+      },
+      {
+        "nombre": "Mundo Infinito",
+        "tipo": "Producción original",
+        "genero": "Astrología / Esoterismo",
+        "descripcion": "Conducido por Walter Mercado. Astrología, predicciones y mensajes de esperanza. La magia de Walter Mercado encontraba en Canal Infinito su hogar ideal.",
+        "era": "1999-2008"
+      },
+      {
+        "nombre": "Signos",
+        "tipo": "Producción original",
+        "genero": "Astrología",
+        "descripcion": "Conducción de Alejandro Agostinelli. Análisis profundo de fenómenos astrológicos, esotéricos y espirituales.",
+        "era": "1999-2008"
+      },
+      {
+        "nombre": "Hora Infinito",
+        "tipo": "Producción original",
+        "genero": "Entrevistas / Debate",
+        "descripcion": "Programa de entrevistas y debates sobre temas de actualidad esotérica, misterio y ciencia alternativa.",
+        "era": "1999-2008"
+      },
+      {
+        "nombre": "Creencias",
+        "tipo": "Producción original",
+        "genero": "Debate religioso",
+        "descripcion": "Programa dedicado a debatir desde distintos puntos de vista religiosos temas de actualidad como homosexualidad, eutanasia, celibato, reencarnación, infidelidad y poligamia. Conducido por Esteban Mirol con panelistas de diferentes religiones.",
+        "era": "2005-2006",
+        "temporadas": 2,
+        "detalles": "Panelistas 1ra temp (2005): Islamismo (Sheik Abdul Karim Paz), Judaísmo (Rabino Baruj Plavnik), Catolicismo (Sacerdote Eduardo Pérez Dal Lago), Agnosticismo (Leonardo Sacco), Hinduismo (Swami Aruna Nanda). Panelistas 2da temp (2006): Islamismo (Sheij Moceen Ali), Judaísmo (Rabino Ángel Kreiman Brill), Catolicismo (Presbítero Alejandro W Bunge), Agnosticismo (Carlos Escudé), Protestantismo (Pastor Ricardo Bedrossian), Hinduismo (Mahajan Das). Se publicó libro 'Creencias. Las religiones y los temas polémicos' (Editorial Kier, 2006)."
+      },
+      {
+        "nombre": "Guía Extraterrestre (GET)",
+        "tipo": "Producción original",
+        "genero": "OVNIs / Docureality",
+        "descripcion": "Programa sobre la posibilidad de vida extraterrestre y avistamientos OVNI. Entrevistaba a personas que han tenido experiencias de contacto. Formato docureality con investigaciones en el lugar de los hechos.",
+        "era": "2003-2004",
+        "temporadas": 2,
+        "detalles": "1ra temporada (2003) grabada en México. 2da temporada (2004) grabada en Argentina. Investigadores: César Buenrostro, Carlos Guzmán, Francisco Domínguez, Pascal Lopresti, Yohanan Díaz, Héctor Chavarría, Héctor Sampson."
+      },
+      {
+        "nombre": "Misterios Urbanos",
+        "tipo": "Producción original",
+        "genero": "Documental / Misterio",
+        "descripcion": "Serie documental de 1999 que exploraba leyendas urbanas, crímenes sin resolver y fenómenos extraños en ciudades de Latinoamérica. Considerado lost media.",
+        "era": "1999"
+      },
+      {
+        "nombre": "Casa Infinito",
+        "tipo": "Producción original",
+        "genero": "Misterio",
+        "descripcion": "Programa sobre casas embrujadas y fenómenos paranormales en hogares.",
+        "era": "1999-2008"
+      },
+      {
+        "nombre": "El precio de la fama",
+        "tipo": "Producción original",
+        "genero": "Documental",
+        "descripcion": "Documental sobre el costo personal de la fama."
+      },
+      {
+        "nombre": "Expedición",
+        "tipo": "Producción original",
+        "genero": "Documental / Aventura",
+        "descripcion": "Programa de expediciones y exploración."
+      },
+      {
+        "nombre": "Testimonios de protagonistas",
+        "tipo": "Producción original",
+        "genero": "Documental",
+        "descripcion": "Testimonios en primera persona de eventos extraordinarios."
+      },
+      {
+        "nombre": "Aventuras en el buceo",
+        "tipo": "Producción original",
+        "genero": "Documental / Naturaleza",
+        "descripcion": "Exploración del mundo submarino."
+      },
+      {
+        "nombre": "Más allá del mañana",
+        "tipo": "Producción original",
+        "genero": "Ciencia ficción / Futurismo",
+        "descripcion": "Programa sobre el futuro y la tecnología."
+      },
+      {
+        "nombre": "La magia del cine",
+        "tipo": "Producción original",
+        "genero": "Cine / Detrás de escena",
+        "descripcion": "Detrás de escena del mundo cinematográfico."
+      },
+      {
+        "nombre": "Recreo satelital",
+        "tipo": "Producción original",
+        "genero": "Infantil / Educativo",
+        "descripcion": "Espacio infantil dentro de la programación."
+      },
+      {
+        "nombre": "Ovnis, verdades y mentiras",
+        "tipo": "Producción original",
+        "genero": "OVNIs / Documental",
+        "descripcion": "Investigación sobre el fenómeno OVNI."
+      },
+      {
+        "nombre": "BRIC",
+        "tipo": "Producción original",
+        "genero": "Documental / Política",
+        "descripcion": "Documental sobre el bloque BRIC (Brasil, Rusia, India, China)."
+      },
+      {
+        "nombre": "Kirchner: A un año de su muerte",
+        "tipo": "Producción original",
+        "genero": "Documental / Política",
+        "descripcion": "Documental sobre Néstor Kirchner al año de su fallecimiento."
+      },
+      {
+        "nombre": "Vuelo 3142: la tragedia de LAPA",
+        "tipo": "Producción original",
+        "genero": "Documental / Tragedia",
+        "descripcion": "Documental sobre la tragedia del vuelo 3142 de LAPA."
+      },
+      {
+        "nombre": "El representante de Dios",
+        "tipo": "Producción original",
+        "genero": "Documental / Religión",
+        "descripcion": "Documental sobre la figura papal."
+      },
+      {
+        "nombre": "Efemérides",
+        "tipo": "Producción original",
+        "genero": "Historia",
+        "descripcion": "Programa sobre fechas históricas importantes."
+      },
+      {
+        "nombre": "Incoming",
+        "tipo": "Producción original",
+        "genero": "Documental",
+        "descripcion": "Documental de producción original."
+      },
+      {
+        "nombre": "Extreme Makeover: Home Edition Latin America",
+        "tipo": "Producción original",
+        "genero": "Reality / Remodelación",
+        "descripcion": "Versión latinoamericana del programa de remodelación de hogares."
+      },
+      {
+        "nombre": "Huellas",
+        "tipo": "Producción original",
+        "genero": "Documental / Historia",
+        "descripcion": "Programa documental sobre historia y cultura."
+      },
+      {
+        "nombre": "LAPA: veredicto final",
+        "tipo": "Producción original",
+        "genero": "Documental / Judicial",
+        "descripcion": "Seguimiento del caso judicial de la tragedia de LAPA."
+      },
+      {
+        "nombre": "Confesiones de un sicario",
+        "tipo": "Producción original",
+        "genero": "Documental / Crimen",
+        "descripcion": "Documental sobre sicariato y crimen organizado."
+      },
+      {
+        "nombre": "La decisión equivocada",
+        "tipo": "Producción original",
+        "genero": "Documental",
+        "descripcion": "Documental sobre decisiones fatales."
+      },
+      {
+        "nombre": "Cuerpos sin edad",
+        "tipo": "Producción original",
+        "genero": "Documental / Ciencia",
+        "descripcion": "Documental sobre el envejecimiento y la juventud eterna."
+      },
+      {
+        "nombre": "¿Qué edad tiene tu cuerpo?",
+        "tipo": "Adquirido",
+        "genero": "Docureality / Salud",
+        "descripcion": "Serie británica que sigue a jóvenes que han llevado una vida de excesos sometidos a exámenes médicos para determinar su edad biológica y revertir los daños.",
+        "pais_original": "Reino Unido"
+      },
+      {
+        "nombre": "26 personas para salvar al mundo",
+        "tipo": "Producción original",
+        "genero": "Documental",
+        "descripcion": "Documental sobre 26 personas con la misión de salvar el mundo."
+      },
+      {
+        "nombre": "Adictos",
+        "tipo": "Producción original",
+        "genero": "Documental / Adicciones",
+        "descripcion": "Programa sobre adicciones y recuperación."
+      },
+      {
+        "nombre": "El último hombre en pie",
+        "tipo": "Producción original",
+        "genero": "Reality / Competencia",
+        "descripcion": "Reality show de competencia extrema."
+      },
+      {
+        "nombre": "21 gramos",
+        "tipo": "Producción original",
+        "genero": "Documental / Misterio",
+        "descripcion": "Documental sobre el peso del alma y experiencias cercanas a la muerte, inspirado en los experimentos del Dr. Duncan MacDougall."
+      }
+    ],
+    "adquiridos": [
+      {"nombre": "Ghost Hunters", "genero": "Paranormal", "descripcion": "Cazadores de fantasmas que investigan actividad paranormal."},
+      {"nombre": "Misterios no resueltos", "genero": "Misterio", "descripcion": "Casos sin resolver de todo tipo."},
+      {"nombre": "UFO", "genero": "OVNIs", "descripcion": "Serie sobre avistamientos OVNI."},
+      {"nombre": "El misterioso mundo de Arthur C. Clarke", "genero": "Ciencia / Misterio", "descripcion": "Arthur C. Clarke explora fenómenos misteriosos."},
+      {"nombre": "El significado de los sueños", "genero": "Psicología / Esoterismo", "descripcion": "Interpretación y análisis de los sueños."},
+      {"nombre": "Tattoo Nightmares", "genero": "Reality", "descripcion": "Personas arreglan tatuajes que odian."},
+      {"nombre": "Rizzoli & Isles", "genero": "Serie / Crimen", "descripcion": "Serie sobre una detective y una forense."},
+      {"nombre": "Cazadores de subastas", "genero": "Reality", "descripcion": "Subastas y hallazgos de tesoros."},
+      {"nombre": "Fanboy Confessional", "genero": "Comedia", "descripcion": "Confesiones de fanáticos de la cultura pop."},
+      {"nombre": "Cheaters", "genero": "Reality", "descripcion": "Investigación de infidelidades de pareja."},
+      {"nombre": "1000 maneras de morir", "genero": "Comedia negra", "descripcion": "Recreación de muertes absurdas."},
+      {"nombre": "Extreme Makeover: Home Edition", "genero": "Reality", "descripcion": "Remodelación de hogares para familias necesitadas."},
+      {"nombre": "Mujeres tras las rejas", "genero": "Documental / Cárcel", "descripcion": "Historias de mujeres en prisión."},
+      {"nombre": "Condenados por error", "genero": "Documental / Judicial", "descripcion": "Casos de personas condenadas injustamente."},
+      {"nombre": "El guerrero más letal (Deadliest Warrior)", "genero": "Documental / Historia", "descripcion": "Enfrentamiento simulado de guerreros históricos."},
+      {"nombre": "XXL", "genero": "Documental / Salud", "descripcion": "Historias de personas con obesidad extrema."},
+      {"nombre": "Vanity Insanity", "genero": "Documental", "descripcion": "Obsesión por la cirugía estética."},
+      {"nombre": "Esposas de la tribu", "genero": "Documental", "descripcion": "Mujeres que se casan con líderes tribales."},
+      {"nombre": "Extreme Food", "genero": "Documental / Gastronomía", "descripcion": "Comidas extremas alrededor del mundo."},
+      {"nombre": "Impractical Jokers", "genero": "Comedia", "descripcion": "Cámara oculta y desafíos entre amigos."},
+      {"nombre": "Crímenes que estremecieron a Gran Bretaña", "genero": "Documental / Crimen", "descripcion": "Crímenes famosos británicos."},
+      {"nombre": "Cazadores de tesoros", "genero": "Reality / Aventura", "descripcion": "Búsqueda de tesoros y objetos valiosos."},
+      {"nombre": "Parejas asesinas", "genero": "Documental / Crimen", "descripcion": "Parejas que cometieron asesinatos juntos."},
+      {"nombre": "Operación Rescate (Operation Repo)", "genero": "Reality", "descripcion": "Operaciones de recuperación de vehículos."},
+      {"nombre": "Maestros marciales", "genero": "Documental", "descripcion": "Artes marciales y sus maestros."},
+      {"nombre": "Esta es mi historia", "genero": "Documental", "descripcion": "Historias de vida extraordinarias."},
+      {"nombre": "Frontline", "genero": "Documental / Guerra", "descripcion": "Documentales de guerra y conflicto."},
+      {"nombre": "Pill Poppers", "genero": "Documental / Salud", "descripcion": "Adicción a medicamentos recetados."},
+      {"nombre": "Dra. G: Médica Forense", "genero": "Documental / Forense", "descripcion": "Casos forenses de la Dra. G."},
+      {"nombre": "Restauradores", "genero": "Reality", "descripcion": "Restauración de objetos antiguos."},
+      {"nombre": "La super nadadora", "genero": "Documental / Deporte", "descripcion": "Historia de una nadadora de elite."},
+      {"nombre": "Dog, el cazarrecompensas", "genero": "Reality", "descripcion": "Cazarrecompensas capturando fugitivos."},
+      {"nombre": "Excavadores de Tesoros", "genero": "Reality / Aventura", "descripcion": "Excavaciones en busca de tesoros."},
+      {"nombre": "Osmin Physco Trainer", "genero": "Reality / Fitness", "descripcion": "Entrenamiento físico extremo."},
+      {"nombre": "La última mujer en pie", "genero": "Reality / Competencia", "descripcion": "Competencia extrema femenina."},
+      {"nombre": "Los videos más tontos del mundo", "genero": "Comedia", "descripcion": "Compilación de videos virales."},
+      {"nombre": "Tácticas de terror (Scare Tactics)", "genero": "Comedia / Terror", "descripcion": "Cámara oculta con sustos."},
+      {"nombre": "Inquilinos extremos", "genero": "Reality", "descripcion": "Conflictos entre inquilinos y propietarios."},
+      {"nombre": "Repo Games", "genero": "Reality / Juego", "descripcion": "Juegos por recuperación de deudas."},
+      {"nombre": "Guerra de containers", "genero": "Reality", "descripcion": "Competencia por contenedores abandonados."},
+      {"nombre": "El Efecto Carbonaro", "genero": "Comedia / Magia", "descripcion": "Trucos de magia con cámara oculta."},
+      {"nombre": "Cosentino", "genero": "Magia", "descripcion": "Escape y magia con el ilusionista Cosentino."},
+      {"nombre": "Hasta que la muerte nos separe", "genero": "Documental / Crimen", "descripcion": "Matrimonios que terminaron en asesinato."},
+      {"nombre": "Pequeños asesinos", "genero": "Documental / Crimen", "descripcion": "Niños y adolescentes que cometieron asesinatos."},
+      {"nombre": "Drama Total: la venganza de la Isla", "genero": "Animación / Comedia", "descripcion": "Serie animada de competencia."},
+      {"nombre": "El mejor precio: Chicago (Hardcore Pawn)", "genero": "Reality", "descripcion": "Casa de empeño en Chicago."},
+      {"nombre": "Survivor: Thailand / Palau / All-Stars / Marquesas / África", "genero": "Reality / Aventura", "descripcion": "Temporadas clásicas del reality de supervivencia."},
+      {"nombre": "El día menos pensado", "genero": "Docudrama / Paranormal", "descripcion": "Serie chilena que recrea historias reales de fenómenos paranormales, encuentros dimensionales y vida después de la muerte. Conducida por Carlos Pinto. Emitida en Infinito en los años 2000."}
+    ]
+  },
+  "devociones": [
+    "Ghost Hunters",
+    "Misterios no resueltos",
+    "UFO",
+    "El misterioso mundo de Arthur C. Clarke",
+    "El significado de los sueños",
+    "Tattoo Nightmares",
+    "Rizzoli & Isles",
+    "Cazadores de subastas",
+    "Fanboy Confessional",
+    "Cheaters",
+    "1000 maneras de morir",
+    "Extreme Makeover: Home Edition",
+    "Mujeres tras las rejas",
+    "Condenados por error",
+    "El guerrero más letal",
+    "XXL",
+    "Vanity insanity",
+    "Esposas de la tribu",
+    "Extreme Food",
+    "Impractical Jokers",
+    "Crímenes que estremecieron a Gran Bretaña",
+    "Cazadores de tesoros",
+    "Parejas asesinas",
+    "Operación Rescate",
+    "Maestros marciales",
+    "Esta es mi historia",
+    "Frontline",
+    "Pill poppers",
+    "Dra. G: Médica Forense",
+    "Restauradores",
+    "La super nadadora",
+    "Dog, el cazarrecompensas",
+    "Excavadores de Tesoros",
+    "Osmin Physco Trainer",
+    "La última mujer en pie",
+    "Los videos más tontos del mundo",
+    "Tácticas de terror",
+    "Inquilinos extremos",
+    "Repo games",
+    "Guerra de containers",
+    "El Efecto Carbonaro",
+    "Cosentino",
+    "Hasta que la muerte nos separe",
+    "Pequeños asesinos",
+    "Drama Total: la venganza de la Isla",
+    "El mejor precio: Chicago",
+    "Survivor: Thailand",
+    "Survivor: Palau",
+    "Survivor: All-Stars",
+    "Survivor: Marquesas",
+    "Survivor: África",
+    "El día menos pensado"
+  ]
+}

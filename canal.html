@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canal Infinito — El Canal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',sans-serif;
+  background:#0a0a0f;color:#e8e0d0;line-height:1.7;overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9999;
+}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:0.02em}
+
+/* Navbar */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(201,168,76,0.15);
+  padding:0 24px;height:64px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Playfair Display',serif;font-size:1.2rem;color:#c9a84c;text-decoration:none;
+}
+.nav-logo svg{width:28px;height:28px;fill:#c9a84c}
+.nav-links{display:flex;gap:4px;list-style:none;align-items:center}
+.nav-links a{
+  color:#7a6c5a;text-decoration:none;font-size:0.78rem;font-weight:500;
+  padding:6px 12px;border-radius:6px;transition:all 0.3s;letter-spacing:0.5px;text-transform:uppercase;
+  white-space:nowrap;
+}
+.nav-links a:hover{color:#f0d060;background:rgba(201,168,76,0.08)}
+.nav-links a.active{color:#c9a84c;background:rgba(201,168,76,0.12)}
+.nav-toggle{display:none;background:none;border:none;color:#c9a84c;font-size:1.5rem;cursor:pointer;padding:8px}
+
+/* Page header */
+.page-header{
+  padding:120px 24px 40px;text-align:center;position:relative;
+}
+.page-header h1{font-size:clamp(2rem,5vw,3.2rem);color:#c9a84c;margin-bottom:8px}
+.page-header p{color:#7a6c5a;font-size:1.05rem;max-width:600px;margin:0 auto}
+.page-divider{width:80px;height:2px;background:linear-gradient(90deg,transparent,#c9a84c,transparent);margin:24px auto}
+
+/* Timeline */
+.timeline-section{padding:20px 24px 80px;max-width:900px;margin:0 auto}
+.timeline{position:relative;padding:20px 0}
+.timeline-line{
+  position:absolute;left:50%;top:0;bottom:0;width:2px;
+  background:linear-gradient(180deg,transparent,#c9a84c,transparent);
+  transform:translateX(-50%);
+}
+.timeline-item{
+  display:flex;align-items:flex-start;margin-bottom:40px;position:relative;
+  opacity:0;transform:translateY(30px);transition:all 0.8s cubic-bezier(0.22,1,0.36,1);
+}
+.timeline-item.visible{opacity:1;transform:translateY(0)}
+.timeline-item:nth-child(odd){flex-direction:row-reverse}
+.timeline-dot{
+  position:absolute;left:50%;top:8px;transform:translateX(-50%);
+  width:16px;height:16px;border-radius:50%;background:#c9a84c;
+  box-shadow:0 0 12px rgba(201,168,76,0.4);z-index:2;
+}
+.timeline-content{
+  width:calc(50% - 40px);padding:24px;background:rgba(26,10,46,0.4);
+  border:1px solid rgba(201,168,76,0.15);border-radius:12px;
+  backdrop-filter:blur(4px);transition:all 0.3s;
+}
+.timeline-content:hover{border-color:rgba(201,168,76,0.4);background:rgba(26,10,46,0.6)}
+.timeline-year{font-family:'Playfair Display',serif;font-size:1.8rem;color:#c9a84c;font-weight:900}
+.timeline-text{color:#b0a090;font-size:0.95rem;margin-top:4px}
+
+/* Footer */
+footer{text-align:center;padding:40px 24px 24px;border-top:1px solid rgba(201,168,76,0.08)}
+footer p{color:#5a4c3a;font-size:0.85rem;margin-bottom:4px}
+footer .footer-tagline{font-family:'Playfair Display',serif;font-style:italic;color:#7a6c5a;font-size:0.95rem;margin:8px 0}
+
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(10,10,15,0.96);backdrop-filter:blur(12px);flex-direction:column;padding:16px;border-bottom:1px solid rgba(201,168,76,0.15);gap:4px}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+  nav{padding:0 16px}
+  .timeline-line{left:20px}
+  .timeline-item,.timeline-item:nth-child(odd){flex-direction:row;padding-left:50px}
+  .timeline-dot{left:20px;transform:translateX(-50%)}
+  .timeline-content{width:100%}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30,30 C30,11 54,8 60,27 C66,8 90,11 90,30 C90,49 66,52 60,33 C54,52 30,49 30,30 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    Infinito
+  </a>
+  <button class="nav-toggle" aria-label="Menú">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="canal.html" class="active">El Canal</a></li>
+    <li><a href="programas.html">Programas</a></li>
+    <li><a href="videoteca.html">Videoteca</a></li>
+    <li><a href="tv.html">TV Channel</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <h1>El Canal</h1>
+  <div class="page-divider"></div>
+  <p>Canal Infinito fue un canal de televisión por cable argentino fundado en 1994. Durante 21 años transmitió programación que exploraba los misterios del universo, convirtiéndose en un ícono de la televisión latinoamericana.</p>
+</header>
+
+<section class="timeline-section">
+  <div class="timeline">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1994</div>
+        <div class="timeline-text">Fundación por <strong>Imagen Satelital</strong>. El canal nace el 21 de febrero con una visión innovadora en la televisión por cable argentina. Su primer logo fue un diseño triangular. Inicialmente transmitía programación variada sin una temática definida.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1996</div>
+        <div class="timeline-text">El canal adopta el símbolo del infinito (∞) como su identidad visual. El logo azul del infinito marca una nueva etapa de crecimiento y reconocimiento en la región.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1997</div>
+        <div class="timeline-text">Adquirido por el grupo <strong>Cisneros/Claxson</strong>, iniciando una etapa de expansión y crecimiento en toda Latinoamérica. El canal comienza a definir su identidad temática.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1999</div>
+        <div class="timeline-text"><strong>Relanzamiento el 13 de abril</strong> con la icónica temática paranormal y esotérica. Nace el lema <em>"Abre tu Mente"</em> y el emblemático símbolo del infinito dorado. Esta es considerada la <strong>era dorada del canal</strong>, con programas como Zona Infinito, Signos y Mundo Infinito que alcanzaron enorme popularidad.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-year">2007</div>
+        <div class="timeline-text">Adquirido por <strong>Turner Broadcasting System (Time Warner)</strong>, marcando el comienzo de una transición en su identidad y programación. El canal comienza a alejarse gradualmente del contenido paranormal.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-year">2009</div>
+        <div class="timeline-text">Relanzamiento el <strong>1 de enero</strong> con nuevo formato orientado a reality shows y documentales. El símbolo del infinito cambia drásticamente y el canal abandona la temática paranormal que lo caracterizó. Pierde gran parte de su audiencia original.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-year">2015</div>
+        <div class="timeline-text"><strong>Cierre definitivo</strong>. El 10 de marzo cesa transmisiones en Argentina, y el 17 de marzo en el resto de Latinoamérica. Su frecuencia es reemplazada por <strong>TNT Series</strong>. Parte de su programación se trasladó a <strong>TruTV</strong>. El fin de una era que marcó a toda una generación.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#7a6c5a">Canal Infinito</p>
+  <p class="footer-tagline">"Realidad que supera la ficción"</p>
+  <p style="margin:6px 0 16px">1994 — 2015</p>
+  <p style="font-size:0.75rem;color:#3a2c1a">Sitio tributo sin fines de lucro</p>
+</footer>
+
+<script>
+document.querySelector('.nav-toggle')?.addEventListener('click',function(){document.querySelector('.nav-links').classList.toggle('open')});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.nav-links')?.classList.remove('open')}));
+const observer=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.15});
+document.querySelectorAll('.timeline-item').forEach(e=>observer.observe(e));
+</script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canal Infinito — Señor de TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#0a0a0f;color:#e8e0d0;line-height:1.7;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:background}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:0.02em}
+a{color:#c9a84c;text-decoration:none;transition:color 0.3s}
+a:hover{color:#f0d060}
+
+/* Navbar */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.15);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-size:1.2rem;color:#c9a84c;text-decoration:none}
+.nav-logo svg{width:28px;height:28px;fill:#c9a84c}
+.nav-links{display:flex;gap:4px;list-style:none;align-items:center}
+.nav-links a{color:#7a6c5a;text-decoration:none;font-size:0.78rem;font-weight:500;padding:6px 12px;border-radius:6px;transition:all 0.3s;letter-spacing:0.5px;text-transform:uppercase;white-space:nowrap}
+.nav-links a:hover{color:#f0d060;background:rgba(201,168,76,0.08)}
+.nav-links a.active{color:#c9a84c;background:rgba(201,168,76,0.12)}
+.nav-toggle{display:none;background:none;border:none;color:#c9a84c;font-size:1.5rem;cursor:pointer;padding:8px}
+
+/* TV container */
+.tv-container{flex:1;display:flex;flex-direction:column;padding:84px 24px 20px;max-width:960px;margin:0 auto;width:100%}
+.tv-header{text-align:center;margin-bottom:16px}
+.tv-header h1{font-size:clamp(1.3rem,2.8vw,2rem);color:#c9a84c;margin-bottom:2px}
+.tv-header p{color:#5a4c3a;font-size:0.82rem}
+.tv-stats{display:flex;justify-content:center;gap:16px;margin-top:6px;flex-wrap:wrap}
+.tv-stats span{font-size:0.7rem;color:#4a3c2a;background:rgba(201,168,76,0.06);padding:4px 12px;border-radius:20px;border:1px solid rgba(201,168,76,0.08)}
+
+/* TV Set */
+.tv-set{background:#111;border-radius:20px;padding:20px 20px 16px;border:3px solid #222;box-shadow:0 20px 60px rgba(0,0,0,0.6),inset 0 0 40px rgba(0,0,0,0.3);flex:1;display:flex;flex-direction:column;position:relative}
+.tv-screen{position:relative;background:#050508;border-radius:10px;overflow:hidden;aspect-ratio:16/9;border:2px solid #2a2a2a;flex:1;display:flex;align-items:center;justify-content:center}
+.tv-screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:1}
+.scanlines{position:absolute;inset:0;z-index:3;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.06) 2px,rgba(0,0,0,0.06) 4px)}
+
+/* Static overlay (for transitions) */
+.static-overlay{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:0;transition:opacity 0.15s;background:#050508}
+.static-overlay.active{opacity:1}
+.static-overlay::after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='sn'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23sn)' opacity='1'/%3E%3C/svg%3E");animation:staticScramble 0.1s steps(3) infinite}
+@keyframes staticScramble{0%{transform:translate(0,0)}25%{transform:translate(-2px,1px)}50%{transform:translate(1px,-1px)}75%{transform:translate(-1px,2px)}100%{transform:translate(0,0)}}
+
+.tv-power-led{position:absolute;top:10px;right:14px;z-index:5;display:flex;align-items:center;gap:5px}
+.tv-power-led .led{width:7px;height:7px;border-radius:50%;background:#c9a84c;box-shadow:0 0 8px rgba(201,168,76,0.6);animation:ledPulse 2s ease-in-out infinite}
+.tv-power-led .led-label{font-size:0.55rem;color:#3a2c1a;letter-spacing:1px;text-transform:uppercase}
+@keyframes ledPulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+/* Channel info overlay */
+.tv-channel-info{position:absolute;top:10px;left:12px;z-index:5;background:rgba(0,0,0,0.8);padding:6px 14px;border-radius:6px;border-left:3px solid #c9a84c;max-width:75%;transition:opacity 0.5s;backdrop-filter:blur(4px)}
+.tv-channel-info .ch-number{font-size:0.6rem;color:#6a5c4a;letter-spacing:1px;text-transform:uppercase}
+.tv-channel-info .ch-title{font-size:0.82rem;color:#f0e0c0;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tv-channel-info .ch-badge{display:inline-block;padding:1px 8px;border-radius:10px;font-size:0.58rem;margin-top:3px;background:rgba(201,168,76,0.15);color:#c9a84c}
+.tv-channel-info .ch-badge-2{font-size:0.58rem;color:#6a5c4a;margin-top:2px}
+.tv-channel-info .ch-progress{height:2px;background:rgba(255,255,255,0.1);border-radius:2px;margin-top:4px;overflow:hidden}
+.tv-channel-info .ch-progress-bar{height:100%;background:#c9a84c;width:0%;transition:width 1s linear;border-radius:2px}
+.tv-channel-info .ch-detalle{display:block;font-size:0.6rem;color:#5a4c3a;margin-top:4px;text-decoration:none;transition:color .3s}
+.tv-channel-info .ch-detalle:hover{color:#c9a84c}
+
+/* Up next */
+.tv-upnext{position:absolute;bottom:12px;right:14px;z-index:5;background:rgba(0,0,0,0.85);padding:8px 14px;border-radius:8px;max-width:55%;text-align:right;backdrop-filter:blur(4px);opacity:0;transform:translateY(8px);transition:all 0.5s}
+.tv-upnext.show{opacity:1;transform:translateY(0)}
+.tv-upnext .upnext-label{font-size:0.55rem;color:#c9a84c;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.tv-upnext .upnext-title{font-size:0.75rem;color:#c0b090;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tv-upnext .upnext-prog{font-size:0.6rem;color:#5a4c3a;margin-top:1px}
+
+/* Countdown overlay */
+.tv-countdown{position:absolute;bottom:50%;left:50%;transform:translate(-50%,50%);z-index:5;text-align:center;opacity:0;transition:opacity 0.3s;pointer-events:none}
+.tv-countdown.show{opacity:1}
+.tv-countdown .countdown-num{font-size:4rem;font-weight:900;color:#c9a84c;font-family:'Playfair Display',serif;text-shadow:0 0 40px rgba(201,168,76,0.3)}
+.tv-countdown .countdown-label{font-size:0.7rem;color:#5a4c3a;letter-spacing:2px;text-transform:uppercase}
+
+/* Idle state */
+.tv-idle{text-align:center;z-index:2;position:relative}
+.tv-idle svg{width:70px;height:70px;fill:#c9a84c;opacity:0.4}
+.tv-idle p{color:#5a4c3a;font-family:'Playfair Display',serif;font-size:1rem;margin-top:6px;opacity:0.5}
+.tv-idle .idle-sub{font-size:0.75rem;color:#3a2c1a;font-family:'Inter',sans-serif;margin-top:4px}
+@keyframes idlePulse{0%,100%{opacity:0.4}50%{opacity:0.15}}
+.tv-idle svg{animation:idlePulse 3s ease-in-out infinite}
+
+/* controls */
+.tv-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;flex-wrap:wrap}
+.tv-btn{padding:9px 20px;border-radius:50px;border:1px solid rgba(201,168,76,0.2);background:rgba(201,168,76,0.05);color:#c9a84c;font-family:'Inter',sans-serif;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.3s;display:inline-flex;align-items:center;gap:7px;text-decoration:none}
+.tv-btn:hover{background:rgba(201,168,76,0.12);border-color:rgba(201,168,76,0.4);transform:translateY(-1px)}
+.tv-btn-sm{padding:7px 14px;font-size:0.75rem;gap:5px}
+.tv-btn-secondary{background:rgba(255,255,255,0.04);color:#7a6c5a;border-color:rgba(255,255,255,0.08)}
+.tv-btn-secondary:hover{background:rgba(255,255,255,0.07);color:#a09080}
+.tv-btn-icon{width:36px;height:36px;padding:0;border-radius:50%;justify-content:center}
+.tv-now-playing{text-align:center;margin-top:10px;font-size:0.75rem;color:#5a4c3a;min-height:1.2em}
+.tv-now-playing strong{color:#8a7c6a}
+
+/* Help overlay */
+.tv-help{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
+.tv-help.open{display:flex}
+.tv-help-box{background:#181810;border:1px solid rgba(201,168,76,0.15);border-radius:16px;padding:32px;max-width:420px;width:90%}
+.tv-help-box h3{color:#c9a84c;margin-bottom:16px;font-size:1.1rem}
+.tv-help-box kbd{display:inline-block;background:#2a2a1a;color:#c9a84c;padding:2px 10px;border-radius:4px;font-size:0.75rem;font-family:'Inter',sans-serif;border:1px solid rgba(201,168,76,0.15);min-width:28px;text-align:center}
+.tv-help-item{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:0.8rem;color:#a09080}
+.tv-help-item:not(:last-child){border-bottom:1px solid rgba(255,255,255,0.04)}
+
+footer{text-align:center;padding:16px 24px}
+footer p{color:#2a1c0a;font-size:0.72rem}
+
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(10,10,15,0.96);backdrop-filter:blur(12px);flex-direction:column;padding:16px;border-bottom:1px solid rgba(201,168,76,0.15);gap:4px}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+  nav{padding:0 16px}
+  .tv-container{padding:80px 12px 12px}
+  .tv-set{padding:14px 14px 12px}
+  .tv-controls{gap:8px}
+  .tv-btn{font-size:0.75rem;padding:7px 14px}
+  .tv-btn-icon{width:32px;height:32px}
+  .tv-help-box{padding:24px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30,30 C30,11 54,8 60,27 C66,8 90,11 90,30 C90,49 66,52 60,33 C54,52 30,49 30,30 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    Infinito
+  </a>
+  <button class="nav-toggle" aria-label="Menú">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="canal.html">El Canal</a></li>
+    <li><a href="programas.html">Programas</a></li>
+    <li><a href="videoteca.html">Videoteca</a></li>
+    <li><a href="tv.html" class="active">TV Channel</a></li>
+  </ul>
+</nav>
+
+<div class="tv-container">
+  <header class="tv-header">
+    <h1>📺 Señal en vivo</h1>
+    <p>Experiencia de televisión interactiva &mdash; 88 videos del Lost Media Canal Infinito</p>
+    <div class="tv-stats">
+      <span id="tvStatVideo">🎬 88 videos</span>
+      <span id="tvStatProg">📋 24 programas</span>
+      <span id="tvStatAuto">▶ Auto: activado</span>
+      <span id="tvStatVol">🔊 Sonido: activado</span>
+    </div>
+  </header>
+
+  <div class="tv-set">
+    <div class="tv-screen" id="tvScreen">
+      <div class="tv-idle" id="tvIdle">
+        <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50,50 C50,18 88,12 100,45 C112,12 150,18 150,50 C150,82 112,88 100,55 C88,88 50,82 50,50 Z" fill="none" stroke="#c9a84c" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <p>Sintonizando Canal Infinito...</p>
+        <p class="idle-sub">Presiona cualquier tecla o haz clic en "Siguiente video"</p>
+      </div>
+      <div class="static-overlay" id="staticOverlay"></div>
+      <div class="scanlines"></div>
+      <div class="tv-power-led"><span class="led"></span><span class="led-label">ON AIR</span></div>
+      <div class="tv-channel-info" id="tvInfo">
+        <div class="ch-number" id="tvChNum">CH —</div>
+        <div class="ch-title" id="tvChTitle">Cargando...</div>
+        <span class="ch-badge" id="tvChBadge"></span>
+        <div class="ch-badge-2" id="tvChBadge2"></div>
+        <div class="ch-progress"><div class="ch-progress-bar" id="tvProgress"></div></div>
+        <a class="ch-detalle" id="tvDetalle" target="_blank">📄 Ver detalle</a>
+      </div>
+      <div class="tv-upnext" id="tvUpNext">
+        <div class="upnext-label">Siguiente</div>
+        <div class="upnext-title" id="upnextTitle"></div>
+        <div class="upnext-prog" id="upnextProg"></div>
+      </div>
+      <div class="tv-countdown" id="tvCountdown">
+        <div class="countdown-num" id="countdownNum">3</div>
+        <div class="countdown-label">auto-siguiente</div>
+      </div>
+    </div>
+
+    <div class="tv-controls">
+      <button class="tv-btn" id="prevBtn" title="Anterior (←)">◀</button>
+      <button class="tv-btn" id="randomBtn" title="Siguiente (Space/N)">🎲 Siguiente</button>
+      <button class="tv-btn" id="nextBtn" title="Repetir mismo programa (→)">▶▶</button>
+      <button class="tv-btn tv-btn-sm tv-btn-secondary" id="autoToggle" title="Auto-avance">▶ Auto</button>
+      <button class="tv-btn tv-btn-sm tv-btn-secondary" id="muteBtn" title="Silenciar (M)">🔊</button>
+      <button class="tv-btn tv-btn-sm tv-btn-secondary" id="helpBtn" title="Atajos (?)">⌨</button>
+    </div>
+    <p class="tv-now-playing" id="tvNowPlaying"></p>
+  </div>
+</div>
+
+<footer><p>Sitio tributo sin fines de lucro • Canal Infinito 1994-2015</p></footer>
+
+<div class="tv-help" id="tvHelp">
+  <div class="tv-help-box">
+    <h3>⌨ Atajos de teclado</h3>
+    <div class="tv-help-item"><span>Video siguiente</span> <span><kbd>Space</kbd> / <kbd>N</kbd></span></div>
+    <div class="tv-help-item"><span>Siguiente del mismo programa</span> <span><kbd>→</kbd></span></div>
+    <div class="tv-help-item"><span>Video anterior</span> <span><kbd>←</kbd></span></div>
+    <div class="tv-help-item"><span>Activar / silenciar</span> <span><kbd>M</kbd></span></div>
+    <div class="tv-help-item"><span>Alternar auto-avance</span> <span><kbd>A</kbd></span></div>
+    <div class="tv-help-item"><span>Modo pantalla completa</span> <span><kbd>F</kbd></span></div>
+    <div class="tv-help-item"><span>Mostrar / ocultar ayuda</span> <span><kbd>?</kbd></span></div>
+    <div style="margin-top:16px;text-align:right">
+      <button class="tv-btn tv-btn-sm" id="helpClose">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Data (standardized progIds) ──
+const progNames = {"documental-infinito":"Documental Infinito","paranormal-guide":"Paranormal Guide","ufo-infinity":"UFO Infinity","off-the-beaten-path-fuera-de-ruta":"Off the Beaten Path / Fuera de Ruta","casa-infinito":"Casa Infinito","fear-is-breathed-here-aqu-se-respira-el-miedo":"Fear Is Breathed Here / Aquí se Respira el Miedo","fear-is-breathed-here":"Fear Is Breathed Here","aqu-se-respira-el-miedo":"Aquí se Respira el Miedo","neopilates":"Neopilates","naturalmente-yoga":"Naturalmente Yoga","tantra":"Tantra","masones-misterio-y-poder":"Masones: Misterio y Poder","grandes-misterios":"Grandes Misterios","cortos-infinito":"Cortos Infinito","fuera-de-ruta":"Fuera de Ruta","latinoam-rica-historias-perdidas":"Latinoamérica: Historias Perdidas","producci-n-original-infinito":"Producción Original Infinito","a-a-la-z-del-horror":"A a la Z del Horror","expedici-n":"Expedición","el-d-a-menos-pensado":"El Día Menos Pensado","revista-a-o-cero":"Revista Año Cero","traves-a-infinito":"Travesía Infinito","zona-infinito":"Zona Infinito","encuentros-paranormales":"Encuentros Paranormales"};
+const progColors = {"documental-infinito":"#c96bb5","paranormal-guide":"#e0c96b","ufo-infinity":"#6bc96b","off-the-beaten-path-fuera-de-ruta":"#6b6be0","casa-infinito":"#6bb5e0","fear-is-breathed-here-aqu-se-respira-el-miedo":"#c9c96b","fear-is-breathed-here":"#6b8ec9","aqu-se-respira-el-miedo":"#e06b6b","neopilates":"#b5c96b","naturalmente-yoga":"#c98e6b","tantra":"#8ec96b","masones-misterio-y-poder":"#6be08e","grandes-misterios":"#6bc9b5","cortos-infinito":"#7ec96b","fuera-de-ruta":"#e06b8e","latinoam-rica-historias-perdidas":"#8e6be0","producci-n-original-infinito":"#c96b8e","a-a-la-z-del-horror":"#c9a84c","expedici-n":"#b56bc9","el-d-a-menos-pensado":"#e0a06b","revista-a-o-cero":"#6bc9c9","traves-a-infinito":"#c96be0","zona-infinito":"#c97b3a","encuentros-paranormales":"#6be0c9"};
+
+const catalog = [{"id":"dxR2_l0Hda8","t":"Paranormal Guide - Contact With the Beyond","prog":"paranormal-guide"},{"id":"PX77NX7FAw0","t":"Paranormal Guide - Ghost Detection Device","prog":"paranormal-guide"},{"id":"x_h1N4qg9AI","t":"Paranormal Guide - Haunted Pub","prog":"paranormal-guide"},{"id":"5LjFbmMSVNc","t":"Paranormal Guide - Ghosts in the Stable","prog":"paranormal-guide"},{"id":"rO-TfxIGd9s","t":"UFO Infinity - UFO Contact Stories","prog":"ufo-infinity"},{"id":"8XBwkOhp5YU","t":"Off the Beaten Path - Chiapas","prog":"off-the-beaten-path-fuera-de-ruta"},{"id":"A9zGGvraqvg","t":"INFINITE HOUSE - Venier Poltergeist Case","prog":"casa-infinito"},{"id":"DxuLu0iWQFE","t":"Fear Is Breathed Here - Premonition","prog":"fear-is-breathed-here-aqu-se-respira-el-miedo"},{"id":"gTMBXIOtgNE","t":"Fear Is Breathed Here - The Spawn","prog":"fear-is-breathed-here"},{"id":"sSP0JbUw9A4","t":"Fear Breathes Here - The Intruder","prog":"aqu-se-respira-el-miedo"},{"id":"HlaP90_ZhUE","t":"Fear Is in the Air - The Return","prog":"aqu-se-respira-el-miedo"},{"id":"l_XdR1pGycw","t":"Here the Fear is Breathed - The Shadows","prog":"aqu-se-respira-el-miedo"},{"id":"hWTcHLQ5iwI","t":"Neopilates - Serie Completa CANAL INFINITO VHS RIP","prog":"neopilates"},{"id":"KwAhblgi5Rc","t":"Naturalmente YOGA - Serie Completa CANAL INFINITO","prog":"naturalmente-yoga"},{"id":"d4nuG5JHeWw","t":"Tantra - The Yoga of Love (Short)","prog":"tantra"},{"id":"74UFl2R89LU","t":"Freemasons: Mystery and Power - Chapter III","prog":"masones-misterio-y-poder"},{"id":"EsrrljAJ9s8","t":"Is there extraterrestrial life? INFINITE CHANNEL","prog":"documental-infinito"},{"id":"EtpIPxSzcvg","t":"Masones: Misterio y Poder Capítulo II","prog":"masones-misterio-y-poder"},{"id":"I8N1Zetmq1o","t":"Canal Infinito - Registros Sumerios del Planeta X","prog":"documental-infinito"},{"id":"COjend2PDyo","t":"Masones: Misterio y Poder - Capitulo I","prog":"masones-misterio-y-poder"},{"id":"dmt_Rp5C50o","t":"Grandes misterios de la Historia (Podcast)","prog":"grandes-misterios"},{"id":"qjImMMxxKR0","t":"La Historia Secreta de Bogotá (RIP VHS)","prog":"documental-infinito"},{"id":"C4DAdElt0gE","t":"Cortos del Canal Infinito #2","prog":"cortos-infinito"},{"id":"ct9sJPpxPH8","t":"Cortos del Canal Infinito (Parcialmente Encontrados)","prog":"cortos-infinito"},{"id":"3cK1ZJWmrQQ","t":"Fuera de Ruta - La Cultura Chichimeca (Chihuahua)","prog":"fuera-de-ruta"},{"id":"b2mQKhGG2sI","t":"Fuera de Ruta - Compilación de Cortos","prog":"fuera-de-ruta"},{"id":"kxMFslJivHg","t":"Aquí se Respira el Miedo - Naranja Dulce Limón Partido","prog":"aqu-se-respira-el-miedo"},{"id":"FDXS3jIRWp0","t":"EL MISTERIO de la primera NAVIDAD - Documental Infinito","prog":"documental-infinito"},{"id":"H-l4RR1m5pQ","t":"EL EXPERIMENTO PHILADELPHIA - Documental Infinito","prog":"documental-infinito"},{"id":"EROZrNnmCYU","t":"OVNIS sobre BOGOTÁ - 11 de Noviembre de 2024","prog":"cortos-infinito"},{"id":"Ibw0-RIH02Q","t":"CERCA DE LA MUERTE - Documental Infinito","prog":"documental-infinito"},{"id":"xK51Pzu5YNE","t":"Misterios de Marte - Documental Canal Infinito","prog":"documental-infinito"},{"id":"cZKMRstQVDY","t":"El Misterio del Proyecto HAARP","prog":"documental-infinito"},{"id":"OGJMmzjKfOc","t":"Apariciones Marianas en Venezuela","prog":"documental-infinito"},{"id":"rouETlXgHx4","t":"Misterios Naturales: La Fuerza Vital Humana","prog":"documental-infinito"},{"id":"EHYVkS4o0So","t":"El Misterio de Los Rollos del Mar Muerto","prog":"documental-infinito"},{"id":"Qrdas2nzum0","t":"La Vida Desconocida de Jesús","prog":"documental-infinito"},{"id":"TpJkVc6IhV8","t":"Movimiento Raeliano y clonación (Canal Infinito)","prog":"documental-infinito"},{"id":"VV1pbuRzgK0","t":"Latinoamerica: Historias Perdidas - El Pais De las Siete Luminarias","prog":"latinoam-rica-historias-perdidas"},{"id":"jjkFWb4hONU","t":"La verdadera Historia del Exorcista","prog":"documental-infinito"},{"id":"1Y3fCWLdOw8","t":"En Busca de Drácula - Documental Completo","prog":"documental-infinito"},{"id":"FvarFkCfKKg","t":"El Salvador - Documental Canal Infinito","prog":"documental-infinito"},{"id":"BDyvleFJHOc","t":"Ángeles - Documental Canal Infinito (Producción Original)","prog":"producci-n-original-infinito"},{"id":"Q7ZI91UAz7o","t":"¿Qué pasa después de la Muerte?","prog":"documental-infinito"},{"id":"9bRrZ5rIltw","t":"TANTRA: el yoga del amor - El Orgasmo","prog":"tantra"},{"id":"iZZYj3bNOBc","t":"Criaturas Fantásticas - Gatos Míticos","prog":"documental-infinito"},{"id":"gQSDe4scmWo","t":"La historia de la Secta Heavens Gate","prog":"documental-infinito"},{"id":"nr4KPf2fbqA","t":"THE FEARMAKERS: TEXAS CHAINSAW MASSACRE","prog":"a-a-la-z-del-horror"},{"id":"Lo_E0vg4Un0","t":"Expedición: Historia de Dos Océanos","prog":"expedici-n"},{"id":"0aDXC8-rC94","t":"Latinoamérica: Historias Perdidas - Cosechas Gigantes","prog":"latinoam-rica-historias-perdidas"},{"id":"4eBhtrp4mds","t":"Latinoamérica: Historias Perdidas - OVNIS II Parte","prog":"latinoam-rica-historias-perdidas"},{"id":"VCbM9k1w6xY","t":"2PAC esta Vivo? La verdad de P Diddy","prog":"documental-infinito"},{"id":"ioYJWaxMzOc","t":"Bob Marley y la Mística Rastafari","prog":"documental-infinito"},{"id":"3z6DSQQO8vg","t":"Benajmin Solari Parravincini - Documental","prog":"documental-infinito"},{"id":"sXbYlAwoQaE","t":"El Futuro de la Tierra: La Profecía Infinita","prog":"documental-infinito"},{"id":"Nymnh2MxNmw","t":"Las 7 Profecías mayas - Canal Infinito","prog":"documental-infinito"},{"id":"PpEDkUKQSkc","t":"Tarot: La Rueda de la Vida","prog":"documental-infinito"},{"id":"1vutWV8UKHQ","t":"A a la Z del Horror con Clive Barker","prog":"a-a-la-z-del-horror"},{"id":"w5WkSz4u7P0","t":"Rompiendo Límites: El Canal Infinito en 4K","prog":"documental-infinito"},{"id":"iUgYhJ05VFE","t":"A a la Z del Horror: Zombies y Muertos Vivientes","prog":"a-a-la-z-del-horror"},{"id":"nyzFM1orWYw","t":"Juegos de Rol en el Canal Infinito","prog":"documental-infinito"},{"id":"qay6tDJkuBM","t":"Latinoamérica: Historias Perdidas - Chamanes","prog":"latinoam-rica-historias-perdidas"},{"id":"eL9v3LNapWk","t":"Una Posibilidad: Prem Rawat","prog":"documental-infinito"},{"id":"hsamYHp76aY","t":"Los Apostoles - Documental Completo","prog":"documental-infinito"},{"id":"TvJTWpn7mWQ","t":"Secretos de la Hipnosis con Paul McKena","prog":"documental-infinito"},{"id":"gBGL7Dg2_Jc","t":"El Zen en las Cárceles","prog":"documental-infinito"},{"id":"TbDydZrzepc","t":"Área 51 Revelada: La Verdadera Historia","prog":"documental-infinito"},{"id":"WeitAV9az9k","t":"Cerebros Místicos","prog":"documental-infinito"},{"id":"CflIljmzT4o","t":"Ed Gein: El Monstruo de la Vida Real","prog":"a-a-la-z-del-horror"},{"id":"EONPkqQOTYA","t":"El Enigma de los Cielos","prog":"documental-infinito"},{"id":"GvVc-DMnJuM","t":"Uritorco: El Enigma Mágico","prog":"documental-infinito"},{"id":"19Dwxwql7ng","t":"Benjamín Solari Parravicini Misterios","prog":"documental-infinito"},{"id":"fFkCv52XVfc","t":"Magia del Amor: Magia Roja y Amarres","prog":"documental-infinito"},{"id":"JLbdMyyAiro","t":"En Busca del Karma - Machu Picchu (2003)","prog":"documental-infinito"},{"id":"0ongfuCjrO4","t":"Mayas: Los Dueños del Tiempo","prog":"documental-infinito"},{"id":"kUlg7CLRvvY","t":"Tantra y Kamasutra: El yoga del Placer","prog":"tantra"},{"id":"_50ubsnATl4","t":"El Secreto de los Templarios","prog":"documental-infinito"},{"id":"i4DI5KIkO-Q","t":"OVNIS: El Enigma Pendiente","prog":"documental-infinito"},{"id":"Enlt-H6y5as","t":"El Misterio de los Estigmas","prog":"documental-infinito"},{"id":"ZXT39gNXoZA","t":"Maratón de Misterios: El Día Menos Pensado","prog":"el-d-a-menos-pensado"},{"id":"4D-_bWHpsYs","t":"Serie de TV OVNI en VHS","prog":"documental-infinito"},{"id":"wNTZIIT5UkQ","t":"Contacto con el Misterio: El Caso Pastén","prog":"documental-infinito"},{"id":"BbF0_-LsFkk","t":"Revista AÑO CERO - Misterios del pasado","prog":"revista-a-o-cero"},{"id":"Jw6GN7i8mRA","t":"Historias de Fantasmas con Patrick Mcnee","prog":"documental-infinito"},{"id":"qMsGkMmqsnk","t":"El Mundo de las Vidas Pasadas","prog":"documental-infinito"},{"id":"QnRPgn_uBvc","t":"Travesía Infinito: Buenos Aires a Machu Picchu","prog":"traves-a-infinito"},{"id":"Oyc6Zu6WEic","t":"JJ Benítez: Zona Infinito","prog":"zona-infinito"},{"id":"btjyGln5eLE","t":"Encuentros Paranormales (1996) - Serie Completa","prog":"encuentros-paranormales"}];
+
+const TOTAL = catalog.length;
+let currentIdx = -1;
+let history = [];
+let autoAdvance = true;
+let isMuted = false;
+let player = null;
+let progressTimer = null;
+let countdownTimer = null;
+let countdownValue = 5;
+let wasAutoLoading = false;
+
+// ── DOM refs ──
+const screen = document.getElementById('tvScreen');
+const idle = document.getElementById('tvIdle');
+const staticOverlay = document.getElementById('staticOverlay');
+const tvInfo = document.getElementById('tvInfo');
+const tvChNum = document.getElementById('tvChNum');
+const tvChTitle = document.getElementById('tvChTitle');
+const tvChBadge = document.getElementById('tvChBadge');
+const tvChBadge2 = document.getElementById('tvChBadge2');
+const tvProgress = document.getElementById('tvProgress');
+const tvNowPlaying = document.getElementById('tvNowPlaying');
+const tvUpNext = document.getElementById('tvUpNext');
+const upnextTitle = document.getElementById('upnextTitle');
+const upnextProg = document.getElementById('upnextProg');
+const countdownEl = document.getElementById('tvCountdown');
+const countdownNum = document.getElementById('countdownNum');
+const randomBtn = document.getElementById('randomBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const autoToggle = document.getElementById('autoToggle');
+
+// ── Helpers ──
+function getProgName(prog){return progNames[prog]||prog;}
+function getProgColor(prog){return progColors[prog]||'#c9a84c';}
+
+function getNextRandom(){return Math.floor(Math.random()*TOTAL);}
+function getNextSameProg(idx){
+  const prog=catalog[idx].prog;
+  const same=catalog.map((v,i)=>i).filter(i=>catalog[i].prog===prog&&i!==idx);
+  if(same.length===0)return getNextRandom();
+  return same[Math.floor(Math.random()*same.length)];
+}
+function getPrevFromHistory(){
+  if(history.length<2)return getNextRandom();
+  history.pop(); // remove current
+  return history.pop(); // get previous
+}
+
+function showStatic(show){
+  staticOverlay.classList.toggle('active',show);
+}
+
+function loadVideo(idx,keepHistory){
+  // Save to history
+  if(!keepHistory){
+    if(currentIdx>=0) history.push(currentIdx);
+    if(history.length>50) history.shift();
+  }
+  currentIdx=idx;
+  const v=catalog[idx];
+  const progName=getProgName(v.prog);
+  const color=getProgColor(v.prog);
+
+  // Hide idle
+  idle.style.display='none';
+
+  // Static transition
+  showStatic(true);
+  setTimeout(()=>{
+    // Create iframe
+    const oldIframe=screen.querySelector('iframe');
+    if(oldIframe) oldIframe.remove();
+
+    const iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube-nocookie.com/embed/'+v.id+'?rel=0&autoplay=1&enablejsapi=1&origin='+encodeURIComponent(window.location.origin);
+    iframe.allow='autoplay; encrypted-media';
+    iframe.allowFullscreen=true;
+    iframe.loading='eager';
+    screen.insertBefore(iframe,screen.querySelector('.scanlines'));
+
+    // Update channel info
+    tvChNum.textContent='CH '+(idx+1).toString().padStart(2,'0');
+    tvChTitle.textContent=v.t;
+    tvChBadge.textContent=progName;
+    tvChBadge.style.background=color+'33';
+    tvChBadge.style.color=color;
+    tvChBadge2.textContent='Programa '+(idx+1)+' de '+TOTAL;
+    // Set detail link
+    const dl=document.getElementById('tvDetalle');
+    if(dl){dl.href='video.html?id='+v.id;dl.style.display='inline'}
+
+    // Update now playing
+    tvNowPlaying.innerHTML='📡 <strong>'+progName+'</strong> &mdash; '+v.t;
+
+    // Update border
+    tvInfo.style.borderLeftColor=color;
+
+    // Update up next (preview next)
+    updateUpNext();
+
+    // Fade in
+    setTimeout(()=>{showStatic(false)},250);
+  },400);
+
+  // Start counting for auto-advance
+  resetCountdown();
+}
+
+function updateUpNext(){
+  // Find next video of same program first
+  const prog=catalog[currentIdx].prog;
+  const same=catalog.map((v,i)=>i).filter(i=>catalog[i].prog===prog&&i!==currentIdx);
+  const nextIdx=same.length>0?same[Math.floor(Math.random()*same.length)]:getNextRandom();
+  const next=catalog[nextIdx];
+  const nextProg=getProgName(next.prog);
+  upnextTitle.textContent=next.t;
+  upnextProg.textContent=nextProg;
+  // Not showing it by default, will show near end
+  tvUpNext.classList.remove('show');
+}
+
+function resetCountdown(){
+  clearInterval(countdownTimer);
+  clearTimeout(progressTimer);
+  countdownEl.classList.remove('show');
+  tvUpNext.classList.remove('show');
+  tvProgress.style.width='0%';
+  countdownValue=5;
+
+  if(!autoAdvance) return;
+
+  // Show "up next" after 70% of a reasonable time (~10s for UX)
+  // Since we can't detect actual video end easily, show up next after 15s
+  setTimeout(()=>{
+    if(autoAdvance) tvUpNext.classList.add('show');
+  },15000);
+
+  // Countdown at 28s
+  setTimeout(()=>{
+    if(!autoAdvance || currentIdx<0) return;
+    countdownEl.classList.add('show');
+    countdownValue=5;
+    countdownNum.textContent='5';
+    countdownTimer=setInterval(()=>{
+      countdownValue--;
+      countdownNum.textContent=countdownValue;
+      if(countdownValue<=0){
+        clearInterval(countdownTimer);
+        countdownEl.classList.remove('show');
+        playRandom();
+      }
+    },1000);
+  },30000);
+
+  // Progress bar animation (30s cycle)
+  setTimeout(()=>{
+    if(currentIdx<0) return;
+    tvProgress.style.width='100%';
+    tvProgress.style.transition='width 28s linear';
+    tvProgress.style.width='0%';
+    // Then reset after completion
+    setTimeout(()=>{
+      tvProgress.style.transition='none';
+      tvProgress.style.width='0%';
+    },28000);
+  },2000);
+}
+
+function playRandom(){loadVideo(getNextRandom(),false);}
+function playPrev(){const idx=getPrevFromHistory();loadVideo(idx,true);}
+function playSameProg(){if(currentIdx<0){playRandom();return;}loadVideo(getNextSameProg(currentIdx),false);}
+
+// ── Mute via YouTube postMessage ──
+function setMute(muted){
+  isMuted=muted;
+  const iframe=screen.querySelector('iframe');
+  if(iframe && iframe.contentWindow){
+    iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:muted?'mute':'unMute',args:''}),'*');
+  }
+  document.getElementById('muteBtn').textContent=muted?'🔇':'🔊';
+  document.getElementById('muteBtn').style.color=muted?'#ff6450':'#7a6c5a';
+  document.getElementById('tvStatVol').textContent=muted?'🔇 Silenciado':'🔊 Sonido: activado';
+}
+document.getElementById('muteBtn').addEventListener('click',()=>setMute(!isMuted));
+
+// ── Auto toggle ──
+autoToggle.addEventListener('click',()=>{
+  autoAdvance=!autoAdvance;
+  autoToggle.textContent=autoAdvance?'▶ Auto':'■ Auto';
+  autoToggle.style.color=autoAdvance?'#c9a84c':'#7a6c5a';
+  document.getElementById('tvStatAuto').textContent=autoAdvance?'▶ Auto: activado':'■ Auto: desactivado';
+  if(autoAdvance && currentIdx>=0) resetCountdown();
+  else {
+    clearInterval(countdownTimer);
+    countdownEl.classList.remove('show');
+    tvUpNext.classList.remove('show');
+  }
+});
+
+// ── Button events ──
+randomBtn.addEventListener('click',playRandom);
+prevBtn.addEventListener('click',playPrev);
+nextBtn.addEventListener('click',playSameProg);
+
+// ── Keyboard ──
+document.addEventListener('keydown',e=>{
+  const key=e.key;
+  if(key===' '||key==='Space'||key==='n'||key==='N'){
+    e.preventDefault(); playRandom();
+  } else if(key==='ArrowRight'){
+    e.preventDefault(); playSameProg();
+  } else if(key==='ArrowLeft'){
+    e.preventDefault(); playPrev();
+  } else if(key==='m'||key==='M'){
+    e.preventDefault(); setMute(!isMuted);
+  } else if(key==='a'||key==='A'){
+    e.preventDefault(); autoToggle.click();
+  } else if(key==='f'||key==='F'){
+    e.preventDefault();
+    if(!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  } else if(key==='?'){
+    e.preventDefault();
+    document.getElementById('tvHelp').classList.toggle('open');
+  } else if(key==='Escape'){
+    document.getElementById('tvHelp').classList.remove('open');
+  }
+});
+
+// Click on screen = next
+screen.addEventListener('click',e=>{
+  if(e.target===screen||e.target===staticOverlay) playRandom();
+});
+
+// ── Help ──
+document.getElementById('helpBtn').addEventListener('click',()=>{
+  document.getElementById('tvHelp').classList.toggle('open');
+});
+document.getElementById('helpClose').addEventListener('click',()=>{
+  document.getElementById('tvHelp').classList.remove('open');
+});
+
+// ── Nav ──
+document.querySelector('.nav-toggle')?.addEventListener('click',function(){document.querySelector('.nav-links').classList.toggle('open')});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.nav-links')?.classList.remove('open')}));
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded',()=>{setTimeout(playRandom,600)});
+</script>
+</body>
+</html>
