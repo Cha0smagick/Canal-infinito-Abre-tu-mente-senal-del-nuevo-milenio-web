@@ -74,13 +74,19 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Servir el sitio
-        run: |
-          npx --yes http-server -p 8080 -s . &
-          npx --yes wait-on http://127.0.0.1:8080/index.html --timeout 60000
-
+      # No hay paso "Servir el sitio": lighthouse-ci levanta y apaga el servidor
+      # el mismo con startServerCommand de .lighthouserc.json. Si tambien se
+      # levanta aqui, el segundo http-server falla con EADDRINUSE en el 8080.
       - name: Lighthouse CI
         uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: '.lighthouserc.json'
-          uploadArtifacts: false
+          uploadArtifacts: true
+
+      - name: Guardar el informe de Lighthouse
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: .lighthouseci-report
+          retention-days: 30

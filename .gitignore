@@ -17,6 +17,7 @@ youtube-snapshot.txt
 # Salida volatil de scripts (se regenera; la version congelada si se commitea)
 data/legacy-current.json
 informe-enlaces.json
+.lighthouseci-report/
 
 # Scripts de diagnostico puntual (no forman parte del sitio)
 scripts/classes-used.mjs
