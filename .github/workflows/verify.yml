@@ -1,0 +1,86 @@
+name: Verificar
+
+# Puerta de calidad. Corre en cada push a main y en cada PR.
+# Los 4 checks deterministas (sin red, sin navegador) son BLOQUEANTES:
+# si falla alguno, el sitio no se publica.
+# Lighthouse se reporta pero NO bloquea: sus umbrales en un runner efimero
+# son flaky y no vale la pena que un falso positivo tumbe la web.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Checks deterministas
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: El build esta al dia
+        run: |
+          node scripts/build-lore.mjs
+          node scripts/build-legacy.mjs
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::Falta commitear el resultado del build."
+            git --no-pager diff --stat
+            exit 1
+          fi
+
+      - name: Sin glifos CJK ni alfabetos fuera de rango
+        run: node scripts/scan-cjk.mjs
+
+      - name: Auditoria de las 10 paginas
+        run: node scripts/verify.mjs
+
+      - name: Toda clase CSS usada esta definida
+        run: |
+          node scripts/check-classes.mjs \
+            index.html enciclopedia.html logos.html enlaces.html canal.html \
+            programas.html videoteca.html video.html tv.html 404.html
+
+      - name: El catalogo canonico es reproducible
+        run: node scripts/check-reproducible.mjs
+
+      - name: Los 88 videos siguen siendo 88 y sin duplicados
+        run: node scripts/check-catalog.mjs
+
+  lighthouse:
+    name: Lighthouse (informativo)
+    needs: checks
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Servir el sitio
+        run: |
+          npx --yes http-server -p 8080 -s . &
+          npx --yes wait-on http://127.0.0.1:8080/index.html --timeout 60000
+
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: '.lighthouserc.json'
+          uploadArtifacts: false

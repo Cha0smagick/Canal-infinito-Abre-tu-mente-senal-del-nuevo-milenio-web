@@ -1,0 +1,17 @@
+# El repositorio se guarda en LF y se trabaja en LF en todos los sistemas.
+# Sin esto, core.autocrlf en Windows convierte a CRLF al hacer checkout y los
+# artefactos que genera el build dejan de coincidir byte a byte con lo commiteado,
+# lo que hace fallar el control de reproducibilidad de CI.
+* text=auto eol=lf
+
+# Los ficheros que genera el build deben compararse sin conversion ninguna.
+assets/js/legacy/*.js text eol=lf
+assets/js/data-lore.js  text eol=lf
+data/*.json             text eol=lf
+
+# Binarios (no se tocan).
+*.png  binary
+*.jpg  binary
+*.mp3  binary
+*.mp4  binary
+*.ico  binary

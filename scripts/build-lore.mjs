@@ -21,6 +21,13 @@ if (!HAS('data/catalog.json')) {
 }
 const ext = J('data/catalog.json');
 
+/* Descripciones largas de los 88 videos y de los 21 programas con pieza de video.
+   Vivian duplicadas dentro de los <script> inline de las paginas legacy.
+   Se congelaron en data/legacy-extras.json (scripts/extract-legacy-extras.mjs)
+   para que data-lore.js sea la UNICA fuente y las legacy se generen desde aqui. */
+const ex = HAS('data/legacy-extras.json') ? J('data/legacy-extras.json') : null;
+if (!ex) console.warn('AVISO: falta data/legacy-extras.json -> videos y programas quedaran sin descripcion.');
+
 /* ---------------------------------------------------------------- 1. VIDEOS
    Re-deriva los 28 videos de youtube-data.txt con duración + flag "miembros".
    Regla: heading level=3 -> /url: /watch?v=ID (ventana +4)
@@ -168,6 +175,7 @@ const videos = ext.vidCatalog.map((v) => {
     programa: v.programa,
     progId: v.progId,
     pub: v.pub,
+    desc: (ex && ex.videoDesc[v.id]) || '',
     tags: v.tags || [],
     dur: s.dur || '',
     miembros: Boolean(s.miembro),
@@ -243,6 +251,19 @@ for (const o of pj.originales || []) {
   }
 }
 
+/* Los 21 programas con material en video (los que la videoteca, el reproductor
+   de un video y la "senal" de tv.html tienen ficha). Orden: el de la videoteca.
+   Descripcion: la version mas rica de las dos legacy (verificar que la otra
+   difiere -> drift corregido al elegir esta como canonica). */
+const videosPorProg = new Map();
+for (const v of videos) videosPorProg.set(v.progId, (videosPorProg.get(v.progId) || 0) + 1);
+const programas = (ex ? ex.programOrder : []).map((slug) => ({
+  slug,
+  nombre: ex.programNames[slug] || slug,
+  descripcion: ex.programDesc[slug] || '',
+  videos: videosPorProg.get(slug) || 0,
+}));
+
 /* ------------------------------------- 5. Filas del canal (de programacion.json) */
 const canal = prog.canal || {};
 const esloganes = (canal.esloganes || []).map((s) =>
@@ -285,6 +306,7 @@ const DATA = {
   bloques,
   originales,
   adquiridos,
+  programas,
   devociones,
   videos,
   sinFicha,
@@ -307,6 +329,7 @@ console.log('bloques         :', bloques.length);
 console.log('originales      :', originales.length, '(prog.json extra:', originales.length - ext.orig.length + ')');
 console.log('adquiridos      :', adquiridos.length, '(prog.json extra:', adquiridos.length - ext.adq.length + ')');
 console.log('devociones      :', devociones.length);
+console.log('programas piec. :', programas.length, '| videos con desc:', videos.filter((v) => v.desc).length);
 console.log('videos          :', videos.length);
 console.log('  con duración  :', videos.filter((v) => v.dur).length);
 console.log('  solo miembros :', videos.filter((v) => v.miembros).length);

@@ -1,0 +1,5577 @@
+{
+ "programas.html": {
+  "orig": [
+   {
+    "n": "Zona Infinito",
+    "g": "Paranormal / Misterio",
+    "e": "1999-2008",
+    "d": "El programa emblemático del canal. Horacio Embón viajaba por Latinoamérica investigando fenómenos paranormales, OVNIs y misterios sin resolver. Un referente del periodismo esotérico.",
+    "vid": "Oyc6Zu6WEic",
+    "st": "ok",
+    "det": "Horacio Embón • 1999-2008 • Grabó en Chile, México y Argentina. +20 episodios documentados. Algunos episodios preservados en YouTube y archivos de fans."
+   },
+   {
+    "n": "Mundo Infinito",
+    "g": "Astrología / Esoterismo",
+    "e": "1999-2008",
+    "d": "Conducido por Walter Mercado. Astrología, predicciones y mensajes de esperanza del astrólogo más famoso de Latinoamérica.",
+    "st": "lost",
+    "det": "Walter Mercado • 2002 • 8 episodios de 1 hora confirmados. Producción de Watermark International. Grabado en Caesars Palace, Las Vegas. Perdido — sin copias circulando."
+   },
+   {
+    "n": "Signos",
+    "g": "Astrología",
+    "e": "1999-2008",
+    "d": "Conducción de Alejandro Agostinelli. Análisis profundo de fenómenos astrológicos y esotéricos. Una de las dos únicas producciones originales del relanzamiento de 1999.",
+    "st": "lost",
+    "det": "Lilly Soullos • 1999-2000s • Programa semanal de astrología. Una de las dos producciones originales del relanzamiento de 1999 junto a Zona Infinito. Estado: perdido."
+   },
+   {
+    "n": "Hora Infinito",
+    "g": "Entrevistas / Debate",
+    "e": "2001-2008",
+    "d": "Franja documental insignia del canal. Más de 400 horas de contenido original sobre crimen, política, misterio y sociedad. Investigación periodística en profundidad.",
+    "st": "partial",
+    "det": "2001-2008 • +400 horas de documentales originales. Se emitía semanalmente y también en Canal 7 Argentina. 2 episodios preservados en Archivo RTA (Escobar, López Rega). Mayoría perdido."
+   },
+   {
+    "n": "Creencias",
+    "g": "Debate religioso",
+    "e": "2005-2006",
+    "d": "Programa que reunía representantes de las principales religiones para debatir temas de actualidad. Con Esteban Mirol y panelistas de 6 religiones. Se publicó un libro (Editorial Kier, 2006).",
+    "st": "partial",
+    "det": "Esteban Mirol • 2005-2006 • 21 episodios (S1:8, S2:13). Panelistas: Sheik Abdul Karim Paz, Rabino Baruj Plavnik, Presbítero Eduardo Pérez Dal Lago, Swami Aruna Nanda, entre otros. Libro de 258 págs. Algunos episodios en YouTube."
+   },
+   {
+    "n": "Guía Extraterrestre (GET)",
+    "g": "OVNIs / Docureality",
+    "e": "2003-2004",
+    "d": "Programa docureality que investigaba avistamientos OVNI y vida extraterrestre. Los investigadores viajaban al lugar de los hechos para entrevistar testigos. 2 temporadas.",
+    "st": "partial",
+    "det": "2003-2004 • 2 temporadas. 1ra temp grabada en México con César Buenrostro, Carlos Guzmán, Yohanan Díaz. 2da temp en Argentina. Parcialmente preservado (blog de Yohanan Díaz, canal GNA YouTube)."
+   },
+   {
+    "n": "Misterios Urbanos",
+    "g": "Documental / Misterio",
+    "e": "1999",
+    "d": "Serie documental de 1999 basada en el libro 'Mentiras verdaderas' de Jorge Halperín. Investigaba leyendas urbanas con un enfoque periodístico único. Dirigida por Gabriel Medina.",
+    "st": "ok",
+    "det": "1999 • 23 episodios de 20-24 min. Director: Gabriel Medina (luego dirigió 'El Ángel'). Basado en Jorge Halperín. Preservado completo (1.14 GB en Biblioteca Enigmas). Disponible en YouTube."
+   },
+   {
+    "n": "Casa Infinito",
+    "g": "Misterio",
+    "e": "1999-2008",
+    "d": "Programa sobre casas embrujadas y fenómenos paranormales en hogares. Formato de investigación in-situ.",
+    "vid": "A9zGGvraqvg",
+    "st": "ok",
+    "det": "1999-2008 • Programa de investigación paranormal en locaciones. Información limitada disponible. Video preservado: 'INFINITE HOUSE - Venier Poltergeist Case'."
+   },
+   {
+    "n": "El precio de la fama",
+    "g": "Documental",
+    "e": "1994-1999",
+    "d": "Documental sobre el costo personal de alcanzar la fama y las consecuencias psicológicas y sociales del estrellato.",
+    "st": "lost"
+   },
+   {
+    "n": "Expedición",
+    "g": "Documental / Aventura",
+    "e": "1994-1999",
+    "d": "Programa de expediciones y exploración de la era documental del canal. Viajes a lugares remotos.",
+    "vid": "Lo_E0vg4Un0",
+    "st": "ok",
+    "det": "1994-1999 • Era documental pre-paranormal. Formato de viajes y aventura. Video preservado: 'Expedición: Historia de Dos Océanos'."
+   },
+   {
+    "n": "Testimonios de protagonistas",
+    "g": "Documental",
+    "e": "1999-2008",
+    "d": "Testimonios en primera persona de personas que vivieron eventos extraordinarios.",
+    "st": "lost"
+   },
+   {
+    "n": "Aventuras en el buceo",
+    "g": "Naturaleza",
+    "e": "1994-1999",
+    "d": "Exploración del mundo submarino y la vida marina.",
+    "st": "lost"
+   },
+   {
+    "n": "Más allá del mañana",
+    "g": "Ciencia ficción",
+    "e": "1999-2008",
+    "d": "Programa sobre el futuro, la tecnología y las posibilidades de la ciencia.",
+    "st": "lost"
+   },
+   {
+    "n": "La magia del cine",
+    "g": "Cine",
+    "e": "1999-2008",
+    "d": "Detrás de escena del mundo cinematográfico. Cómo se hacen las películas.",
+    "st": "lost"
+   },
+   {
+    "n": "Recreo satelital",
+    "g": "Infantil",
+    "e": "1994-1998",
+    "d": "Espacio infantil dentro de la programación. Terminó en sep 1998 cuando el canal pivotó a documentales.",
+    "st": "lost",
+    "det": "Pre-1998 • Única referencia: Wikipedia ES menciona su fin en sept 1998. LOST MEDIA — no hay anfitrión, episodios ni material circulando."
+   },
+   {
+    "n": "Ovnis, verdades y mentiras",
+    "g": "OVNIs",
+    "e": "1999-2008",
+    "d": "Investigación sobre el fenómeno OVNI, contrastando evidencias con escepticismo.",
+    "st": "partial",
+    "det": "1999-2008 • Listado en Biblioteca Enigmas. Incluido en compilación 'Infinito OVNI' junto a Guía Extraterrestre. Parcialmente preservado."
+   },
+   {
+    "n": "BRIC",
+    "g": "Política",
+    "e": "2010",
+    "d": "Documental de Jorge Lanata sobre el bloque BRIC (Brasil, Rusia, India, China). Viajó a cada país entrevistando a figuras clave. 10 episodios.",
+    "st": "lost",
+    "det": "Jorge Lanata • 2010 • 10 episodios × 1 temporada. Director: Guido Tomio. Ganó ACE Award 2011. Sin copias oficiales circulando."
+   },
+   {
+    "n": "Kirchner: A un año de su muerte",
+    "g": "Política",
+    "e": "2011",
+    "d": "Documental sobre Néstor Kirchner al cumplirse un año de su fallecimiento. Producido en la era Turner.",
+    "st": "lost"
+   },
+   {
+    "n": "Vuelo 3142: la tragedia de LAPA",
+    "g": "Tragedia",
+    "e": "2010-2015",
+    "d": "Documental sobre el accidente del vuelo 3142 de LAPA (1999, 65 víctimas). Mencionado en Wikipedia del accidente.",
+    "st": "lost",
+    "det": "Era Turner • Referenciado en artículo de Wikipedia del Vuelo 3142. LOST — sin copias conocidas."
+   },
+   {
+    "n": "El representante de Dios",
+    "g": "Religión",
+    "e": "1999-2008",
+    "d": "Documental sobre la figura del Papa y el papado.",
+    "st": "lost"
+   },
+   {
+    "n": "Efemérides",
+    "g": "Historia",
+    "e": "1999-2008",
+    "d": "Programa sobre fechas históricas importantes y su significado.",
+    "st": "lost"
+   },
+   {
+    "n": "Incoming",
+    "g": "Documental",
+    "e": "2010-2015",
+    "d": "Documental de producción original de la era Turner.",
+    "st": "lost"
+   },
+   {
+    "n": "Extreme Makeover: HE Latin America",
+    "g": "Reality",
+    "e": "2012-2014",
+    "d": "Versión latinoamericana del programa de remodelación de hogares. Con Benny Ibarra y Andy Kusnetzoff.",
+    "st": "lost",
+    "det": "Benny Ibarra (T1) / Andy Kusnetzoff (T2-3) • 2012-2014 • 30 episodios (3×10). Endemol + Turner. IMDb: tt2472144. Episodios perdidos / no circulan."
+   },
+   {
+    "n": "Huellas",
+    "g": "Historia",
+    "e": "1999-2008",
+    "d": "Programa documental sobre historia y cultura.",
+    "st": "lost"
+   },
+   {
+    "n": "LAPA: veredicto final",
+    "g": "Judicial",
+    "e": "2011-2014",
+    "d": "Seguimiento del caso judicial de la tragedia de LAPA tras el veredicto de 2010.",
+    "st": "lost",
+    "det": "Post-2010 • Seguimiento del caso judicial. LOST — sin copias conocidas."
+   },
+   {
+    "n": "Confesiones de un sicario",
+    "g": "Crimen",
+    "e": "2010",
+    "d": "Documental que sigue a tres sicarios retirados para revelar el funcionamiento del crimen organizado.",
+    "st": "lost",
+    "det": "Estrenado 24 nov 2010 a las 9pm. Entrevistas a 3 sicarios retirados. LOST — solo sobreviven comunicados de prensa (PRODU)."
+   },
+   {
+    "n": "La decisión equivocada",
+    "g": "Documental",
+    "e": "2010-2015",
+    "d": "Documental sobre decisiones fatales y sus consecuencias.",
+    "st": "lost"
+   },
+   {
+    "n": "Cuerpos sin edad",
+    "g": "Ciencia",
+    "e": "2010-2015",
+    "d": "Documental sobre el envejecimiento y la posibilidad de la juventud eterna.",
+    "st": "lost"
+   },
+   {
+    "n": "¿Qué edad tiene tu cuerpo?",
+    "g": "Salud",
+    "e": "2010-2015",
+    "d": "Serie británica sobre jóvenes con vidas de excesos sometidos a exámenes médicos.",
+    "st": "nd",
+    "det": "Reino Unido • Serie adquirida por Infinito. No disponible en el archivo lost media."
+   },
+   {
+    "n": "26 personas para salvar al mundo",
+    "g": "Documental",
+    "e": "2011",
+    "d": "Jorge Lanata descubre un antiguo texto en Londres que afirma que 26 personas pueden salvar el mundo. Viaja por el mundo entrevistando candidatos.",
+    "st": "partial",
+    "det": "Jorge Lanata • 2011 • 20 episodios (2×10). Entrevistó a Jimmy Wales, Eduardo Galeano, Matthieu Ricard, Juanes, Nicholas Negroponte, entre otros. Parcialmente disponible en YouTube y Web Archive."
+   },
+   {
+    "n": "Adictos",
+    "g": "Adicciones",
+    "e": "2010-2015",
+    "d": "Programa sobre adicciones y procesos de recuperación.",
+    "st": "lost"
+   },
+   {
+    "n": "El último hombre en pie",
+    "g": "Reality",
+    "e": "2010-2015",
+    "d": "Reality show de competencia extrema de la era Turner.",
+    "st": "lost"
+   },
+   {
+    "n": "21 gramos",
+    "g": "Misterio",
+    "e": "2000-2005",
+    "d": "Documental sobre el peso del alma (21 gramos) y experiencias cercanas a la muerte. Inspirado en los experimentos del Dr. Duncan MacDougall.",
+    "st": "lost",
+    "det": "Early-mid 2000s • Documental sobre experiencias cercanas a la muerte. Efectivamente perdido — solo fragmentos circulan en internet."
+   }
+  ],
+  "adq": [
+   {
+    "n": "Ghost Hunters",
+    "g": "Paranormal",
+    "d": "Cazadores de fantasmas que investigan actividad paranormal.",
+    "st": "nd"
+   },
+   {
+    "n": "Misterios no resueltos",
+    "g": "Misterio",
+    "d": "Casos sin resolver de todo tipo.",
+    "st": "nd"
+   },
+   {
+    "n": "UFO",
+    "g": "OVNIs",
+    "d": "Serie sobre avistamientos OVNI.",
+    "vid": "rO-TfxIGd9s",
+    "st": "ok",
+    "det": "Serie documental adquirida. Video preservado: 'UFO Infinity - UFO Contact Stories'."
+   },
+   {
+    "n": "El misterioso mundo de Arthur C. Clarke",
+    "g": "Ciencia / Misterio",
+    "d": "Arthur C. Clarke explora fenómenos misteriosos alrededor del mundo.",
+    "st": "nd"
+   },
+   {
+    "n": "El significado de los sueños",
+    "g": "Psicología",
+    "d": "Interpretación y análisis de los sueños desde distintas perspectivas.",
+    "st": "nd"
+   },
+   {
+    "n": "Tattoo Nightmares",
+    "g": "Reality",
+    "d": "Personas arreglan tatuajes que odian.",
+    "st": "nd"
+   },
+   {
+    "n": "Rizzoli & Isles",
+    "g": "Serie",
+    "d": "Serie sobre una detective y una forense resolviendo crímenes.",
+    "st": "nd"
+   },
+   {
+    "n": "Cazadores de subastas",
+    "g": "Reality",
+    "d": "Subastas y hallazgos de tesoros.",
+    "st": "nd"
+   },
+   {
+    "n": "Fanboy Confessional",
+    "g": "Comedia",
+    "d": "Confesiones de fanáticos de la cultura pop.",
+    "st": "nd"
+   },
+   {
+    "n": "Cheaters",
+    "g": "Reality",
+    "d": "Investigación de infidelidades de pareja.",
+    "st": "nd"
+   },
+   {
+    "n": "1000 maneras de morir",
+    "g": "Comedia",
+    "d": "Recreación de muertes absurdas.",
+    "st": "nd"
+   },
+   {
+    "n": "Extreme Makeover: Home Edition",
+    "g": "Reality",
+    "d": "Remodelación de hogares para familias necesitadas.",
+    "st": "nd"
+   },
+   {
+    "n": "Mujeres tras las rejas",
+    "g": "Cárcel",
+    "d": "Historias de mujeres en prisión.",
+    "st": "nd"
+   },
+   {
+    "n": "Condenados por error",
+    "g": "Judicial",
+    "d": "Casos de personas condenadas injustamente.",
+    "st": "nd"
+   },
+   {
+    "n": "El guerrero más letal (Deadliest Warrior)",
+    "g": "Historia",
+    "d": "Enfrentamiento simulado de guerreros históricos.",
+    "st": "nd"
+   },
+   {
+    "n": "XXL",
+    "g": "Salud",
+    "d": "Historias de personas con obesidad extrema.",
+    "st": "nd"
+   },
+   {
+    "n": "Vanity Insanity",
+    "g": "Documental",
+    "d": "Obsesión por la cirugía estética.",
+    "st": "nd"
+   },
+   {
+    "n": "Esposas de la tribu",
+    "g": "Documental",
+    "d": "Mujeres que se casan con líderes tribales.",
+    "st": "nd"
+   },
+   {
+    "n": "Extreme Food",
+    "g": "Gastronomía",
+    "d": "Comidas extremas alrededor del mundo.",
+    "st": "nd"
+   },
+   {
+    "n": "Impractical Jokers",
+    "g": "Comedia",
+    "d": "Cámara oculta y desafíos entre amigos.",
+    "st": "nd"
+   },
+   {
+    "n": "Crímenes que estremecieron a Gran Bretaña",
+    "g": "Crimen",
+    "d": "Crímenes famosos británicos.",
+    "st": "nd"
+   },
+   {
+    "n": "Cazadores de tesoros",
+    "g": "Aventura",
+    "d": "Búsqueda de tesoros y objetos valiosos.",
+    "st": "nd"
+   },
+   {
+    "n": "Parejas asesinas",
+    "g": "Crimen",
+    "d": "Parejas que cometieron asesinatos juntos.",
+    "st": "nd"
+   },
+   {
+    "n": "Operación Rescate (Operation Repo)",
+    "g": "Reality",
+    "d": "Operaciones de recuperación de vehículos.",
+    "st": "nd"
+   },
+   {
+    "n": "Maestros marciales",
+    "g": "Documental",
+    "d": "Artes marciales y sus maestros.",
+    "st": "nd"
+   },
+   {
+    "n": "Esta es mi historia",
+    "g": "Documental",
+    "d": "Historias de vida extraordinarias.",
+    "st": "nd"
+   },
+   {
+    "n": "Frontline",
+    "g": "Guerra",
+    "d": "Documentales de guerra y conflicto.",
+    "st": "nd"
+   },
+   {
+    "n": "Pill Poppers",
+    "g": "Salud",
+    "d": "Adicción a medicamentos recetados.",
+    "st": "nd"
+   },
+   {
+    "n": "Dra. G: Médica Forense",
+    "g": "Forense",
+    "d": "Casos forenses de la Dra. G.",
+    "st": "nd"
+   },
+   {
+    "n": "Restauradores",
+    "g": "Reality",
+    "d": "Restauración de objetos antiguos.",
+    "st": "nd"
+   },
+   {
+    "n": "La super nadadora",
+    "g": "Deporte",
+    "d": "Historia de una nadadora de elite.",
+    "st": "nd"
+   },
+   {
+    "n": "Dog, el cazarrecompensas",
+    "g": "Reality",
+    "d": "Cazarrecompensas capturando fugitivos.",
+    "st": "nd"
+   },
+   {
+    "n": "Excavadores de Tesoros",
+    "g": "Aventura",
+    "d": "Excavaciones en busca de tesoros.",
+    "st": "nd"
+   },
+   {
+    "n": "Osmin Physco Trainer",
+    "g": "Fitness",
+    "d": "Entrenamiento físico extremo.",
+    "st": "nd"
+   },
+   {
+    "n": "La última mujer en pie",
+    "g": "Competencia",
+    "d": "Competencia extrema femenina.",
+    "st": "nd"
+   },
+   {
+    "n": "Los videos más tontos del mundo",
+    "g": "Comedia",
+    "d": "Compilación de videos virales.",
+    "st": "nd"
+   },
+   {
+    "n": "Tácticas de terror (Scare Tactics)",
+    "g": "Terror",
+    "d": "Cámara oculta con sustos.",
+    "st": "nd"
+   },
+   {
+    "n": "Inquilinos extremos",
+    "g": "Reality",
+    "d": "Conflictos entre inquilinos y propietarios.",
+    "st": "nd"
+   },
+   {
+    "n": "Repo Games",
+    "g": "Reality",
+    "d": "Juegos por recuperación de deudas.",
+    "st": "nd"
+   },
+   {
+    "n": "Guerra de containers",
+    "g": "Reality",
+    "d": "Competencia por contenedores abandonados.",
+    "st": "nd"
+   },
+   {
+    "n": "El Efecto Carbonaro",
+    "g": "Magia",
+    "d": "Trucos de magia con cámara oculta.",
+    "st": "nd"
+   },
+   {
+    "n": "Cosentino",
+    "g": "Magia",
+    "d": "Escape y magia con el ilusionista Cosentino.",
+    "st": "nd"
+   },
+   {
+    "n": "Hasta que la muerte nos separe",
+    "g": "Crimen",
+    "d": "Matrimonios que terminaron en asesinato.",
+    "st": "nd"
+   },
+   {
+    "n": "Pequeños asesinos",
+    "g": "Crimen",
+    "d": "Niños que cometieron asesinatos.",
+    "st": "nd"
+   },
+   {
+    "n": "Drama Total: la venganza de la Isla",
+    "g": "Animación",
+    "d": "Serie animada de competencia.",
+    "st": "nd"
+   },
+   {
+    "n": "El mejor precio: Chicago (Hardcore Pawn)",
+    "g": "Reality",
+    "d": "Casa de empeño en Chicago.",
+    "st": "nd"
+   },
+   {
+    "n": "Survivor",
+    "g": "Aventura",
+    "d": "Temporadas clásicas del reality de supervivencia.",
+    "st": "nd"
+   },
+   {
+    "n": "El día menos pensado",
+    "g": "Paranormal",
+    "d": "Serie chilena que recrea historias reales de fenómenos paranormales. Conducida por Carlos Pinto.",
+    "vid": "ZXT39gNXoZA",
+    "st": "ok",
+    "det": "Carlos Pinto • TVN Chile • Emitida en Infinito en los años 2000. Video preservado: 'Maratón de Misterios: El Día Menos Pensado'."
+   },
+   {
+    "n": "Documental Infinito",
+    "g": "Documental",
+    "d": "Los documentales de misterio, ciencia e historia que definieron la señal. Una categoría que reúne producciones de diversas fuentes emitidas por Canal Infinito en su era dorada.",
+    "st": "nd",
+    "det": "Sección que agrupa 46 documentales del canal sobre OVNIs, profecías, religión, ciencia y fenómenos paranormales. Incluye contenido de distintas series y programas."
+   },
+   {
+    "n": "Aquí se Respira el Miedo",
+    "g": "Terror",
+    "d": "Serie de terror documental conducida por Juan Ramón Saenz. Historias reales de entidades, sombras y fenómenos inexplicables narrados con un estilo cinematográfico único.",
+    "st": "nd",
+    "det": "Juan Ramón Saenz • Serie de terror documental. 6 episodios preservados en el archivo Lost Media: premoniciones, entidades, intrusos, sombras."
+   },
+   {
+    "n": "Paranormal Guide",
+    "g": "Paranormal",
+    "d": "Serie que documenta investigaciones paranormales con equipo técnico especializado. Cada episodio explora un fenómeno distinto con testimonios y evidencia en VHS.",
+    "st": "nd",
+    "det": "Serie de investigación paranormal. 4 episodios preservados: contacto con el más allá, detección de fantasmas, pub embrujado, fantasmas en el establo."
+   },
+   {
+    "n": "A a la Z del Horror",
+    "g": "Terror",
+    "d": "Serie conducida por el maestro del horror Clive Barker que explora la historia del género de terror en el cine, la literatura y la cultura popular.",
+    "st": "nd",
+    "det": "Clive Barker • 4 episodios preservados: Texas Chainsaw Massacre, zombies, Ed Gein, y un recorrido completo por la historia del terror."
+   },
+   {
+    "n": "Masones: Misterio y Poder",
+    "g": "Documental",
+    "d": "Trilogía documental que desvela los secretos de la masonería: rituales, símbolos, jerarquías y la influencia que ha tenido en la historia mundial.",
+    "st": "nd",
+    "det": "Trilogía documental, 3 capítulos completos preservados. Una investigación exhaustiva sobre la hermandad secreta más influyente de la historia."
+   },
+   {
+    "n": "Tantra",
+    "g": "Esoterismo",
+    "d": "Serie que explora las enseñanzas del Tantra y el Kamasutra desde una perspectiva espiritual y cultural. La unión del placer con la elevación de la conciencia.",
+    "st": "nd",
+    "det": "Serie documental sobre Tantra. 3 episodios preservados: el yoga del amor, el orgasmo, tantra y kamasutra."
+   },
+   {
+    "n": "Latinoamérica: Historias Perdidas",
+    "g": "Documental",
+    "d": "Serie documental que recorre Latinoamérica descubriendo las historias más sorprendentes, misteriosas y olvidadas del continente.",
+    "st": "nd",
+    "det": "Serie documental. 4 episodios preservados: las siete luminarias, cosechas gigantes, OVNIS, chamanes."
+   },
+   {
+    "n": "Grandes Misterios",
+    "g": "Misterio",
+    "d": "Podcast y serie que explora los enigmas más fascinantes de la historia: civilizaciones perdidas, eventos inexplicables y misterios sin resolver.",
+    "st": "nd",
+    "det": "Podcast documental. Episodio preservado: 'Grandes misterios de la Historia'."
+   },
+   {
+    "n": "Revista Año Cero",
+    "g": "Documental",
+    "d": "Serie sobre civilizaciones perdidas, arqueología prohibida y los grandes enigmas de la humanidad. Basada en la famosa revista de misterio.",
+    "st": "nd",
+    "det": "Serie completa preservada: +11 horas de contenido sobre enigmas históricos y arqueología alternativa."
+   },
+   {
+    "n": "Neopilates",
+    "g": "Fitness",
+    "d": "Programa de ejercicios y bienestar físico transmitido en Canal Infinito. Sesiones completas de pilates para realizar en casa.",
+    "st": "nd",
+    "det": "Serie completa preservada: +3 horas de sesiones de pilates transmitidas en Canal Infinito."
+   },
+   {
+    "n": "Naturalmente Yoga",
+    "g": "Bienestar",
+    "d": "Serie dedicada a la práctica del yoga y la meditación. Guías completas para conectar cuerpo, mente y espíritu.",
+    "st": "nd",
+    "det": "Serie completa preservada: prácticas de yoga y meditación guiadas."
+   },
+   {
+    "n": "Cortos Infinito",
+    "g": "Compilación",
+    "d": "Compilaciones de piezas breves y fragmentos recuperados de la programación de Canal Infinito. Cápsulas de lost media que vuelven a la luz.",
+    "st": "nd",
+    "det": "Serie de compilaciones. 3 piezas preservadas: fragmentos y cortos diversos del canal."
+   },
+   {
+    "n": "Producción Original Infinito",
+    "g": "Documental",
+    "d": "Producciones originales de Canal Infinito con investigación propia. Documentales creados íntegramente por el equipo del canal.",
+    "st": "nd",
+    "det": "Producción original. Episodio preservado: 'Ángeles - Documental Producción Original'."
+   },
+   {
+    "n": "Encuentros Paranormales",
+    "g": "Paranormal",
+    "d": "Serie clásica de 1996 que documenta encuentros con lo desconocido: fantasmas, apariciones y fenómenos que desafían la explicación científica.",
+    "st": "nd",
+    "det": "Serie completa de 1996 preservada: +1 hora de casos documentados de encuentros paranormales."
+   },
+   {
+    "n": "Travesía Infinito",
+    "g": "Viajes",
+    "d": "Programa de viajes y aventura que recorre rutas emblemáticas de Latinoamérica descubriendo paisajes, culturas y misterios del camino.",
+    "st": "nd",
+    "det": "Episodio preservado: 'Travesía Infinito: Buenos Aires a Machu Picchu'."
+   }
+  ],
+  "allProgs": [
+   {
+    "n": "Zona Infinito",
+    "g": "Paranormal / Misterio",
+    "e": "1999-2008",
+    "d": "El programa emblemático del canal. Horacio Embón viajaba por Latinoamérica investigando fenómenos paranormales, OVNIs y misterios sin resolver. Un referente del periodismo esotérico.",
+    "vid": "Oyc6Zu6WEic",
+    "st": "ok",
+    "det": "Horacio Embón • 1999-2008 • Grabó en Chile, México y Argentina. +20 episodios documentados. Algunos episodios preservados en YouTube y archivos de fans.",
+    "tp": "original"
+   },
+   {
+    "n": "Mundo Infinito",
+    "g": "Astrología / Esoterismo",
+    "e": "1999-2008",
+    "d": "Conducido por Walter Mercado. Astrología, predicciones y mensajes de esperanza del astrólogo más famoso de Latinoamérica.",
+    "st": "lost",
+    "det": "Walter Mercado • 2002 • 8 episodios de 1 hora confirmados. Producción de Watermark International. Grabado en Caesars Palace, Las Vegas. Perdido — sin copias circulando.",
+    "tp": "original"
+   },
+   {
+    "n": "Signos",
+    "g": "Astrología",
+    "e": "1999-2008",
+    "d": "Conducción de Alejandro Agostinelli. Análisis profundo de fenómenos astrológicos y esotéricos. Una de las dos únicas producciones originales del relanzamiento de 1999.",
+    "st": "lost",
+    "det": "Lilly Soullos • 1999-2000s • Programa semanal de astrología. Una de las dos producciones originales del relanzamiento de 1999 junto a Zona Infinito. Estado: perdido.",
+    "tp": "original"
+   },
+   {
+    "n": "Hora Infinito",
+    "g": "Entrevistas / Debate",
+    "e": "2001-2008",
+    "d": "Franja documental insignia del canal. Más de 400 horas de contenido original sobre crimen, política, misterio y sociedad. Investigación periodística en profundidad.",
+    "st": "partial",
+    "det": "2001-2008 • +400 horas de documentales originales. Se emitía semanalmente y también en Canal 7 Argentina. 2 episodios preservados en Archivo RTA (Escobar, López Rega). Mayoría perdido.",
+    "tp": "original"
+   },
+   {
+    "n": "Creencias",
+    "g": "Debate religioso",
+    "e": "2005-2006",
+    "d": "Programa que reunía representantes de las principales religiones para debatir temas de actualidad. Con Esteban Mirol y panelistas de 6 religiones. Se publicó un libro (Editorial Kier, 2006).",
+    "st": "partial",
+    "det": "Esteban Mirol • 2005-2006 • 21 episodios (S1:8, S2:13). Panelistas: Sheik Abdul Karim Paz, Rabino Baruj Plavnik, Presbítero Eduardo Pérez Dal Lago, Swami Aruna Nanda, entre otros. Libro de 258 págs. Algunos episodios en YouTube.",
+    "tp": "original"
+   },
+   {
+    "n": "Guía Extraterrestre (GET)",
+    "g": "OVNIs / Docureality",
+    "e": "2003-2004",
+    "d": "Programa docureality que investigaba avistamientos OVNI y vida extraterrestre. Los investigadores viajaban al lugar de los hechos para entrevistar testigos. 2 temporadas.",
+    "st": "partial",
+    "det": "2003-2004 • 2 temporadas. 1ra temp grabada en México con César Buenrostro, Carlos Guzmán, Yohanan Díaz. 2da temp en Argentina. Parcialmente preservado (blog de Yohanan Díaz, canal GNA YouTube).",
+    "tp": "original"
+   },
+   {
+    "n": "Misterios Urbanos",
+    "g": "Documental / Misterio",
+    "e": "1999",
+    "d": "Serie documental de 1999 basada en el libro 'Mentiras verdaderas' de Jorge Halperín. Investigaba leyendas urbanas con un enfoque periodístico único. Dirigida por Gabriel Medina.",
+    "st": "ok",
+    "det": "1999 • 23 episodios de 20-24 min. Director: Gabriel Medina (luego dirigió 'El Ángel'). Basado en Jorge Halperín. Preservado completo (1.14 GB en Biblioteca Enigmas). Disponible en YouTube.",
+    "tp": "original"
+   },
+   {
+    "n": "Casa Infinito",
+    "g": "Misterio",
+    "e": "1999-2008",
+    "d": "Programa sobre casas embrujadas y fenómenos paranormales en hogares. Formato de investigación in-situ.",
+    "vid": "A9zGGvraqvg",
+    "st": "ok",
+    "det": "1999-2008 • Programa de investigación paranormal en locaciones. Información limitada disponible. Video preservado: 'INFINITE HOUSE - Venier Poltergeist Case'.",
+    "tp": "original"
+   },
+   {
+    "n": "El precio de la fama",
+    "g": "Documental",
+    "e": "1994-1999",
+    "d": "Documental sobre el costo personal de alcanzar la fama y las consecuencias psicológicas y sociales del estrellato.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Expedición",
+    "g": "Documental / Aventura",
+    "e": "1994-1999",
+    "d": "Programa de expediciones y exploración de la era documental del canal. Viajes a lugares remotos.",
+    "vid": "Lo_E0vg4Un0",
+    "st": "ok",
+    "det": "1994-1999 • Era documental pre-paranormal. Formato de viajes y aventura. Video preservado: 'Expedición: Historia de Dos Océanos'.",
+    "tp": "original"
+   },
+   {
+    "n": "Testimonios de protagonistas",
+    "g": "Documental",
+    "e": "1999-2008",
+    "d": "Testimonios en primera persona de personas que vivieron eventos extraordinarios.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Aventuras en el buceo",
+    "g": "Naturaleza",
+    "e": "1994-1999",
+    "d": "Exploración del mundo submarino y la vida marina.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Más allá del mañana",
+    "g": "Ciencia ficción",
+    "e": "1999-2008",
+    "d": "Programa sobre el futuro, la tecnología y las posibilidades de la ciencia.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "La magia del cine",
+    "g": "Cine",
+    "e": "1999-2008",
+    "d": "Detrás de escena del mundo cinematográfico. Cómo se hacen las películas.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Recreo satelital",
+    "g": "Infantil",
+    "e": "1994-1998",
+    "d": "Espacio infantil dentro de la programación. Terminó en sep 1998 cuando el canal pivotó a documentales.",
+    "st": "lost",
+    "det": "Pre-1998 • Única referencia: Wikipedia ES menciona su fin en sept 1998. LOST MEDIA — no hay anfitrión, episodios ni material circulando.",
+    "tp": "original"
+   },
+   {
+    "n": "Ovnis, verdades y mentiras",
+    "g": "OVNIs",
+    "e": "1999-2008",
+    "d": "Investigación sobre el fenómeno OVNI, contrastando evidencias con escepticismo.",
+    "st": "partial",
+    "det": "1999-2008 • Listado en Biblioteca Enigmas. Incluido en compilación 'Infinito OVNI' junto a Guía Extraterrestre. Parcialmente preservado.",
+    "tp": "original"
+   },
+   {
+    "n": "BRIC",
+    "g": "Política",
+    "e": "2010",
+    "d": "Documental de Jorge Lanata sobre el bloque BRIC (Brasil, Rusia, India, China). Viajó a cada país entrevistando a figuras clave. 10 episodios.",
+    "st": "lost",
+    "det": "Jorge Lanata • 2010 • 10 episodios × 1 temporada. Director: Guido Tomio. Ganó ACE Award 2011. Sin copias oficiales circulando.",
+    "tp": "original"
+   },
+   {
+    "n": "Kirchner: A un año de su muerte",
+    "g": "Política",
+    "e": "2011",
+    "d": "Documental sobre Néstor Kirchner al cumplirse un año de su fallecimiento. Producido en la era Turner.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Vuelo 3142: la tragedia de LAPA",
+    "g": "Tragedia",
+    "e": "2010-2015",
+    "d": "Documental sobre el accidente del vuelo 3142 de LAPA (1999, 65 víctimas). Mencionado en Wikipedia del accidente.",
+    "st": "lost",
+    "det": "Era Turner • Referenciado en artículo de Wikipedia del Vuelo 3142. LOST — sin copias conocidas.",
+    "tp": "original"
+   },
+   {
+    "n": "El representante de Dios",
+    "g": "Religión",
+    "e": "1999-2008",
+    "d": "Documental sobre la figura del Papa y el papado.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Efemérides",
+    "g": "Historia",
+    "e": "1999-2008",
+    "d": "Programa sobre fechas históricas importantes y su significado.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Incoming",
+    "g": "Documental",
+    "e": "2010-2015",
+    "d": "Documental de producción original de la era Turner.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Extreme Makeover: HE Latin America",
+    "g": "Reality",
+    "e": "2012-2014",
+    "d": "Versión latinoamericana del programa de remodelación de hogares. Con Benny Ibarra y Andy Kusnetzoff.",
+    "st": "lost",
+    "det": "Benny Ibarra (T1) / Andy Kusnetzoff (T2-3) • 2012-2014 • 30 episodios (3×10). Endemol + Turner. IMDb: tt2472144. Episodios perdidos / no circulan.",
+    "tp": "original"
+   },
+   {
+    "n": "Huellas",
+    "g": "Historia",
+    "e": "1999-2008",
+    "d": "Programa documental sobre historia y cultura.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "LAPA: veredicto final",
+    "g": "Judicial",
+    "e": "2011-2014",
+    "d": "Seguimiento del caso judicial de la tragedia de LAPA tras el veredicto de 2010.",
+    "st": "lost",
+    "det": "Post-2010 • Seguimiento del caso judicial. LOST — sin copias conocidas.",
+    "tp": "original"
+   },
+   {
+    "n": "Confesiones de un sicario",
+    "g": "Crimen",
+    "e": "2010",
+    "d": "Documental que sigue a tres sicarios retirados para revelar el funcionamiento del crimen organizado.",
+    "st": "lost",
+    "det": "Estrenado 24 nov 2010 a las 9pm. Entrevistas a 3 sicarios retirados. LOST — solo sobreviven comunicados de prensa (PRODU).",
+    "tp": "original"
+   },
+   {
+    "n": "La decisión equivocada",
+    "g": "Documental",
+    "e": "2010-2015",
+    "d": "Documental sobre decisiones fatales y sus consecuencias.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "Cuerpos sin edad",
+    "g": "Ciencia",
+    "e": "2010-2015",
+    "d": "Documental sobre el envejecimiento y la posibilidad de la juventud eterna.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "¿Qué edad tiene tu cuerpo?",
+    "g": "Salud",
+    "e": "2010-2015",
+    "d": "Serie británica sobre jóvenes con vidas de excesos sometidos a exámenes médicos.",
+    "st": "nd",
+    "det": "Reino Unido • Serie adquirida por Infinito. No disponible en el archivo lost media.",
+    "tp": "original"
+   },
+   {
+    "n": "26 personas para salvar al mundo",
+    "g": "Documental",
+    "e": "2011",
+    "d": "Jorge Lanata descubre un antiguo texto en Londres que afirma que 26 personas pueden salvar el mundo. Viaja por el mundo entrevistando candidatos.",
+    "st": "partial",
+    "det": "Jorge Lanata • 2011 • 20 episodios (2×10). Entrevistó a Jimmy Wales, Eduardo Galeano, Matthieu Ricard, Juanes, Nicholas Negroponte, entre otros. Parcialmente disponible en YouTube y Web Archive.",
+    "tp": "original"
+   },
+   {
+    "n": "Adictos",
+    "g": "Adicciones",
+    "e": "2010-2015",
+    "d": "Programa sobre adicciones y procesos de recuperación.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "El último hombre en pie",
+    "g": "Reality",
+    "e": "2010-2015",
+    "d": "Reality show de competencia extrema de la era Turner.",
+    "st": "lost",
+    "tp": "original"
+   },
+   {
+    "n": "21 gramos",
+    "g": "Misterio",
+    "e": "2000-2005",
+    "d": "Documental sobre el peso del alma (21 gramos) y experiencias cercanas a la muerte. Inspirado en los experimentos del Dr. Duncan MacDougall.",
+    "st": "lost",
+    "det": "Early-mid 2000s • Documental sobre experiencias cercanas a la muerte. Efectivamente perdido — solo fragmentos circulan en internet.",
+    "tp": "original"
+   },
+   {
+    "n": "Ghost Hunters",
+    "g": "Paranormal",
+    "d": "Cazadores de fantasmas que investigan actividad paranormal.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Misterios no resueltos",
+    "g": "Misterio",
+    "d": "Casos sin resolver de todo tipo.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "UFO",
+    "g": "OVNIs",
+    "d": "Serie sobre avistamientos OVNI.",
+    "vid": "rO-TfxIGd9s",
+    "st": "ok",
+    "det": "Serie documental adquirida. Video preservado: 'UFO Infinity - UFO Contact Stories'.",
+    "tp": "acquired"
+   },
+   {
+    "n": "El misterioso mundo de Arthur C. Clarke",
+    "g": "Ciencia / Misterio",
+    "d": "Arthur C. Clarke explora fenómenos misteriosos alrededor del mundo.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "El significado de los sueños",
+    "g": "Psicología",
+    "d": "Interpretación y análisis de los sueños desde distintas perspectivas.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Tattoo Nightmares",
+    "g": "Reality",
+    "d": "Personas arreglan tatuajes que odian.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Rizzoli & Isles",
+    "g": "Serie",
+    "d": "Serie sobre una detective y una forense resolviendo crímenes.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Cazadores de subastas",
+    "g": "Reality",
+    "d": "Subastas y hallazgos de tesoros.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Fanboy Confessional",
+    "g": "Comedia",
+    "d": "Confesiones de fanáticos de la cultura pop.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Cheaters",
+    "g": "Reality",
+    "d": "Investigación de infidelidades de pareja.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "1000 maneras de morir",
+    "g": "Comedia",
+    "d": "Recreación de muertes absurdas.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Extreme Makeover: Home Edition",
+    "g": "Reality",
+    "d": "Remodelación de hogares para familias necesitadas.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Mujeres tras las rejas",
+    "g": "Cárcel",
+    "d": "Historias de mujeres en prisión.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Condenados por error",
+    "g": "Judicial",
+    "d": "Casos de personas condenadas injustamente.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "El guerrero más letal (Deadliest Warrior)",
+    "g": "Historia",
+    "d": "Enfrentamiento simulado de guerreros históricos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "XXL",
+    "g": "Salud",
+    "d": "Historias de personas con obesidad extrema.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Vanity Insanity",
+    "g": "Documental",
+    "d": "Obsesión por la cirugía estética.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Esposas de la tribu",
+    "g": "Documental",
+    "d": "Mujeres que se casan con líderes tribales.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Extreme Food",
+    "g": "Gastronomía",
+    "d": "Comidas extremas alrededor del mundo.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Impractical Jokers",
+    "g": "Comedia",
+    "d": "Cámara oculta y desafíos entre amigos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Crímenes que estremecieron a Gran Bretaña",
+    "g": "Crimen",
+    "d": "Crímenes famosos británicos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Cazadores de tesoros",
+    "g": "Aventura",
+    "d": "Búsqueda de tesoros y objetos valiosos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Parejas asesinas",
+    "g": "Crimen",
+    "d": "Parejas que cometieron asesinatos juntos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Operación Rescate (Operation Repo)",
+    "g": "Reality",
+    "d": "Operaciones de recuperación de vehículos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Maestros marciales",
+    "g": "Documental",
+    "d": "Artes marciales y sus maestros.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Esta es mi historia",
+    "g": "Documental",
+    "d": "Historias de vida extraordinarias.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Frontline",
+    "g": "Guerra",
+    "d": "Documentales de guerra y conflicto.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Pill Poppers",
+    "g": "Salud",
+    "d": "Adicción a medicamentos recetados.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Dra. G: Médica Forense",
+    "g": "Forense",
+    "d": "Casos forenses de la Dra. G.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Restauradores",
+    "g": "Reality",
+    "d": "Restauración de objetos antiguos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "La super nadadora",
+    "g": "Deporte",
+    "d": "Historia de una nadadora de elite.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Dog, el cazarrecompensas",
+    "g": "Reality",
+    "d": "Cazarrecompensas capturando fugitivos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Excavadores de Tesoros",
+    "g": "Aventura",
+    "d": "Excavaciones en busca de tesoros.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Osmin Physco Trainer",
+    "g": "Fitness",
+    "d": "Entrenamiento físico extremo.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "La última mujer en pie",
+    "g": "Competencia",
+    "d": "Competencia extrema femenina.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Los videos más tontos del mundo",
+    "g": "Comedia",
+    "d": "Compilación de videos virales.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Tácticas de terror (Scare Tactics)",
+    "g": "Terror",
+    "d": "Cámara oculta con sustos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Inquilinos extremos",
+    "g": "Reality",
+    "d": "Conflictos entre inquilinos y propietarios.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Repo Games",
+    "g": "Reality",
+    "d": "Juegos por recuperación de deudas.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Guerra de containers",
+    "g": "Reality",
+    "d": "Competencia por contenedores abandonados.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "El Efecto Carbonaro",
+    "g": "Magia",
+    "d": "Trucos de magia con cámara oculta.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Cosentino",
+    "g": "Magia",
+    "d": "Escape y magia con el ilusionista Cosentino.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Hasta que la muerte nos separe",
+    "g": "Crimen",
+    "d": "Matrimonios que terminaron en asesinato.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Pequeños asesinos",
+    "g": "Crimen",
+    "d": "Niños que cometieron asesinatos.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Drama Total: la venganza de la Isla",
+    "g": "Animación",
+    "d": "Serie animada de competencia.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "El mejor precio: Chicago (Hardcore Pawn)",
+    "g": "Reality",
+    "d": "Casa de empeño en Chicago.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "Survivor",
+    "g": "Aventura",
+    "d": "Temporadas clásicas del reality de supervivencia.",
+    "st": "nd",
+    "tp": "acquired"
+   },
+   {
+    "n": "El día menos pensado",
+    "g": "Paranormal",
+    "d": "Serie chilena que recrea historias reales de fenómenos paranormales. Conducida por Carlos Pinto.",
+    "vid": "ZXT39gNXoZA",
+    "st": "ok",
+    "det": "Carlos Pinto • TVN Chile • Emitida en Infinito en los años 2000. Video preservado: 'Maratón de Misterios: El Día Menos Pensado'.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Documental Infinito",
+    "g": "Documental",
+    "d": "Los documentales de misterio, ciencia e historia que definieron la señal. Una categoría que reúne producciones de diversas fuentes emitidas por Canal Infinito en su era dorada.",
+    "st": "nd",
+    "det": "Sección que agrupa 46 documentales del canal sobre OVNIs, profecías, religión, ciencia y fenómenos paranormales. Incluye contenido de distintas series y programas.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Aquí se Respira el Miedo",
+    "g": "Terror",
+    "d": "Serie de terror documental conducida por Juan Ramón Saenz. Historias reales de entidades, sombras y fenómenos inexplicables narrados con un estilo cinematográfico único.",
+    "st": "nd",
+    "det": "Juan Ramón Saenz • Serie de terror documental. 6 episodios preservados en el archivo Lost Media: premoniciones, entidades, intrusos, sombras.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Paranormal Guide",
+    "g": "Paranormal",
+    "d": "Serie que documenta investigaciones paranormales con equipo técnico especializado. Cada episodio explora un fenómeno distinto con testimonios y evidencia en VHS.",
+    "st": "nd",
+    "det": "Serie de investigación paranormal. 4 episodios preservados: contacto con el más allá, detección de fantasmas, pub embrujado, fantasmas en el establo.",
+    "tp": "acquired"
+   },
+   {
+    "n": "A a la Z del Horror",
+    "g": "Terror",
+    "d": "Serie conducida por el maestro del horror Clive Barker que explora la historia del género de terror en el cine, la literatura y la cultura popular.",
+    "st": "nd",
+    "det": "Clive Barker • 4 episodios preservados: Texas Chainsaw Massacre, zombies, Ed Gein, y un recorrido completo por la historia del terror.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Masones: Misterio y Poder",
+    "g": "Documental",
+    "d": "Trilogía documental que desvela los secretos de la masonería: rituales, símbolos, jerarquías y la influencia que ha tenido en la historia mundial.",
+    "st": "nd",
+    "det": "Trilogía documental, 3 capítulos completos preservados. Una investigación exhaustiva sobre la hermandad secreta más influyente de la historia.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Tantra",
+    "g": "Esoterismo",
+    "d": "Serie que explora las enseñanzas del Tantra y el Kamasutra desde una perspectiva espiritual y cultural. La unión del placer con la elevación de la conciencia.",
+    "st": "nd",
+    "det": "Serie documental sobre Tantra. 3 episodios preservados: el yoga del amor, el orgasmo, tantra y kamasutra.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Latinoamérica: Historias Perdidas",
+    "g": "Documental",
+    "d": "Serie documental que recorre Latinoamérica descubriendo las historias más sorprendentes, misteriosas y olvidadas del continente.",
+    "st": "nd",
+    "det": "Serie documental. 4 episodios preservados: las siete luminarias, cosechas gigantes, OVNIS, chamanes.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Grandes Misterios",
+    "g": "Misterio",
+    "d": "Podcast y serie que explora los enigmas más fascinantes de la historia: civilizaciones perdidas, eventos inexplicables y misterios sin resolver.",
+    "st": "nd",
+    "det": "Podcast documental. Episodio preservado: 'Grandes misterios de la Historia'.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Revista Año Cero",
+    "g": "Documental",
+    "d": "Serie sobre civilizaciones perdidas, arqueología prohibida y los grandes enigmas de la humanidad. Basada en la famosa revista de misterio.",
+    "st": "nd",
+    "det": "Serie completa preservada: +11 horas de contenido sobre enigmas históricos y arqueología alternativa.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Neopilates",
+    "g": "Fitness",
+    "d": "Programa de ejercicios y bienestar físico transmitido en Canal Infinito. Sesiones completas de pilates para realizar en casa.",
+    "st": "nd",
+    "det": "Serie completa preservada: +3 horas de sesiones de pilates transmitidas en Canal Infinito.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Naturalmente Yoga",
+    "g": "Bienestar",
+    "d": "Serie dedicada a la práctica del yoga y la meditación. Guías completas para conectar cuerpo, mente y espíritu.",
+    "st": "nd",
+    "det": "Serie completa preservada: prácticas de yoga y meditación guiadas.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Cortos Infinito",
+    "g": "Compilación",
+    "d": "Compilaciones de piezas breves y fragmentos recuperados de la programación de Canal Infinito. Cápsulas de lost media que vuelven a la luz.",
+    "st": "nd",
+    "det": "Serie de compilaciones. 3 piezas preservadas: fragmentos y cortos diversos del canal.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Producción Original Infinito",
+    "g": "Documental",
+    "d": "Producciones originales de Canal Infinito con investigación propia. Documentales creados íntegramente por el equipo del canal.",
+    "st": "nd",
+    "det": "Producción original. Episodio preservado: 'Ángeles - Documental Producción Original'.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Encuentros Paranormales",
+    "g": "Paranormal",
+    "d": "Serie clásica de 1996 que documenta encuentros con lo desconocido: fantasmas, apariciones y fenómenos que desafían la explicación científica.",
+    "st": "nd",
+    "det": "Serie completa de 1996 preservada: +1 hora de casos documentados de encuentros paranormales.",
+    "tp": "acquired"
+   },
+   {
+    "n": "Travesía Infinito",
+    "g": "Viajes",
+    "d": "Programa de viajes y aventura que recorre rutas emblemáticas de Latinoamérica descubriendo paisajes, culturas y misterios del camino.",
+    "st": "nd",
+    "det": "Episodio preservado: 'Travesía Infinito: Buenos Aires a Machu Picchu'.",
+    "tp": "acquired"
+   }
+  ],
+  "vidCatalog": [
+   {
+    "id": "dxR2_l0Hda8",
+    "title": "Paranormal Guide - Contact With the Beyond",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "PX77NX7FAw0",
+    "title": "Paranormal Guide - Ghost Detection Device",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "x_h1N4qg9AI",
+    "title": "Paranormal Guide - Haunted Pub",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "5LjFbmMSVNc",
+    "title": "Paranormal Guide - Ghosts in the Stable",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "rO-TfxIGd9s",
+    "title": "UFO Infinity - UFO Contact Stories",
+    "programa": "UFO Infinity",
+    "progId": "ufo-infinity",
+    "pub": "2026-07-13",
+    "tags": [
+     "ovnis",
+     "contacto"
+    ]
+   },
+   {
+    "id": "8XBwkOhp5YU",
+    "title": "Off the Beaten Path - Chiapas",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2026-07-13",
+    "tags": [
+     "viajes",
+     "cultura"
+    ]
+   },
+   {
+    "id": "A9zGGvraqvg",
+    "title": "INFINITE HOUSE - Venier Poltergeist Case",
+    "programa": "Casa Infinito",
+    "progId": "casa-infinito",
+    "pub": "2026-07-13",
+    "tags": [
+     "poltergeist",
+     "argentina"
+    ]
+   },
+   {
+    "id": "DxuLu0iWQFE",
+    "title": "Fear Is Breathed Here - Premonition",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "tags": [
+     "premonicion",
+     "miedo"
+    ]
+   },
+   {
+    "id": "gTMBXIOtgNE",
+    "title": "Fear Is Breathed Here - The Spawn",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "tags": [
+     "entidades",
+     "miedo"
+    ]
+   },
+   {
+    "id": "sSP0JbUw9A4",
+    "title": "Fear Breathes Here - The Intruder",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "tags": [
+     "intruso",
+     "casa"
+    ]
+   },
+   {
+    "id": "HlaP90_ZhUE",
+    "title": "Fear Is in the Air - The Return",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "tags": [
+     "entidades",
+     "regreso"
+    ]
+   },
+   {
+    "id": "l_XdR1pGycw",
+    "title": "Here the Fear is Breathed - The Shadows",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "tags": [
+     "sombras",
+     "miedo"
+    ]
+   },
+   {
+    "id": "hWTcHLQ5iwI",
+    "title": "Neopilates - Serie Completa (+3 HORAS)",
+    "programa": "Neopilates",
+    "progId": "neopilates",
+    "pub": "2026-05-01",
+    "tags": [
+     "ejercicio",
+     "bienestar",
+     "serie"
+    ]
+   },
+   {
+    "id": "KwAhblgi5Rc",
+    "title": "Naturalmente YOGA - Serie Completa",
+    "programa": "Naturalmente Yoga",
+    "progId": "naturalmente-yoga",
+    "pub": "2026-02-01",
+    "tags": [
+     "yoga",
+     "meditacion",
+     "serie"
+    ]
+   },
+   {
+    "id": "d4nuG5JHeWw",
+    "title": "Tantra - The Yoga of Love (Short)",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2026-06-01",
+    "tags": [
+     "tantra",
+     "yoga"
+    ]
+   },
+   {
+    "id": "74UFl2R89LU",
+    "title": "Freemasons: Mystery and Power - Chapter III",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-02-05",
+    "tags": [
+     "masones",
+     "sociedad-secreta"
+    ]
+   },
+   {
+    "id": "EsrrljAJ9s8",
+    "title": "Is there extraterrestrial life? INFINITE CHANNEL",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2026-01-29",
+    "tags": [
+     "ovnis",
+     "extraterrestre"
+    ]
+   },
+   {
+    "id": "EtpIPxSzcvg",
+    "title": "Masones: Misterio y Poder Capítulo II",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-01-19",
+    "tags": [
+     "masones",
+     "sociedad-secreta"
+    ]
+   },
+   {
+    "id": "I8N1Zetmq1o",
+    "title": "Registros Sumerios del Planeta X",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2026-01-12",
+    "tags": [
+     "sumerios",
+     "planeta-x",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "COjend2PDyo",
+    "title": "Masones: Misterio y Poder - Capitulo I",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-01-05",
+    "tags": [
+     "masones",
+     "poder"
+    ]
+   },
+   {
+    "id": "dmt_Rp5C50o",
+    "title": "Grandes misterios de la Historia (Podcast)",
+    "programa": "Grandes Misterios",
+    "progId": "grandes-misterios",
+    "pub": "2025-09-19",
+    "tags": [
+     "historia",
+     "misterio",
+     "podcast"
+    ]
+   },
+   {
+    "id": "qjImMMxxKR0",
+    "title": "La Historia Secreta de Bogotá",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2025-06-11",
+    "tags": [
+     "bogota",
+     "historia",
+     "colombia"
+    ]
+   },
+   {
+    "id": "C4DAdElt0gE",
+    "title": "Cortos del Canal Infinito #2",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2025-03-28",
+    "tags": [
+     "compilacion",
+     "cortos"
+    ]
+   },
+   {
+    "id": "ct9sJPpxPH8",
+    "title": "Cortos del Canal Infinito #1",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2025-02-28",
+    "tags": [
+     "compilacion",
+     "cortos"
+    ]
+   },
+   {
+    "id": "3cK1ZJWmrQQ",
+    "title": "Fuera de Ruta - Cultura Chichimeca",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2025-01-31",
+    "tags": [
+     "mexico",
+     "chihuahua",
+     "cultura"
+    ]
+   },
+   {
+    "id": "b2mQKhGG2sI",
+    "title": "Fuera de Ruta - Compilación de Cortos",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2025-01-15",
+    "tags": [
+     "viajes",
+     "compilacion"
+    ]
+   },
+   {
+    "id": "kxMFslJivHg",
+    "title": "Aquí se Respira el Miedo - Naranja Dulce",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2025-01-10",
+    "tags": [
+     "miedo",
+     "terror",
+     "lost-media"
+    ]
+   },
+   {
+    "id": "FDXS3jIRWp0",
+    "title": "El Misterio de la Primera Navidad",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-12-20",
+    "tags": [
+     "navidad",
+     "historia",
+     "religion"
+    ]
+   },
+   {
+    "id": "H-l4RR1m5pQ",
+    "title": "El Experimento Philadelphia",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-12-15",
+    "tags": [
+     "experimento",
+     "militar",
+     "consipracion"
+    ]
+   },
+   {
+    "id": "EROZrNnmCYU",
+    "title": "OVNIS sobre Bogotá - 11 Nov 2024",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2024-11-11",
+    "tags": [
+     "ovnis",
+     "bogota",
+     "colombia"
+    ]
+   },
+   {
+    "id": "Ibw0-RIH02Q",
+    "title": "Cerca de la Muerte",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-11-01",
+    "tags": [
+     "muerte",
+     "ecm",
+     "experiencias"
+    ]
+   },
+   {
+    "id": "xK51Pzu5YNE",
+    "title": "Misterios de Marte",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-10-15",
+    "tags": [
+     "marte",
+     "ovnis",
+     "espacio"
+    ]
+   },
+   {
+    "id": "cZKMRstQVDY",
+    "title": "El Misterio del Proyecto HAARP",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-10-01",
+    "tags": [
+     "haarp",
+     "conspiracion",
+     "ciencia"
+    ]
+   },
+   {
+    "id": "OGJMmzjKfOc",
+    "title": "Apariciones Marianas en Venezuela",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-09-15",
+    "tags": [
+     "religion",
+     "venezuela",
+     "apariciones"
+    ]
+   },
+   {
+    "id": "rouETlXgHx4",
+    "title": "Misterios Naturales: La Fuerza Vital Humana",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-09-01",
+    "tags": [
+     "energia",
+     "vital",
+     "mente"
+    ]
+   },
+   {
+    "id": "EHYVkS4o0So",
+    "title": "El Misterio de los Rollos del Mar Muerto",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-08-15",
+    "tags": [
+     "rollos",
+     "mar-muerto",
+     "religion"
+    ]
+   },
+   {
+    "id": "Qrdas2nzum0",
+    "title": "La Vida Desconocida de Jesús",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-08-01",
+    "tags": [
+     "jesus",
+     "religion",
+     "historia"
+    ]
+   },
+   {
+    "id": "TpJkVc6IhV8",
+    "title": "Movimiento Raeliano y clonación",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-07-15",
+    "tags": [
+     "raeliano",
+     "clonacion",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "VV1pbuRzgK0",
+    "title": "Latinoamérica: Historias Perdidas - Siete Luminarias",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-07-01",
+    "tags": [
+     "latinoamerica",
+     "misterio",
+     "leyendas"
+    ]
+   },
+   {
+    "id": "jjkFWb4hONU",
+    "title": "La Verdadera Historia del Exorcista",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-06-15",
+    "tags": [
+     "exorcista",
+     "posesion",
+     "demonio"
+    ]
+   },
+   {
+    "id": "1Y3fCWLdOw8",
+    "title": "En Busca de Drácula",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-06-01",
+    "tags": [
+     "dracula",
+     "vampiros",
+     "transilvania"
+    ]
+   },
+   {
+    "id": "FvarFkCfKKg",
+    "title": "El Salvador - Documental",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-05-15",
+    "tags": [
+     "el-salvador",
+     "centroamerica",
+     "documental"
+    ]
+   },
+   {
+    "id": "BDyvleFJHOc",
+    "title": "Ángeles - Documental Producción Original",
+    "programa": "Producción Original Infinito",
+    "progId": "produccion-original",
+    "pub": "2024-05-01",
+    "tags": [
+     "angeles",
+     "religion",
+     "produccion-original"
+    ]
+   },
+   {
+    "id": "Q7ZI91UAz7o",
+    "title": "¿Qué pasa después de la Muerte?",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-04-15",
+    "tags": [
+     "muerte",
+     "reencarnacion",
+     "espiritu"
+    ]
+   },
+   {
+    "id": "9bRrZ5rIltw",
+    "title": "TANTRA: el yoga del amor - El Orgasmo",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2024-04-01",
+    "tags": [
+     "tantra",
+     "yoga",
+     "sexualidad"
+    ]
+   },
+   {
+    "id": "iZZYj3bNOBc",
+    "title": "Criaturas Fantásticas - Gatos Míticos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-03-15",
+    "tags": [
+     "gatos",
+     "mitologia",
+     "animales"
+    ]
+   },
+   {
+    "id": "gQSDe4scmWo",
+    "title": "La Secta Heavens Gate",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-03-01",
+    "tags": [
+     "secta",
+     "heavens-gate",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "nr4KPf2fbqA",
+    "title": "THE FEARMAKERS: Texas Chainsaw Massacre",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2024-02-15",
+    "tags": [
+     "horror",
+     "cine",
+     "clive-barker"
+    ]
+   },
+   {
+    "id": "Lo_E0vg4Un0",
+    "title": "Expedición: Historia de Dos Océanos",
+    "programa": "Expedición",
+    "progId": "expedicion",
+    "pub": "2024-02-01",
+    "tags": [
+     "expedicion",
+     "naturaleza",
+     "viaje"
+    ]
+   },
+   {
+    "id": "0aDXC8-rC94",
+    "title": "Latinoamérica: Historias Perdidas - Cosechas Gigantes",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-01-15",
+    "tags": [
+     "latinoamerica",
+     "naturaleza",
+     "misterio"
+    ]
+   },
+   {
+    "id": "4eBhtrp4mds",
+    "title": "Latinoamérica: Historias Perdidas - OVNIS II",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-01-01",
+    "tags": [
+     "ovnis",
+     "latinoamerica",
+     "avistamientos"
+    ]
+   },
+   {
+    "id": "VCbM9k1w6xY",
+    "title": "2PAC esta Vivo?",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-12-15",
+    "tags": [
+     "2pac",
+     "conspiracion",
+     "musica"
+    ]
+   },
+   {
+    "id": "ioYJWaxMzOc",
+    "title": "Bob Marley y la Mística Rastafari",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-12-01",
+    "tags": [
+     "bob-marley",
+     "rastafari",
+     "musica"
+    ]
+   },
+   {
+    "id": "3z6DSQQO8vg",
+    "title": "Benjamín Solari Parravincini",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-11-15",
+    "tags": [
+     "profecia",
+     "parravincini",
+     "vidente"
+    ]
+   },
+   {
+    "id": "sXbYlAwoQaE",
+    "title": "El Futuro de la Tierra: La Profecía Infinita",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2008",
+    "tags": [
+     "profecia",
+     "futuro",
+     "tierra"
+    ]
+   },
+   {
+    "id": "Nymnh2MxNmw",
+    "title": "Las 7 Profecías Mayas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2007",
+    "tags": [
+     "mayas",
+     "profecia",
+     "2012"
+    ]
+   },
+   {
+    "id": "PpEDkUKQSkc",
+    "title": "Tarot: La Rueda de la Vida",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2006",
+    "tags": [
+     "tarot",
+     "adivinacion",
+     "esoterico"
+    ]
+   },
+   {
+    "id": "1vutWV8UKHQ",
+    "title": "A a la Z del Horror con Clive Barker",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2005",
+    "tags": [
+     "clive-barker",
+     "horror",
+     "cine"
+    ]
+   },
+   {
+    "id": "w5WkSz4u7P0",
+    "title": "Rompiendo Límites: Documental Raro",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2005",
+    "tags": [
+     "mente",
+     "limites",
+     "documental"
+    ]
+   },
+   {
+    "id": "iUgYhJ05VFE",
+    "title": "A a la Z del Horror: Zombies",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2005",
+    "tags": [
+     "zombies",
+     "clive-barker",
+     "horror"
+    ]
+   },
+   {
+    "id": "nyzFM1orWYw",
+    "title": "Juegos de Rol en el Canal Infinito",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "tags": [
+     "rol",
+     "dungeons-dragons",
+     "juegos"
+    ]
+   },
+   {
+    "id": "qay6tDJkuBM",
+    "title": "Latinoamérica: Historias Perdidas - Chamanes",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2004",
+    "tags": [
+     "chamanes",
+     "espiritualidad",
+     "latinoamerica"
+    ]
+   },
+   {
+    "id": "eL9v3LNapWk",
+    "title": "Una Posibilidad: Prem Rawat",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "tags": [
+     "prem-rawat",
+     "espiritualidad",
+     "paz"
+    ]
+   },
+   {
+    "id": "hsamYHp76aY",
+    "title": "Los Apóstoles",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "tags": [
+     "apostoles",
+     "religion",
+     "historia"
+    ]
+   },
+   {
+    "id": "TvJTWpn7mWQ",
+    "title": "Secretos de la Hipnosis con Paul McKena",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "hipnosis",
+     "mente",
+     "paul-mckenna"
+    ]
+   },
+   {
+    "id": "gBGL7Dg2_Jc",
+    "title": "El Zen en las Cárceles",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "zen",
+     "prision",
+     "meditacion"
+    ]
+   },
+   {
+    "id": "TbDydZrzepc",
+    "title": "Área 51 Revelada",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "area-51",
+     "ovnis",
+     "gobierno"
+    ]
+   },
+   {
+    "id": "WeitAV9az9k",
+    "title": "Cerebros Místicos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "cerebro",
+     "misticismo",
+     "neurociencia"
+    ]
+   },
+   {
+    "id": "CflIljmzT4o",
+    "title": "Ed Gein: El Monstruo de la Vida Real",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2003",
+    "tags": [
+     "ed-gein",
+     "asesino",
+     "clive-barker"
+    ]
+   },
+   {
+    "id": "EONPkqQOTYA",
+    "title": "El Enigma de los Cielos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "cielos",
+     "fenomenos",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "GvVc-DMnJuM",
+    "title": "Uritorco: El Enigma Mágico",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "uritorco",
+     "argentina",
+     "energia"
+    ]
+   },
+   {
+    "id": "19Dwxwql7ng",
+    "title": "Parravicini: Misterios Revelados",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "parravincini",
+     "profecia",
+     "vidente"
+    ]
+   },
+   {
+    "id": "fFkCv52XVfc",
+    "title": "Magia del Amor: Magia Roja",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "tags": [
+     "magia",
+     "amor",
+     "esoterico"
+    ]
+   },
+   {
+    "id": "JLbdMyyAiro",
+    "title": "En Busca del Karma - Machu Picchu 2003",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "karma",
+     "machu-picchu",
+     "espiritual"
+    ]
+   },
+   {
+    "id": "0ongfuCjrO4",
+    "title": "Mayas: Los Dueños del Tiempo",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "mayas",
+     "tiempo",
+     "civilizacion"
+    ]
+   },
+   {
+    "id": "kUlg7CLRvvY",
+    "title": "Tantra y Kamasutra: El yoga del Placer",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2004",
+    "tags": [
+     "tantra",
+     "kamasutra",
+     "sexualidad"
+    ]
+   },
+   {
+    "id": "_50ubsnATl4",
+    "title": "El Secreto de los Templarios",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "tags": [
+     "templarios",
+     "medieval",
+     "misterio"
+    ]
+   },
+   {
+    "id": "i4DI5KIkO-Q",
+    "title": "OVNIS: El Enigma Pendiente",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "tags": [
+     "ovnis",
+     "conozca-mas",
+     "enigma"
+    ]
+   },
+   {
+    "id": "Enlt-H6y5as",
+    "title": "El Misterio de los Estigmas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2000",
+    "tags": [
+     "estigmas",
+     "religion",
+     "misterio"
+    ]
+   },
+   {
+    "id": "ZXT39gNXoZA",
+    "title": "Maratón El Día Menos Pensado",
+    "programa": "El Día Menos Pensado",
+    "progId": "el-dia-menos-pensado",
+    "pub": "2000",
+    "tags": [
+     "maraton",
+     "compilacion",
+     "misterio"
+    ]
+   },
+   {
+    "id": "4D-_bWHpsYs",
+    "title": "Serie de TV OVNI - Análisis Completo",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2000",
+    "tags": [
+     "ovnis",
+     "serie",
+     "tv"
+    ]
+   },
+   {
+    "id": "wNTZIIT5UkQ",
+    "title": "Contacto con el Misterio: El Caso Pastén",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "tags": [
+     "pasten",
+     "chile",
+     "posesion"
+    ]
+   },
+   {
+    "id": "BbF0_-LsFkk",
+    "title": "Revista AÑO CERO - Serie Completa (+11 HORAS)",
+    "programa": "Revista Año Cero",
+    "progId": "revista-ano-cero",
+    "pub": "1999",
+    "tags": [
+     "año-cero",
+     "arqueologia",
+     "historia",
+     "serie"
+    ]
+   },
+   {
+    "id": "Jw6GN7i8mRA",
+    "title": "Historias de Fantasmas con Patrick Mcnee",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "1997",
+    "tags": [
+     "fantasmas",
+     "patrick-mcnee",
+     "paranormal"
+    ]
+   },
+   {
+    "id": "qMsGkMmqsnk",
+    "title": "El Mundo de las Vidas Pasadas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2001",
+    "tags": [
+     "vidas-pasadas",
+     "reencarnacion",
+     "hipnosis"
+    ]
+   },
+   {
+    "id": "QnRPgn_uBvc",
+    "title": "Travesía Infinito: Buenos Aires a Machu Picchu",
+    "programa": "Travesía Infinito",
+    "progId": "travesia-infinito",
+    "pub": "2003",
+    "tags": [
+     "viaje",
+     "machu-picchu",
+     "travesia"
+    ]
+   },
+   {
+    "id": "Oyc6Zu6WEic",
+    "title": "JJ Benítez: Zona Infinito",
+    "programa": "Zona Infinito",
+    "progId": "zona-infinito",
+    "pub": "2002",
+    "tags": [
+     "jj-benitez",
+     "zona-infinito",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "btjyGln5eLE",
+    "title": "Encuentros Paranormales (1996) - Serie Completa",
+    "programa": "Encuentros Paranormales",
+    "progId": "encuentros-paranormales",
+    "pub": "1996",
+    "tags": [
+     "paranormal",
+     "encuentros",
+     "serie"
+    ]
+   }
+  ],
+  "progVideoMap": {
+   "Zona Infinito": [
+    "zona-infinito"
+   ],
+   "Casa Infinito": [
+    "casa-infinito"
+   ],
+   "Expedición": [
+    "expedicion"
+   ],
+   "Fuera de Ruta": [
+    "fuera-de-ruta"
+   ],
+   "Travesía Infinito": [
+    "travesia-infinito"
+   ],
+   "Encuentros Paranormales": [
+    "encuentros-paranormales"
+   ],
+   "UFO": [
+    "ufo-infinity"
+   ],
+   "El día menos pensado": [
+    "el-dia-menos-pensado"
+   ],
+   "Grandes Misterios": [
+    "grandes-misterios"
+   ],
+   "Revista Año Cero": [
+    "revista-ano-cero"
+   ],
+   "Neopilates": [
+    "neopilates"
+   ],
+   "Naturalmente Yoga": [
+    "naturalmente-yoga"
+   ],
+   "Tantra": [
+    "tantra"
+   ],
+   "A a la Z del Horror": [
+    "a-a-la-z-del-horror"
+   ],
+   "Masones: Misterio y Poder": [
+    "masones"
+   ],
+   "Latinoamérica: Historias Perdidas": [
+    "latinoamerica-historias-perdidas"
+   ],
+   "Producción Original Infinito": [
+    "produccion-original"
+   ],
+   "Cortos Infinito": [
+    "cortos-infinito"
+   ],
+   "Aquí se Respira el Miedo": [
+    "aqui-se-respira-el-miedo"
+   ],
+   "Documental Infinito": [
+    "documental-infinito"
+   ],
+   "Paranormal Guide": [
+    "paranormal-guide"
+   ]
+  },
+  "progVidColors": {
+   "paranormal-guide": "#e0c96b",
+   "ufo-infinity": "#6bc96b",
+   "fuera-de-ruta": "#6b6be0",
+   "casa-infinito": "#6bb5e0",
+   "aqui-se-respira-el-miedo": "#c9c96b",
+   "neopilates": "#b5c96b",
+   "naturalmente-yoga": "#c98e6b",
+   "tantra": "#8ec96b",
+   "masones": "#6be08e",
+   "documental-infinito": "#c96bb5",
+   "grandes-misterios": "#6bc9b5",
+   "cortos-infinito": "#7ec96b",
+   "latinoamerica-historias-perdidas": "#8e6be0",
+   "a-a-la-z-del-horror": "#c9a84c",
+   "produccion-original": "#c96b8e",
+   "expedicion": "#b56bc9",
+   "el-dia-menos-pensado": "#e0a06b",
+   "revista-ano-cero": "#6bc9c9",
+   "travesia-infinito": "#c96be0",
+   "zona-infinito": "#c97b3a",
+   "encuentros-paranormales": "#6be0c9"
+  }
+ },
+ "videoteca.html": {
+  "catalog": [
+   {
+    "id": "dxR2_l0Hda8",
+    "title": "Paranormal Guide - Contact With the Beyond",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Episodio de Paranormal Guide que explora el contacto con el más allá. Testimonios y evidencia sobre comunicación con entidades espirituales, recuperado de cintas VHS originales de Canal Infinito.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "PX77NX7FAw0",
+    "title": "Paranormal Guide - Ghost Detection Device",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Un análisis de los dispositivos de detección de fantasmas utilizados en investigaciones paranormales. Parte de la serie Paranormal Guide de Canal Infinito.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "x_h1N4qg9AI",
+    "title": "Paranormal Guide - Haunted Pub",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Investigación paranormal en un pub embrujado. El equipo de Paranormal Guide documenta actividad sobrenatural en este emblemático lugar.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "5LjFbmMSVNc",
+    "title": "Paranormal Guide - Ghosts in the Stable",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Fantasmas en el establo: una investigación paranormal que revela presencias espectrales en un antiguo establo. Episodio de Paranormal Guide.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "rO-TfxIGd9s",
+    "title": "UFO Infinity - UFO Contact Stories",
+    "programa": "UFO Infinity",
+    "progId": "ufo-infinity",
+    "pub": "2026-07-13",
+    "desc": "Historias de contacto OVNI de personas comunes que afirman haber tenido encuentros cercanos. Episodio de la serie UFO Infinity de Canal Infinito.",
+    "tags": [
+     "ovnis",
+     "contacto"
+    ]
+   },
+   {
+    "id": "8XBwkOhp5YU",
+    "title": "Off the Beaten Path - Chiapas",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2026-07-13",
+    "desc": "Exploración de Chiapas, México, en este episodio de Off the Beaten Path/Fuera de Ruta. Viaje a través de paisajes y culturas indígenas.",
+    "tags": [
+     "viajes",
+     "cultura"
+    ]
+   },
+   {
+    "id": "A9zGGvraqvg",
+    "title": "INFINITE HOUSE - Venier Poltergeist Case",
+    "programa": "Casa Infinito",
+    "progId": "casa-infinito",
+    "pub": "2026-07-13",
+    "desc": "El caso Venier: un escalofriante caso poltergeist ocurrido en Río Tercero, Córdoba, Argentina. Documentado por Canal Infinito en su serie Casa Infinito.",
+    "tags": [
+     "poltergeist",
+     "argentina"
+    ]
+   },
+   {
+    "id": "DxuLu0iWQFE",
+    "title": "Fear Is Breathed Here - Premonition",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "La premonición: episodio de la serie Aquí se Respira el Miedo que explora visiones del futuro y sueños premonitorios. Con Juan Ramón Saenz.",
+    "tags": [
+     "premonicion",
+     "miedo"
+    ]
+   },
+   {
+    "id": "gTMBXIOtgNE",
+    "title": "Fear Is Breathed Here - The Spawn",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "La progenie: episodio de Aquí se Respira el Miedo sobre entidades que se manifiestan a través de personas vulnerables. Lost media encontrado.",
+    "tags": [
+     "entidades",
+     "miedo"
+    ]
+   },
+   {
+    "id": "sSP0JbUw9A4",
+    "title": "Fear Breathes Here - The Intruder",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "El intruso: una historia de presencias inexplicables en el hogar. Episodio de la serie de terror documental de Canal Infinito.",
+    "tags": [
+     "intruso",
+     "casa"
+    ]
+   },
+   {
+    "id": "HlaP90_ZhUE",
+    "title": "Fear Is in the Air - The Return",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "El regreso: episodio que documenta el retorno de entidades a lugares donde ya habían sido reportadas. Con Juan Ramón Saenz.",
+    "tags": [
+     "entidades",
+     "regreso"
+    ]
+   },
+   {
+    "id": "l_XdR1pGycw",
+    "title": "Here the Fear is Breathed - The Shadows",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "Las sombras: documental completo sobre el fenómeno de las sombras como entidades paranormales. Una investigación profunda de Juan Ramón Saenz.",
+    "tags": [
+     "sombras",
+     "miedo"
+    ]
+   },
+   {
+    "id": "hWTcHLQ5iwI",
+    "title": "Neopilates - Serie Completa (+3 HORAS)",
+    "programa": "Neopilates",
+    "progId": "neopilates",
+    "pub": "2026-05-01",
+    "desc": "Serie completa de Neopilates transmitida en Canal Infinito. Más de 3 horas de contenido de ejercicios y bienestar recuperado de cintas VHS originales.",
+    "tags": [
+     "ejercicio",
+     "bienestar",
+     "serie"
+    ]
+   },
+   {
+    "id": "KwAhblgi5Rc",
+    "title": "Naturalmente YOGA - Serie Completa",
+    "programa": "Naturalmente Yoga",
+    "progId": "naturalmente-yoga",
+    "pub": "2026-02-01",
+    "desc": "Serie completa de Naturalmente Yoga de Canal Infinito. Una hora y media de prácticas de yoga y meditación guiadas.",
+    "tags": [
+     "yoga",
+     "meditacion",
+     "serie"
+    ]
+   },
+   {
+    "id": "d4nuG5JHeWw",
+    "title": "Tantra - The Yoga of Love (Short)",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2026-06-01",
+    "desc": "Corto documental sobre Tantra: el yoga del amor. Una introducción a las prácticas tántricas desde la perspectiva de Canal Infinito.",
+    "tags": [
+     "tantra",
+     "yoga"
+    ]
+   },
+   {
+    "id": "74UFl2R89LU",
+    "title": "Freemasons: Mystery and Power - Chapter III",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-02-05",
+    "desc": "Tercer capítulo del documental sobre los masones. Análisis profundo de rituales y la influencia de la hermandad secreta más poderosa.",
+    "tags": [
+     "masones",
+     "sociedad-secreta"
+    ]
+   },
+   {
+    "id": "EsrrljAJ9s8",
+    "title": "Is there extraterrestrial life? INFINITE CHANNEL",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2026-01-29",
+    "desc": "Documental que explora la gran pregunta: ¿hay vida extraterrestre? Una mirada a la evidencia y testimonios más impactantes recopilados por Canal Infinito.",
+    "tags": [
+     "ovnis",
+     "extraterrestre"
+    ]
+   },
+   {
+    "id": "EtpIPxSzcvg",
+    "title": "Masones: Misterio y Poder Capítulo II",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-01-19",
+    "desc": "Segunda parte del documental sobre sociedades secretas masónicas. Rituales, simbolismos y la influencia histórica de la masonería.",
+    "tags": [
+     "masones",
+     "sociedad-secreta"
+    ]
+   },
+   {
+    "id": "I8N1Zetmq1o",
+    "title": "Registros Sumerios del Planeta X",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2026-01-12",
+    "desc": "Exploración de los antiguos registros sumerios y su conexión con Nibiru, el misterioso Planeta X. Material perdido recuperado en VHS.",
+    "tags": [
+     "sumerios",
+     "planeta-x",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "COjend2PDyo",
+    "title": "Masones: Misterio y Poder - Capitulo I",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-01-05",
+    "desc": "Primer capítulo de la trilogía documental sobre los masones. Los orígenes, símbolos y el poder oculto de la hermandad masónica.",
+    "tags": [
+     "masones",
+     "poder"
+    ]
+   },
+   {
+    "id": "dmt_Rp5C50o",
+    "title": "Grandes misterios de la Historia (Podcast)",
+    "programa": "Grandes Misterios",
+    "progId": "grandes-misterios",
+    "pub": "2025-09-19",
+    "desc": "Podcast que explora los enigmas más fascinantes de la historia: civilizaciones perdidas, eventos inexplicables y misterios sin resolver.",
+    "tags": [
+     "historia",
+     "misterio",
+     "podcast"
+    ]
+   },
+   {
+    "id": "qjImMMxxKR0",
+    "title": "La Historia Secreta de Bogotá",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2025-06-11",
+    "desc": "Los secretos ocultos de la capital colombiana. Leyendas urbanas, historias olvidadas y misterios que guardan las calles de Bogotá.",
+    "tags": [
+     "bogota",
+     "historia",
+     "colombia"
+    ]
+   },
+   {
+    "id": "C4DAdElt0gE",
+    "title": "Cortos del Canal Infinito #2",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2025-03-28",
+    "desc": "Segunda compilación de cortos y fragmentos recuperados de Canal Infinito. Piezas de lost media parcialmente encontradas que vuelven a la luz.",
+    "tags": [
+     "compilacion",
+     "cortos"
+    ]
+   },
+   {
+    "id": "ct9sJPpxPH8",
+    "title": "Cortos del Canal Infinito #1",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2025-02-28",
+    "desc": "Compilación de cortos y piezas breves de Canal Infinito que estaban parcialmente perdidas. Material invaluable para coleccionistas de lost media.",
+    "tags": [
+     "compilacion",
+     "cortos"
+    ]
+   },
+   {
+    "id": "3cK1ZJWmrQQ",
+    "title": "Fuera de Ruta - Cultura Chichimeca",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2025-01-31",
+    "desc": "Exploración de la Cultura Chichimeca en Chihuahua. Un viaje a las raíces indígenas del norte de México a través de Canal Infinito.",
+    "tags": [
+     "mexico",
+     "chihuahua",
+     "cultura"
+    ]
+   },
+   {
+    "id": "b2mQKhGG2sI",
+    "title": "Fuera de Ruta - Compilación de Cortos",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2025-01-15",
+    "desc": "Compilación de cortos del programa Fuera de Ruta. Recorriendo los lugares más remotos y fascinantes del continente.",
+    "tags": [
+     "viajes",
+     "compilacion"
+    ]
+   },
+   {
+    "id": "kxMFslJivHg",
+    "title": "Aquí se Respira el Miedo - Naranja Dulce",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2025-01-10",
+    "desc": "Único capítulo encontrado de esta serie de terror: Naranja Dulce Limón Partido. Un escalofriante relato de Juan Ramón Saenz.",
+    "tags": [
+     "miedo",
+     "terror",
+     "lost-media"
+    ]
+   },
+   {
+    "id": "FDXS3jIRWp0",
+    "title": "El Misterio de la Primera Navidad",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-12-20",
+    "desc": "Documental que investiga el verdadero origen de la Navidad, sus símbolos paganos y la historia detrás de la celebración más universal.",
+    "tags": [
+     "navidad",
+     "historia",
+     "religion"
+    ]
+   },
+   {
+    "id": "H-l4RR1m5pQ",
+    "title": "El Experimento Philadelphia",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-12-15",
+    "desc": "El legendario experimento naval de 1943 que supuestamente hizo invisible un barco completo. Una investigación de Canal Infinito.",
+    "tags": [
+     "experimento",
+     "militar",
+     "consipracion"
+    ]
+   },
+   {
+    "id": "EROZrNnmCYU",
+    "title": "OVNIS sobre Bogotá - 11 Nov 2024",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2024-11-11",
+    "desc": "Avistamiento OVNI reportado sobre Bogotá, Colombia. Imágenes y análisis de este fenómeno ocurrido en plena capital colombiana.",
+    "tags": [
+     "ovnis",
+     "bogota",
+     "colombia"
+    ]
+   },
+   {
+    "id": "Ibw0-RIH02Q",
+    "title": "Cerca de la Muerte",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-11-01",
+    "desc": "Experiencias cercanas a la muerte: testimonios de personas que estuvieron al borde de la muerte y regresaron para contar su historia.",
+    "tags": [
+     "muerte",
+     "ecm",
+     "experiencias"
+    ]
+   },
+   {
+    "id": "xK51Pzu5YNE",
+    "title": "Misterios de Marte",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-10-15",
+    "desc": "Los enigmas del planeta rojo: estructuras, supuestas ruinas y evidencia de vida pasada en Marte. Documental de Canal Infinito.",
+    "tags": [
+     "marte",
+     "ovnis",
+     "espacio"
+    ]
+   },
+   {
+    "id": "cZKMRstQVDY",
+    "title": "El Misterio del Proyecto HAARP",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-10-01",
+    "desc": "Investigación sobre HAARP, el polémico programa de investigación ionosférica. ¿Arma climática o estudio científico?",
+    "tags": [
+     "haarp",
+     "conspiracion",
+     "ciencia"
+    ]
+   },
+   {
+    "id": "OGJMmzjKfOc",
+    "title": "Apariciones Marianas en Venezuela",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-09-15",
+    "desc": "Documental sobre las apariciones de la Virgen María reportadas en Venezuela. Fe, milagros y fenómenos inexplicables.",
+    "tags": [
+     "religion",
+     "venezuela",
+     "apariciones"
+    ]
+   },
+   {
+    "id": "rouETlXgHx4",
+    "title": "Misterios Naturales: La Fuerza Vital Humana",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-09-01",
+    "desc": "Exploración de la fuerza vital que habita en cada ser humano. Energías, chakras y el poder oculto del cuerpo.",
+    "tags": [
+     "energia",
+     "vital",
+     "mente"
+    ]
+   },
+   {
+    "id": "EHYVkS4o0So",
+    "title": "El Misterio de los Rollos del Mar Muerto",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-08-15",
+    "desc": "Los antiguos pergaminos descubiertos en Qumrán: su contenido, su significado y los secretos que aún guardan sobre los orígenes del cristianismo.",
+    "tags": [
+     "rollos",
+     "mar-muerto",
+     "religion"
+    ]
+   },
+   {
+    "id": "Qrdas2nzum0",
+    "title": "La Vida Desconocida de Jesús",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-08-01",
+    "desc": "Los años perdidos de Jesús de Nazaret. Evidencias de su vida en la India y el Tíbet antes de su ministerio público.",
+    "tags": [
+     "jesus",
+     "religion",
+     "historia"
+    ]
+   },
+   {
+    "id": "TpJkVc6IhV8",
+    "title": "Movimiento Raeliano y clonación",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-07-15",
+    "desc": "El movimiento raeliano y sus controvertidas afirmaciones sobre la clonación humana. Creado por extraterrestres según su fundador.",
+    "tags": [
+     "raeliano",
+     "clonacion",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "VV1pbuRzgK0",
+    "title": "Latinoamérica: Historias Perdidas - Siete Luminarias",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-07-01",
+    "desc": "El país de las siete luminarias: exploración de los misterios y leyendas de los lugares sagrados de Latinoamérica.",
+    "tags": [
+     "latinoamerica",
+     "misterio",
+     "leyendas"
+    ]
+   },
+   {
+    "id": "jjkFWb4hONU",
+    "title": "La Verdadera Historia del Exorcista",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-06-15",
+    "desc": "Detrás de la película: el caso real de posesión demoníaca que inspiró El Exorcista. Una investigación de Canal Infinito.",
+    "tags": [
+     "exorcista",
+     "posesion",
+     "demonio"
+    ]
+   },
+   {
+    "id": "1Y3fCWLdOw8",
+    "title": "En Busca de Drácula",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-06-01",
+    "desc": "Viaje a Transilvania en busca del verdadero Drácula: Vlad Tepes, el empalador. Historia, leyenda y mito se entrelazan.",
+    "tags": [
+     "dracula",
+     "vampiros",
+     "transilvania"
+    ]
+   },
+   {
+    "id": "FvarFkCfKKg",
+    "title": "El Salvador - Documental",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-05-15",
+    "desc": "Documental sobre El Salvador: su historia, cultura y misterios. Un recorrido por el corazón de Centroamérica.",
+    "tags": [
+     "el-salvador",
+     "centroamerica",
+     "documental"
+    ]
+   },
+   {
+    "id": "BDyvleFJHOc",
+    "title": "Ángeles - Documental Producción Original",
+    "programa": "Producción Original Infinito",
+    "progId": "produccion-original",
+    "pub": "2024-05-01",
+    "desc": "Producción original de Canal Infinito sobre los ángeles: jerarquías celestiales, apariciones y su papel en las distintas religiones.",
+    "tags": [
+     "angeles",
+     "religion",
+     "produccion-original"
+    ]
+   },
+   {
+    "id": "Q7ZI91UAz7o",
+    "title": "¿Qué pasa después de la Muerte?",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-04-15",
+    "desc": "Las teorías más fascinantes sobre la vida después de la muerte. Experiencias cercanas, reencarnación y testimonios.",
+    "tags": [
+     "muerte",
+     "reencarnacion",
+     "espiritu"
+    ]
+   },
+   {
+    "id": "9bRrZ5rIltw",
+    "title": "TANTRA: el yoga del amor - El Orgasmo",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2024-04-01",
+    "desc": "Serie de TV sobre Tantra: el yoga del amor. Este episodio explora el orgasmo como experiencia espiritual y trascendental.",
+    "tags": [
+     "tantra",
+     "yoga",
+     "sexualidad"
+    ]
+   },
+   {
+    "id": "iZZYj3bNOBc",
+    "title": "Criaturas Fantásticas - Gatos Míticos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-03-15",
+    "desc": "Los gatos a través de la historia: dioses en Egipto, compañeros de brujas y criaturas místicas. Un documental felino de Canal Infinito.",
+    "tags": [
+     "gatos",
+     "mitologia",
+     "animales"
+    ]
+   },
+   {
+    "id": "gQSDe4scmWo",
+    "title": "La Secta Heavens Gate",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-03-01",
+    "desc": "La historia prohibida de la secta Heavens Gate y su suicidio colectivo para alcanzar una nave extraterrestre. Impactante documental.",
+    "tags": [
+     "secta",
+     "heavens-gate",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "nr4KPf2fbqA",
+    "title": "THE FEARMAKERS: Texas Chainsaw Massacre",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2024-02-15",
+    "desc": "Serie A a la Z del Horror con Clive Barker: La masacre de Texas. Detrás de cámaras de la película que redefinió el terror.",
+    "tags": [
+     "horror",
+     "cine",
+     "clive-barker"
+    ]
+   },
+   {
+    "id": "Lo_E0vg4Un0",
+    "title": "Expedición: Historia de Dos Océanos",
+    "programa": "Expedición",
+    "progId": "expedicion",
+    "pub": "2024-02-01",
+    "desc": "Una travesía única conectando dos océanos. Naturaleza, aventura y descubrimiento en este documental de Canal Infinito.",
+    "tags": [
+     "expedicion",
+     "naturaleza",
+     "viaje"
+    ]
+   },
+   {
+    "id": "0aDXC8-rC94",
+    "title": "Latinoamérica: Historias Perdidas - Cosechas Gigantes",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-01-15",
+    "desc": "Frutas y verduras gigantes: fenómeno natural o intervención desconocida. Un misterio agrícola en Latinoamérica.",
+    "tags": [
+     "latinoamerica",
+     "naturaleza",
+     "misterio"
+    ]
+   },
+   {
+    "id": "4eBhtrp4mds",
+    "title": "Latinoamérica: Historias Perdidas - OVNIS II",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-01-01",
+    "desc": "Segunda parte de los avistamientos OVNI en Latinoamérica. Casos documentados y testimonios impactantes.",
+    "tags": [
+     "ovnis",
+     "latinoamerica",
+     "avistamientos"
+    ]
+   },
+   {
+    "id": "VCbM9k1w6xY",
+    "title": "2PAC esta Vivo?",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-12-15",
+    "desc": "La teoría de la conspiración sobre la falsa muerte de Tupac Shakur. Evidencias y testimonios que cuestionan su asesinato.",
+    "tags": [
+     "2pac",
+     "conspiracion",
+     "musica"
+    ]
+   },
+   {
+    "id": "ioYJWaxMzOc",
+    "title": "Bob Marley y la Mística Rastafari",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-12-01",
+    "desc": "La espiritualidad rastafari a través de la vida y música de Bob Marley. Un viaje documental único.",
+    "tags": [
+     "bob-marley",
+     "rastafari",
+     "musica"
+    ]
+   },
+   {
+    "id": "3z6DSQQO8vg",
+    "title": "Benjamín Solari Parravincini",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-11-15",
+    "desc": "Las profecías del vidente argentino Benjamín Solari Parravincini. Sus dibujos premonitorios y predicciones cumplidas.",
+    "tags": [
+     "profecia",
+     "parravincini",
+     "vidente"
+    ]
+   },
+   {
+    "id": "sXbYlAwoQaE",
+    "title": "El Futuro de la Tierra: La Profecía Infinita",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2008",
+    "desc": "Documental de 2008 que reúne las profecías más impactantes sobre el futuro de la humanidad y el planeta.",
+    "tags": [
+     "profecia",
+     "futuro",
+     "tierra"
+    ]
+   },
+   {
+    "id": "Nymnh2MxNmw",
+    "title": "Las 7 Profecías Mayas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2007",
+    "desc": "Las profecías del calendario maya: el fin del mundo, los cambios planetarios y la transformación de la conciencia.",
+    "tags": [
+     "mayas",
+     "profecia",
+     "2012"
+    ]
+   },
+   {
+    "id": "PpEDkUKQSkc",
+    "title": "Tarot: La Rueda de la Vida",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2006",
+    "desc": "Especial completo de Canal Infinito sobre el tarot: la rueda de la vida, sus arcanos y el arte de la adivinación.",
+    "tags": [
+     "tarot",
+     "adivinacion",
+     "esoterico"
+    ]
+   },
+   {
+    "id": "1vutWV8UKHQ",
+    "title": "A a la Z del Horror con Clive Barker",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2005",
+    "desc": "El maestro del horror Clive Barker guía este recorrido por la historia del terror en el cine y la literatura. Capítulo completo en 4K.",
+    "tags": [
+     "clive-barker",
+     "horror",
+     "cine"
+    ]
+   },
+   {
+    "id": "w5WkSz4u7P0",
+    "title": "Rompiendo Límites: Documental Raro",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2005",
+    "desc": "Un documental poco común de Canal Infinito que explora los límites de la mente humana y fenómenos extraordinarios.",
+    "tags": [
+     "mente",
+     "limites",
+     "documental"
+    ]
+   },
+   {
+    "id": "iUgYhJ05VFE",
+    "title": "A a la Z del Horror: Zombies",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2005",
+    "desc": "Clive Barker explora el fenómeno zombie: del vudú haitiano a Walking Dead. La historia de los muertos vivientes.",
+    "tags": [
+     "zombies",
+     "clive-barker",
+     "horror"
+    ]
+   },
+   {
+    "id": "nyzFM1orWYw",
+    "title": "Juegos de Rol en el Canal Infinito",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "desc": "Documental sobre el mundo de los juegos de rol: Dragones y Mazmorras, el satanismo y la controversia en los años 90.",
+    "tags": [
+     "rol",
+     "dungeons-dragons",
+     "juegos"
+    ]
+   },
+   {
+    "id": "qay6tDJkuBM",
+    "title": "Latinoamérica: Historias Perdidas - Chamanes",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2004",
+    "desc": "Los chamanes y sus misterios ocultos: rituales ancestrales, plantas sagradas y la conexión con el mundo espiritual.",
+    "tags": [
+     "chamanes",
+     "espiritualidad",
+     "latinoamerica"
+    ]
+   },
+   {
+    "id": "eL9v3LNapWk",
+    "title": "Una Posibilidad: Prem Rawat",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "desc": "Documental sobre Prem Rawat (Maharaji) y su mensaje de paz interior. Una búsqueda espiritual a través de Canal Infinito.",
+    "tags": [
+     "prem-rawat",
+     "espiritualidad",
+     "paz"
+    ]
+   },
+   {
+    "id": "hsamYHp76aY",
+    "title": "Los Apóstoles",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "desc": "Documental completo sobre los doce apóstoles de Jesús: sus vidas, ministerios y la propagación del cristianismo.",
+    "tags": [
+     "apostoles",
+     "religion",
+     "historia"
+    ]
+   },
+   {
+    "id": "TvJTWpn7mWQ",
+    "title": "Secretos de la Hipnosis con Paul McKena",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "El poder de la hipnosis revelado por Paul McKenna. Técnicas, historia y el potencial oculto de la mente.",
+    "tags": [
+     "hipnosis",
+     "mente",
+     "paul-mckenna"
+    ]
+   },
+   {
+    "id": "gBGL7Dg2_Jc",
+    "title": "El Zen en las Cárceles",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Impactante documental sobre la práctica del Zen en prisiones. Cómo la meditación transforma la vida de los reclusos.",
+    "tags": [
+     "zen",
+     "prision",
+     "meditacion"
+    ]
+   },
+   {
+    "id": "TbDydZrzepc",
+    "title": "Área 51 Revelada",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "La verdadera historia del Área 51: testimonios de exempleados, evidencias de tecnología invertida y el secreto mejor guardado de EE.UU.",
+    "tags": [
+     "area-51",
+     "ovnis",
+     "gobierno"
+    ]
+   },
+   {
+    "id": "WeitAV9az9k",
+    "title": "Cerebros Místicos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "La neurociencia de la experiencia mística: qué sucede en el cerebro durante la meditación, el éxtasis y las experiencias espirituales.",
+    "tags": [
+     "cerebro",
+     "misticismo",
+     "neurociencia"
+    ]
+   },
+   {
+    "id": "CflIljmzT4o",
+    "title": "Ed Gein: El Monstruo de la Vida Real",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2003",
+    "desc": "Clive Barker presenta la historia de Ed Gein, el asesino real que inspiró a Psicosis, La Masacre de Texas y El Silencio de los Inocentes.",
+    "tags": [
+     "ed-gein",
+     "asesino",
+     "clive-barker"
+    ]
+   },
+   {
+    "id": "EONPkqQOTYA",
+    "title": "El Enigma de los Cielos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Fenómenos celestes inexplicables: luces, formaciones y presencias en el cielo que desafían toda explicación científica.",
+    "tags": [
+     "cielos",
+     "fenomenos",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "GvVc-DMnJuM",
+    "title": "Uritorco: El Enigma Mágico",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "El Cerro Uritorco en Córdoba, Argentina: energía mística, avistamientos OVNI y leyendas que lo convierten en un lugar único.",
+    "tags": [
+     "uritorco",
+     "argentina",
+     "energia"
+    ]
+   },
+   {
+    "id": "19Dwxwql7ng",
+    "title": "Parravicini: Misterios Revelados",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Más profecías de Benjamín Solari Parravicini reveladas. Sus dibujos proféticos analizados en detalle por Canal Infinito.",
+    "tags": [
+     "parravincini",
+     "profecia",
+     "vidente"
+    ]
+   },
+   {
+    "id": "fFkCv52XVfc",
+    "title": "Magia del Amor: Magia Roja",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "desc": "Documental sobre magia roja, amarres y hechizos de amor. Las tradiciones esotéricas más poderosas para el amor.",
+    "tags": [
+     "magia",
+     "amor",
+     "esoterico"
+    ]
+   },
+   {
+    "id": "JLbdMyyAiro",
+    "title": "En Busca del Karma - Machu Picchu 2003",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Viaje espiritual a Machu Picchu en busca del karma. Una travesía por los lugares sagrados de los incas.",
+    "tags": [
+     "karma",
+     "machu-picchu",
+     "espiritual"
+    ]
+   },
+   {
+    "id": "0ongfuCjrO4",
+    "title": "Mayas: Los Dueños del Tiempo",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "La fascinante civilización maya: su calendario, conocimientos astronómicos y la concepción del tiempo como ninguna otra cultura.",
+    "tags": [
+     "mayas",
+     "tiempo",
+     "civilizacion"
+    ]
+   },
+   {
+    "id": "kUlg7CLRvvY",
+    "title": "Tantra y Kamasutra: El yoga del Placer",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2004",
+    "desc": "Serie de TV de Canal Infinito sobre Tantra y Kamasutra. La unión del placer físico con la elevación espiritual.",
+    "tags": [
+     "tantra",
+     "kamasutra",
+     "sexualidad"
+    ]
+   },
+   {
+    "id": "_50ubsnATl4",
+    "title": "El Secreto de los Templarios",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "desc": "Los Caballeros Templarios: su tesoro perdido, sus rituales secretos y su influencia en la historia medieval.",
+    "tags": [
+     "templarios",
+     "medieval",
+     "misterio"
+    ]
+   },
+   {
+    "id": "i4DI5KIkO-Q",
+    "title": "OVNIS: El Enigma Pendiente",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "desc": "Compilación de la Revista Conozca Más: el fenómeno OVNI como el enigma más importante sin resolver de la humanidad.",
+    "tags": [
+     "ovnis",
+     "conozca-mas",
+     "enigma"
+    ]
+   },
+   {
+    "id": "Enlt-H6y5as",
+    "title": "El Misterio de los Estigmas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2000",
+    "desc": "Personas que desarrollan las heridas de la crucifixión sin causa aparente. Un fenómeno místico investigado por Canal Infinito.",
+    "tags": [
+     "estigmas",
+     "religion",
+     "misterio"
+    ]
+   },
+   {
+    "id": "ZXT39gNXoZA",
+    "title": "Maratón El Día Menos Pensado",
+    "programa": "El Día Menos Pensado",
+    "progId": "el-dia-menos-pensado",
+    "pub": "2000",
+    "desc": "Maratón de 3 horas del programa El Día Menos Pensado. Un viaje a través de los temas más fascinantes de Canal Infinito.",
+    "tags": [
+     "maraton",
+     "compilacion",
+     "misterio"
+    ]
+   },
+   {
+    "id": "4D-_bWHpsYs",
+    "title": "Serie de TV OVNI - Análisis Completo",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2000",
+    "desc": "Análisis completo de una serie de TV sobre OVNIs emitida en Canal Infinito. Casos, testigos y evidencia.",
+    "tags": [
+     "ovnis",
+     "serie",
+     "tv"
+    ]
+   },
+   {
+    "id": "wNTZIIT5UkQ",
+    "title": "Contacto con el Misterio: El Caso Pastén",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "El escalofriante caso Pastén: una historia de posesión, exorcismo y fenómenos paranormales en Chile.",
+    "tags": [
+     "pasten",
+     "chile",
+     "posesion"
+    ]
+   },
+   {
+    "id": "BbF0_-LsFkk",
+    "title": "Revista AÑO CERO - Serie Completa (+11 HORAS)",
+    "programa": "Revista Año Cero",
+    "progId": "revista-ano-cero",
+    "pub": "1999",
+    "desc": "Serie completa de Revista Año Cero: más de 11 horas de misterios del pasado, civilizaciones perdidas y arqueología prohibida.",
+    "tags": [
+     "año-cero",
+     "arqueologia",
+     "historia",
+     "serie"
+    ]
+   },
+   {
+    "id": "Jw6GN7i8mRA",
+    "title": "Historias de Fantasmas con Patrick Mcnee",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "1997",
+    "desc": "El actor Patrick Mcnee narra historias reales de fantasmas y apariciones. Un clásico documental de Canal Infinito.",
+    "tags": [
+     "fantasmas",
+     "patrick-mcnee",
+     "paranormal"
+    ]
+   },
+   {
+    "id": "qMsGkMmqsnk",
+    "title": "El Mundo de las Vidas Pasadas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2001",
+    "desc": "La hipnosis regresiva y las vidas pasadas: personas que recuerdan sus existencias anteriores bajo hipnosis.",
+    "tags": [
+     "vidas-pasadas",
+     "reencarnacion",
+     "hipnosis"
+    ]
+   },
+   {
+    "id": "QnRPgn_uBvc",
+    "title": "Travesía Infinito: Buenos Aires a Machu Picchu",
+    "programa": "Travesía Infinito",
+    "progId": "travesia-infinito",
+    "pub": "2003",
+    "desc": "Un viaje épico desde Buenos Aires hasta Machu Picchu. Descubriendo los misterios y maravillas del camino.",
+    "tags": [
+     "viaje",
+     "machu-picchu",
+     "travesia"
+    ]
+   },
+   {
+    "id": "Oyc6Zu6WEic",
+    "title": "JJ Benítez: Zona Infinito",
+    "programa": "Zona Infinito",
+    "progId": "zona-infinito",
+    "pub": "2002",
+    "desc": "El reconocido investigador JJ Benítez presenta Zona Infinito: una mirada a sus investigaciones sobre OVNIs y fenómenos paranormales.",
+    "tags": [
+     "jj-benitez",
+     "zona-infinito",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "btjyGln5eLE",
+    "title": "Encuentros Paranormales (1996) - Serie Completa",
+    "programa": "Encuentros Paranormales",
+    "progId": "encuentros-paranormales",
+    "pub": "1996",
+    "desc": "Serie completa de 1996 sobre encuentros paranormales. Más de una hora de casos documentados y testimonios impactantes.",
+    "tags": [
+     "paranormal",
+     "encuentros",
+     "serie"
+    ]
+   }
+  ],
+  "programInfo": {
+   "paranormal-guide": {
+    "name": "Paranormal Guide",
+    "desc": "Serie que documenta investigaciones paranormales con equipo técnico especializado. Cada episodio explora un fenómeno distinto con testimonios y evidencia en VHS."
+   },
+   "ufo-infinity": {
+    "name": "UFO Infinity",
+    "desc": "Serie dedicada al fenómeno OVNI con entrevistas a testigos, investigadores y análisis de los casos más impactantes de avistamientos."
+   },
+   "fuera-de-ruta": {
+    "name": "Fuera de Ruta",
+    "desc": "Programa de viajes y exploración que recorre los destinos más remotos y fascinantes de Latinoamérica, descubriendo culturas, paisajes y tradiciones."
+   },
+   "casa-infinito": {
+    "name": "Casa Infinito",
+    "desc": "Serie que investiga casos reales de casas embrujadas y actividad poltergeist. Cada episodio documenta un lugar con actividad paranormal documentada."
+   },
+   "aqui-se-respira-el-miedo": {
+    "name": "Aquí se Respira el Miedo",
+    "desc": "Serie de terror documental conducida por Juan Ramón Saenz. Historias reales de entidades, sombras y fenómenos inexplicables que ponen la piel de gallina."
+   },
+   "neopilates": {
+    "name": "Neopilates",
+    "desc": "Programa de ejercicios y bienestar físico transmitido en Canal Infinito. Sesiones completas de pilates para realizar en casa."
+   },
+   "naturalmente-yoga": {
+    "name": "Naturalmente Yoga",
+    "desc": "Serie dedicada a la práctica del yoga y la meditación. Guías completas para conectar cuerpo, mente y espíritu."
+   },
+   "tantra": {
+    "name": "Tantra",
+    "desc": "Serie que explora las enseñanzas del Tantra y el Kamasutra desde una perspectiva espiritual y cultural. La unión del placer con la elevación de la conciencia."
+   },
+   "masones": {
+    "name": "Masones: Misterio y Poder",
+    "desc": "Trilogía documental que desvela los secretos de la masonería: sus rituales, símbolos, jerarquías y la influencia que ha tenido en la historia mundial."
+   },
+   "documental-infinito": {
+    "name": "Documental Infinito",
+    "desc": "La categoría más amplia del archivo: documentales producidos o emitidos por Canal Infinito sobre misterios, ciencia, historia, religión y fenómenos paranormales."
+   },
+   "grandes-misterios": {
+    "name": "Grandes Misterios",
+    "desc": "Podcast y serie que explora los enigmas más fascinantes de la historia: civilizaciones perdidas, eventos inexplicables y misterios sin resolver."
+   },
+   "cortos-infinito": {
+    "name": "Cortos Infinito",
+    "desc": "Compilaciones de piezas breves y fragmentos recuperados de la programación de Canal Infinito. Cápsulas de lost media que vuelven a la luz."
+   },
+   "latinoamerica-historias-perdidas": {
+    "name": "Latinoamérica: Historias Perdidas",
+    "desc": "Serie documental que recorre Latinoamérica descubriendo las historias más sorprendentes, misteriosas y olvidadas del continente."
+   },
+   "a-a-la-z-del-horror": {
+    "name": "A a la Z del Horror",
+    "desc": "Serie conducida por el maestro del terror Clive Barker que explora la historia del género de horror en el cine, la literatura y la cultura popular."
+   },
+   "produccion-original": {
+    "name": "Producción Original Infinito",
+    "desc": "Producciones originales de Canal Infinito: documentales creados íntegramente por el equipo del canal con investigación propia."
+   },
+   "expedicion": {
+    "name": "Expedición",
+    "desc": "Serie de aventura y exploración que lleva al espectador a los lugares más remotos del planeta en busca de descubrimientos y experiencias únicas."
+   },
+   "el-dia-menos-pensado": {
+    "name": "El Día Menos Pensado",
+    "desc": "Programa emblemático de Canal Infinito que abordaba temas de misterio, ciencia y actualidad desde una perspectiva única e irreverente."
+   },
+   "revista-ano-cero": {
+    "name": "Revista Año Cero",
+    "desc": "Serie basada en la famosa revista de misterio. Exploración de civilizaciones perdidas, arqueología prohibida y los grandes enigmas de la humanidad."
+   },
+   "travesia-infinito": {
+    "name": "Travesía Infinito",
+    "desc": "Programa de viajes y aventura que recorre rutas emblemáticas de Latinoamérica descubriendo paisajes, culturas y misterios del camino."
+   },
+   "zona-infinito": {
+    "name": "Zona Infinito",
+    "desc": "Programa conducido por el reconocido investigador JJ Benítez, explorando fenómenos OVNI, parapsicología y los grandes misterios de la humanidad."
+   },
+   "encuentros-paranormales": {
+    "name": "Encuentros Paranormales",
+    "desc": "Serie clásica de 1996 que documenta encuentros con lo desconocido: fantasmas, apariciones y fenómenos que desafían la explicación científica."
+   }
+  },
+  "programColors": [
+   "#c9a84c",
+   "#64b4ff",
+   "#ff6464",
+   "#b464ff",
+   "#64ffb4",
+   "#ffb464",
+   "#ff64b4",
+   "#64fff4",
+   "#f464ff",
+   "#ffd464",
+   "#74a4ff",
+   "#ff8474",
+   "#a4c864",
+   "#c864a4",
+   "#64c8a4",
+   "#d4a464",
+   "#a464d4",
+   "#64a4d4",
+   "#d46464",
+   "#64d464",
+   "#d4a4a4",
+   "#a4d4a4",
+   "#a4a4d4",
+   "#d4d4a4"
+  ],
+  "progIds": [
+   "paranormal-guide",
+   "ufo-infinity",
+   "fuera-de-ruta",
+   "casa-infinito",
+   "aqui-se-respira-el-miedo",
+   "neopilates",
+   "naturalmente-yoga",
+   "tantra",
+   "masones",
+   "documental-infinito",
+   "grandes-misterios",
+   "cortos-infinito",
+   "latinoamerica-historias-perdidas",
+   "produccion-original",
+   "a-a-la-z-del-horror",
+   "expedicion",
+   "el-dia-menos-pensado",
+   "revista-ano-cero",
+   "travesia-infinito",
+   "zona-infinito",
+   "encuentros-paranormales"
+  ],
+  "progColorsMap": {
+   "paranormal-guide": "#c9a84c",
+   "ufo-infinity": "#64b4ff",
+   "fuera-de-ruta": "#ff6464",
+   "casa-infinito": "#b464ff",
+   "aqui-se-respira-el-miedo": "#64ffb4",
+   "neopilates": "#ffb464",
+   "naturalmente-yoga": "#ff64b4",
+   "tantra": "#64fff4",
+   "masones": "#f464ff",
+   "documental-infinito": "#ffd464",
+   "grandes-misterios": "#74a4ff",
+   "cortos-infinito": "#ff8474",
+   "latinoamerica-historias-perdidas": "#a4c864",
+   "produccion-original": "#c864a4",
+   "a-a-la-z-del-horror": "#64c8a4",
+   "expedicion": "#d4a464",
+   "el-dia-menos-pensado": "#a464d4",
+   "revista-ano-cero": "#64a4d4",
+   "travesia-infinito": "#d46464",
+   "zona-infinito": "#64d464",
+   "encuentros-paranormales": "#d4a4a4"
+  }
+ },
+ "video.html": {
+  "catalog": [
+   {
+    "id": "dxR2_l0Hda8",
+    "title": "Paranormal Guide - Contact With the Beyond",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Episodio de Paranormal Guide que explora el contacto con el más allá. Testimonios y evidencia sobre comunicación con entidades espirituales, recuperado de cintas VHS originales de Canal Infinito.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "PX77NX7FAw0",
+    "title": "Paranormal Guide - Ghost Detection Device",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Un análisis de los dispositivos de detección de fantasmas utilizados en investigaciones paranormales. Parte de la serie Paranormal Guide de Canal Infinito.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "x_h1N4qg9AI",
+    "title": "Paranormal Guide - Haunted Pub",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Investigación paranormal en un pub embrujado. El equipo de Paranormal Guide documenta actividad sobrenatural en este emblemático lugar.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "5LjFbmMSVNc",
+    "title": "Paranormal Guide - Ghosts in the Stable",
+    "programa": "Paranormal Guide",
+    "progId": "paranormal-guide",
+    "pub": "2026-07-20",
+    "desc": "Fantasmas en el establo: una investigación paranormal que revela presencias espectrales en un antiguo establo. Episodio de Paranormal Guide.",
+    "tags": [
+     "paranormal",
+     "VHS"
+    ]
+   },
+   {
+    "id": "rO-TfxIGd9s",
+    "title": "UFO Infinity - UFO Contact Stories",
+    "programa": "UFO Infinity",
+    "progId": "ufo-infinity",
+    "pub": "2026-07-13",
+    "desc": "Historias de contacto OVNI de personas comunes que afirman haber tenido encuentros cercanos. Episodio de la serie UFO Infinity de Canal Infinito.",
+    "tags": [
+     "ovnis",
+     "contacto"
+    ]
+   },
+   {
+    "id": "8XBwkOhp5YU",
+    "title": "Off the Beaten Path - Chiapas",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2026-07-13",
+    "desc": "Exploración de Chiapas, México, en este episodio de Off the Beaten Path/Fuera de Ruta. Viaje a través de paisajes y culturas indígenas.",
+    "tags": [
+     "viajes",
+     "cultura"
+    ]
+   },
+   {
+    "id": "A9zGGvraqvg",
+    "title": "INFINITE HOUSE - Venier Poltergeist Case",
+    "programa": "Casa Infinito",
+    "progId": "casa-infinito",
+    "pub": "2026-07-13",
+    "desc": "El caso Venier: un escalofriante caso poltergeist ocurrido en Río Tercero, Córdoba, Argentina. Documentado por Canal Infinito en su serie Casa Infinito.",
+    "tags": [
+     "poltergeist",
+     "argentina"
+    ]
+   },
+   {
+    "id": "DxuLu0iWQFE",
+    "title": "Fear Is Breathed Here - Premonition",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "La premonición: episodio de la serie Aquí se Respira el Miedo que explora visiones del futuro y sueños premonitorios. Con Juan Ramón Saenz.",
+    "tags": [
+     "premonicion",
+     "miedo"
+    ]
+   },
+   {
+    "id": "gTMBXIOtgNE",
+    "title": "Fear Is Breathed Here - The Spawn",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "La progenie: episodio de Aquí se Respira el Miedo sobre entidades que se manifiestan a través de personas vulnerables. Lost media encontrado.",
+    "tags": [
+     "entidades",
+     "miedo"
+    ]
+   },
+   {
+    "id": "sSP0JbUw9A4",
+    "title": "Fear Breathes Here - The Intruder",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "El intruso: una historia de presencias inexplicables en el hogar. Episodio de la serie de terror documental de Canal Infinito.",
+    "tags": [
+     "intruso",
+     "casa"
+    ]
+   },
+   {
+    "id": "HlaP90_ZhUE",
+    "title": "Fear Is in the Air - The Return",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "El regreso: episodio que documenta el retorno de entidades a lugares donde ya habían sido reportadas. Con Juan Ramón Saenz.",
+    "tags": [
+     "entidades",
+     "regreso"
+    ]
+   },
+   {
+    "id": "l_XdR1pGycw",
+    "title": "Here the Fear is Breathed - The Shadows",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2026-07-13",
+    "desc": "Las sombras: documental completo sobre el fenómeno de las sombras como entidades paranormales. Una investigación profunda de Juan Ramón Saenz.",
+    "tags": [
+     "sombras",
+     "miedo"
+    ]
+   },
+   {
+    "id": "hWTcHLQ5iwI",
+    "title": "Neopilates - Serie Completa (+3 HORAS)",
+    "programa": "Neopilates",
+    "progId": "neopilates",
+    "pub": "2026-05-01",
+    "desc": "Serie completa de Neopilates transmitida en Canal Infinito. Más de 3 horas de contenido de ejercicios y bienestar recuperado de cintas VHS originales.",
+    "tags": [
+     "ejercicio",
+     "bienestar",
+     "serie"
+    ]
+   },
+   {
+    "id": "KwAhblgi5Rc",
+    "title": "Naturalmente YOGA - Serie Completa",
+    "programa": "Naturalmente Yoga",
+    "progId": "naturalmente-yoga",
+    "pub": "2026-02-01",
+    "desc": "Serie completa de Naturalmente Yoga de Canal Infinito. Una hora y media de prácticas de yoga y meditación guiadas.",
+    "tags": [
+     "yoga",
+     "meditacion",
+     "serie"
+    ]
+   },
+   {
+    "id": "d4nuG5JHeWw",
+    "title": "Tantra - The Yoga of Love (Short)",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2026-06-01",
+    "desc": "Corto documental sobre Tantra: el yoga del amor. Una introducción a las prácticas tántricas desde la perspectiva de Canal Infinito.",
+    "tags": [
+     "tantra",
+     "yoga"
+    ]
+   },
+   {
+    "id": "74UFl2R89LU",
+    "title": "Freemasons: Mystery and Power - Chapter III",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-02-05",
+    "desc": "Tercer capítulo del documental sobre los masones. Análisis profundo de rituales y la influencia de la hermandad secreta más poderosa.",
+    "tags": [
+     "masones",
+     "sociedad-secreta"
+    ]
+   },
+   {
+    "id": "EsrrljAJ9s8",
+    "title": "Is there extraterrestrial life? INFINITE CHANNEL",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2026-01-29",
+    "desc": "Documental que explora la gran pregunta: ¿hay vida extraterrestre? Una mirada a la evidencia y testimonios más impactantes recopilados por Canal Infinito.",
+    "tags": [
+     "ovnis",
+     "extraterrestre"
+    ]
+   },
+   {
+    "id": "EtpIPxSzcvg",
+    "title": "Masones: Misterio y Poder Capítulo II",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-01-19",
+    "desc": "Segunda parte del documental sobre sociedades secretas masónicas. Rituales, simbolismos y la influencia histórica de la masonería.",
+    "tags": [
+     "masones",
+     "sociedad-secreta"
+    ]
+   },
+   {
+    "id": "I8N1Zetmq1o",
+    "title": "Registros Sumerios del Planeta X",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2026-01-12",
+    "desc": "Exploración de los antiguos registros sumerios y su conexión con Nibiru, el misterioso Planeta X. Material perdido recuperado en VHS.",
+    "tags": [
+     "sumerios",
+     "planeta-x",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "COjend2PDyo",
+    "title": "Masones: Misterio y Poder - Capitulo I",
+    "programa": "Masones: Misterio y Poder",
+    "progId": "masones",
+    "pub": "2026-01-05",
+    "desc": "Primer capítulo de la trilogía documental sobre los masones. Los orígenes, símbolos y el poder oculto de la hermandad masónica.",
+    "tags": [
+     "masones",
+     "poder"
+    ]
+   },
+   {
+    "id": "dmt_Rp5C50o",
+    "title": "Grandes misterios de la Historia (Podcast)",
+    "programa": "Grandes Misterios",
+    "progId": "grandes-misterios",
+    "pub": "2025-09-19",
+    "desc": "Podcast que explora los enigmas más fascinantes de la historia: civilizaciones perdidas, eventos inexplicables y misterios sin resolver.",
+    "tags": [
+     "historia",
+     "misterio",
+     "podcast"
+    ]
+   },
+   {
+    "id": "qjImMMxxKR0",
+    "title": "La Historia Secreta de Bogotá",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2025-06-11",
+    "desc": "Los secretos ocultos de la capital colombiana. Leyendas urbanas, historias olvidadas y misterios que guardan las calles de Bogotá.",
+    "tags": [
+     "bogota",
+     "historia",
+     "colombia"
+    ]
+   },
+   {
+    "id": "C4DAdElt0gE",
+    "title": "Cortos del Canal Infinito #2",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2025-03-28",
+    "desc": "Segunda compilación de cortos y fragmentos recuperados de Canal Infinito. Piezas de lost media parcialmente encontradas que vuelven a la luz.",
+    "tags": [
+     "compilacion",
+     "cortos"
+    ]
+   },
+   {
+    "id": "ct9sJPpxPH8",
+    "title": "Cortos del Canal Infinito #1",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2025-02-28",
+    "desc": "Compilación de cortos y piezas breves de Canal Infinito que estaban parcialmente perdidas. Material invaluable para coleccionistas de lost media.",
+    "tags": [
+     "compilacion",
+     "cortos"
+    ]
+   },
+   {
+    "id": "3cK1ZJWmrQQ",
+    "title": "Fuera de Ruta - Cultura Chichimeca",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2025-01-31",
+    "desc": "Exploración de la Cultura Chichimeca en Chihuahua. Un viaje a las raíces indígenas del norte de México a través de Canal Infinito.",
+    "tags": [
+     "mexico",
+     "chihuahua",
+     "cultura"
+    ]
+   },
+   {
+    "id": "b2mQKhGG2sI",
+    "title": "Fuera de Ruta - Compilación de Cortos",
+    "programa": "Fuera de Ruta",
+    "progId": "fuera-de-ruta",
+    "pub": "2025-01-15",
+    "desc": "Compilación de cortos del programa Fuera de Ruta. Recorriendo los lugares más remotos y fascinantes del continente.",
+    "tags": [
+     "viajes",
+     "compilacion"
+    ]
+   },
+   {
+    "id": "kxMFslJivHg",
+    "title": "Aquí se Respira el Miedo - Naranja Dulce",
+    "programa": "Aquí se Respira el Miedo",
+    "progId": "aqui-se-respira-el-miedo",
+    "pub": "2025-01-10",
+    "desc": "Único capítulo encontrado de esta serie de terror: Naranja Dulce Limón Partido. Un escalofriante relato de Juan Ramón Saenz.",
+    "tags": [
+     "miedo",
+     "terror",
+     "lost-media"
+    ]
+   },
+   {
+    "id": "FDXS3jIRWp0",
+    "title": "El Misterio de la Primera Navidad",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-12-20",
+    "desc": "Documental que investiga el verdadero origen de la Navidad, sus símbolos paganos y la historia detrás de la celebración más universal.",
+    "tags": [
+     "navidad",
+     "historia",
+     "religion"
+    ]
+   },
+   {
+    "id": "H-l4RR1m5pQ",
+    "title": "El Experimento Philadelphia",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-12-15",
+    "desc": "El legendario experimento naval de 1943 que supuestamente hizo invisible un barco completo. Una investigación de Canal Infinito.",
+    "tags": [
+     "experimento",
+     "militar",
+     "consipracion"
+    ]
+   },
+   {
+    "id": "EROZrNnmCYU",
+    "title": "OVNIS sobre Bogotá - 11 Nov 2024",
+    "programa": "Cortos Infinito",
+    "progId": "cortos-infinito",
+    "pub": "2024-11-11",
+    "desc": "Avistamiento OVNI reportado sobre Bogotá, Colombia. Imágenes y análisis de este fenómeno ocurrido en plena capital colombiana.",
+    "tags": [
+     "ovnis",
+     "bogota",
+     "colombia"
+    ]
+   },
+   {
+    "id": "Ibw0-RIH02Q",
+    "title": "Cerca de la Muerte",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-11-01",
+    "desc": "Experiencias cercanas a la muerte: testimonios de personas que estuvieron al borde de la muerte y regresaron para contar su historia.",
+    "tags": [
+     "muerte",
+     "ecm",
+     "experiencias"
+    ]
+   },
+   {
+    "id": "xK51Pzu5YNE",
+    "title": "Misterios de Marte",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-10-15",
+    "desc": "Los enigmas del planeta rojo: estructuras, supuestas ruinas y evidencia de vida pasada en Marte. Documental de Canal Infinito.",
+    "tags": [
+     "marte",
+     "ovnis",
+     "espacio"
+    ]
+   },
+   {
+    "id": "cZKMRstQVDY",
+    "title": "El Misterio del Proyecto HAARP",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-10-01",
+    "desc": "Investigación sobre HAARP, el polémico programa de investigación ionosférica. ¿Arma climática o estudio científico?",
+    "tags": [
+     "haarp",
+     "conspiracion",
+     "ciencia"
+    ]
+   },
+   {
+    "id": "OGJMmzjKfOc",
+    "title": "Apariciones Marianas en Venezuela",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-09-15",
+    "desc": "Documental sobre las apariciones de la Virgen María reportadas en Venezuela. Fe, milagros y fenómenos inexplicables.",
+    "tags": [
+     "religion",
+     "venezuela",
+     "apariciones"
+    ]
+   },
+   {
+    "id": "rouETlXgHx4",
+    "title": "Misterios Naturales: La Fuerza Vital Humana",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-09-01",
+    "desc": "Exploración de la fuerza vital que habita en cada ser humano. Energías, chakras y el poder oculto del cuerpo.",
+    "tags": [
+     "energia",
+     "vital",
+     "mente"
+    ]
+   },
+   {
+    "id": "EHYVkS4o0So",
+    "title": "El Misterio de los Rollos del Mar Muerto",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-08-15",
+    "desc": "Los antiguos pergaminos descubiertos en Qumrán: su contenido, su significado y los secretos que aún guardan sobre los orígenes del cristianismo.",
+    "tags": [
+     "rollos",
+     "mar-muerto",
+     "religion"
+    ]
+   },
+   {
+    "id": "Qrdas2nzum0",
+    "title": "La Vida Desconocida de Jesús",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-08-01",
+    "desc": "Los años perdidos de Jesús de Nazaret. Evidencias de su vida en la India y el Tíbet antes de su ministerio público.",
+    "tags": [
+     "jesus",
+     "religion",
+     "historia"
+    ]
+   },
+   {
+    "id": "TpJkVc6IhV8",
+    "title": "Movimiento Raeliano y clonación",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-07-15",
+    "desc": "El movimiento raeliano y sus controvertidas afirmaciones sobre la clonación humana. Creado por extraterrestres según su fundador.",
+    "tags": [
+     "raeliano",
+     "clonacion",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "VV1pbuRzgK0",
+    "title": "Latinoamérica: Historias Perdidas - Siete Luminarias",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-07-01",
+    "desc": "El país de las siete luminarias: exploración de los misterios y leyendas de los lugares sagrados de Latinoamérica.",
+    "tags": [
+     "latinoamerica",
+     "misterio",
+     "leyendas"
+    ]
+   },
+   {
+    "id": "jjkFWb4hONU",
+    "title": "La Verdadera Historia del Exorcista",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-06-15",
+    "desc": "Detrás de la película: el caso real de posesión demoníaca que inspiró El Exorcista. Una investigación de Canal Infinito.",
+    "tags": [
+     "exorcista",
+     "posesion",
+     "demonio"
+    ]
+   },
+   {
+    "id": "1Y3fCWLdOw8",
+    "title": "En Busca de Drácula",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-06-01",
+    "desc": "Viaje a Transilvania en busca del verdadero Drácula: Vlad Tepes, el empalador. Historia, leyenda y mito se entrelazan.",
+    "tags": [
+     "dracula",
+     "vampiros",
+     "transilvania"
+    ]
+   },
+   {
+    "id": "FvarFkCfKKg",
+    "title": "El Salvador - Documental",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-05-15",
+    "desc": "Documental sobre El Salvador: su historia, cultura y misterios. Un recorrido por el corazón de Centroamérica.",
+    "tags": [
+     "el-salvador",
+     "centroamerica",
+     "documental"
+    ]
+   },
+   {
+    "id": "BDyvleFJHOc",
+    "title": "Ángeles - Documental Producción Original",
+    "programa": "Producción Original Infinito",
+    "progId": "produccion-original",
+    "pub": "2024-05-01",
+    "desc": "Producción original de Canal Infinito sobre los ángeles: jerarquías celestiales, apariciones y su papel en las distintas religiones.",
+    "tags": [
+     "angeles",
+     "religion",
+     "produccion-original"
+    ]
+   },
+   {
+    "id": "Q7ZI91UAz7o",
+    "title": "¿Qué pasa después de la Muerte?",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-04-15",
+    "desc": "Las teorías más fascinantes sobre la vida después de la muerte. Experiencias cercanas, reencarnación y testimonios.",
+    "tags": [
+     "muerte",
+     "reencarnacion",
+     "espiritu"
+    ]
+   },
+   {
+    "id": "9bRrZ5rIltw",
+    "title": "TANTRA: el yoga del amor - El Orgasmo",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2024-04-01",
+    "desc": "Serie de TV sobre Tantra: el yoga del amor. Este episodio explora el orgasmo como experiencia espiritual y trascendental.",
+    "tags": [
+     "tantra",
+     "yoga",
+     "sexualidad"
+    ]
+   },
+   {
+    "id": "iZZYj3bNOBc",
+    "title": "Criaturas Fantásticas - Gatos Míticos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-03-15",
+    "desc": "Los gatos a través de la historia: dioses en Egipto, compañeros de brujas y criaturas místicas. Un documental felino de Canal Infinito.",
+    "tags": [
+     "gatos",
+     "mitologia",
+     "animales"
+    ]
+   },
+   {
+    "id": "gQSDe4scmWo",
+    "title": "La Secta Heavens Gate",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2024-03-01",
+    "desc": "La historia prohibida de la secta Heavens Gate y su suicidio colectivo para alcanzar una nave extraterrestre. Impactante documental.",
+    "tags": [
+     "secta",
+     "heavens-gate",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "nr4KPf2fbqA",
+    "title": "THE FEARMAKERS: Texas Chainsaw Massacre",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2024-02-15",
+    "desc": "Serie A a la Z del Horror con Clive Barker: La masacre de Texas. Detrás de cámaras de la película que redefinió el terror.",
+    "tags": [
+     "horror",
+     "cine",
+     "clive-barker"
+    ]
+   },
+   {
+    "id": "Lo_E0vg4Un0",
+    "title": "Expedición: Historia de Dos Océanos",
+    "programa": "Expedición",
+    "progId": "expedicion",
+    "pub": "2024-02-01",
+    "desc": "Una travesía única conectando dos océanos. Naturaleza, aventura y descubrimiento en este documental de Canal Infinito.",
+    "tags": [
+     "expedicion",
+     "naturaleza",
+     "viaje"
+    ]
+   },
+   {
+    "id": "0aDXC8-rC94",
+    "title": "Latinoamérica: Historias Perdidas - Cosechas Gigantes",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-01-15",
+    "desc": "Frutas y verduras gigantes: fenómeno natural o intervención desconocida. Un misterio agrícola en Latinoamérica.",
+    "tags": [
+     "latinoamerica",
+     "naturaleza",
+     "misterio"
+    ]
+   },
+   {
+    "id": "4eBhtrp4mds",
+    "title": "Latinoamérica: Historias Perdidas - OVNIS II",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2024-01-01",
+    "desc": "Segunda parte de los avistamientos OVNI en Latinoamérica. Casos documentados y testimonios impactantes.",
+    "tags": [
+     "ovnis",
+     "latinoamerica",
+     "avistamientos"
+    ]
+   },
+   {
+    "id": "VCbM9k1w6xY",
+    "title": "2PAC esta Vivo?",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-12-15",
+    "desc": "La teoría de la conspiración sobre la falsa muerte de Tupac Shakur. Evidencias y testimonios que cuestionan su asesinato.",
+    "tags": [
+     "2pac",
+     "conspiracion",
+     "musica"
+    ]
+   },
+   {
+    "id": "ioYJWaxMzOc",
+    "title": "Bob Marley y la Mística Rastafari",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-12-01",
+    "desc": "La espiritualidad rastafari a través de la vida y música de Bob Marley. Un viaje documental único.",
+    "tags": [
+     "bob-marley",
+     "rastafari",
+     "musica"
+    ]
+   },
+   {
+    "id": "3z6DSQQO8vg",
+    "title": "Benjamín Solari Parravincini",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2023-11-15",
+    "desc": "Las profecías del vidente argentino Benjamín Solari Parravincini. Sus dibujos premonitorios y predicciones cumplidas.",
+    "tags": [
+     "profecia",
+     "parravincini",
+     "vidente"
+    ]
+   },
+   {
+    "id": "sXbYlAwoQaE",
+    "title": "El Futuro de la Tierra: La Profecía Infinita",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2008",
+    "desc": "Documental de 2008 que reúne las profecías más impactantes sobre el futuro de la humanidad y el planeta.",
+    "tags": [
+     "profecia",
+     "futuro",
+     "tierra"
+    ]
+   },
+   {
+    "id": "Nymnh2MxNmw",
+    "title": "Las 7 Profecías Mayas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2007",
+    "desc": "Las profecías del calendario maya: el fin del mundo, los cambios planetarios y la transformación de la conciencia.",
+    "tags": [
+     "mayas",
+     "profecia",
+     "2012"
+    ]
+   },
+   {
+    "id": "PpEDkUKQSkc",
+    "title": "Tarot: La Rueda de la Vida",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2006",
+    "desc": "Especial completo de Canal Infinito sobre el tarot: la rueda de la vida, sus arcanos y el arte de la adivinación.",
+    "tags": [
+     "tarot",
+     "adivinacion",
+     "esoterico"
+    ]
+   },
+   {
+    "id": "1vutWV8UKHQ",
+    "title": "A a la Z del Horror con Clive Barker",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2005",
+    "desc": "El maestro del horror Clive Barker guía este recorrido por la historia del terror en el cine y la literatura. Capítulo completo en 4K.",
+    "tags": [
+     "clive-barker",
+     "horror",
+     "cine"
+    ]
+   },
+   {
+    "id": "w5WkSz4u7P0",
+    "title": "Rompiendo Límites: Documental Raro",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2005",
+    "desc": "Un documental poco común de Canal Infinito que explora los límites de la mente humana y fenómenos extraordinarios.",
+    "tags": [
+     "mente",
+     "limites",
+     "documental"
+    ]
+   },
+   {
+    "id": "iUgYhJ05VFE",
+    "title": "A a la Z del Horror: Zombies",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2005",
+    "desc": "Clive Barker explora el fenómeno zombie: del vudú haitiano a Walking Dead. La historia de los muertos vivientes.",
+    "tags": [
+     "zombies",
+     "clive-barker",
+     "horror"
+    ]
+   },
+   {
+    "id": "nyzFM1orWYw",
+    "title": "Juegos de Rol en el Canal Infinito",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "desc": "Documental sobre el mundo de los juegos de rol: Dragones y Mazmorras, el satanismo y la controversia en los años 90.",
+    "tags": [
+     "rol",
+     "dungeons-dragons",
+     "juegos"
+    ]
+   },
+   {
+    "id": "qay6tDJkuBM",
+    "title": "Latinoamérica: Historias Perdidas - Chamanes",
+    "programa": "Latinoamérica: Historias Perdidas",
+    "progId": "latinoamerica-historias-perdidas",
+    "pub": "2004",
+    "desc": "Los chamanes y sus misterios ocultos: rituales ancestrales, plantas sagradas y la conexión con el mundo espiritual.",
+    "tags": [
+     "chamanes",
+     "espiritualidad",
+     "latinoamerica"
+    ]
+   },
+   {
+    "id": "eL9v3LNapWk",
+    "title": "Una Posibilidad: Prem Rawat",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "desc": "Documental sobre Prem Rawat (Maharaji) y su mensaje de paz interior. Una búsqueda espiritual a través de Canal Infinito.",
+    "tags": [
+     "prem-rawat",
+     "espiritualidad",
+     "paz"
+    ]
+   },
+   {
+    "id": "hsamYHp76aY",
+    "title": "Los Apóstoles",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2004",
+    "desc": "Documental completo sobre los doce apóstoles de Jesús: sus vidas, ministerios y la propagación del cristianismo.",
+    "tags": [
+     "apostoles",
+     "religion",
+     "historia"
+    ]
+   },
+   {
+    "id": "TvJTWpn7mWQ",
+    "title": "Secretos de la Hipnosis con Paul McKena",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "El poder de la hipnosis revelado por Paul McKenna. Técnicas, historia y el potencial oculto de la mente.",
+    "tags": [
+     "hipnosis",
+     "mente",
+     "paul-mckenna"
+    ]
+   },
+   {
+    "id": "gBGL7Dg2_Jc",
+    "title": "El Zen en las Cárceles",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Impactante documental sobre la práctica del Zen en prisiones. Cómo la meditación transforma la vida de los reclusos.",
+    "tags": [
+     "zen",
+     "prision",
+     "meditacion"
+    ]
+   },
+   {
+    "id": "TbDydZrzepc",
+    "title": "Área 51 Revelada",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "La verdadera historia del Área 51: testimonios de exempleados, evidencias de tecnología invertida y el secreto mejor guardado de EE.UU.",
+    "tags": [
+     "area-51",
+     "ovnis",
+     "gobierno"
+    ]
+   },
+   {
+    "id": "WeitAV9az9k",
+    "title": "Cerebros Místicos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "La neurociencia de la experiencia mística: qué sucede en el cerebro durante la meditación, el éxtasis y las experiencias espirituales.",
+    "tags": [
+     "cerebro",
+     "misticismo",
+     "neurociencia"
+    ]
+   },
+   {
+    "id": "CflIljmzT4o",
+    "title": "Ed Gein: El Monstruo de la Vida Real",
+    "programa": "A a la Z del Horror",
+    "progId": "a-a-la-z-del-horror",
+    "pub": "2003",
+    "desc": "Clive Barker presenta la historia de Ed Gein, el asesino real que inspiró a Psicosis, La Masacre de Texas y El Silencio de los Inocentes.",
+    "tags": [
+     "ed-gein",
+     "asesino",
+     "clive-barker"
+    ]
+   },
+   {
+    "id": "EONPkqQOTYA",
+    "title": "El Enigma de los Cielos",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Fenómenos celestes inexplicables: luces, formaciones y presencias en el cielo que desafían toda explicación científica.",
+    "tags": [
+     "cielos",
+     "fenomenos",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "GvVc-DMnJuM",
+    "title": "Uritorco: El Enigma Mágico",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "El Cerro Uritorco en Córdoba, Argentina: energía mística, avistamientos OVNI y leyendas que lo convierten en un lugar único.",
+    "tags": [
+     "uritorco",
+     "argentina",
+     "energia"
+    ]
+   },
+   {
+    "id": "19Dwxwql7ng",
+    "title": "Parravicini: Misterios Revelados",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Más profecías de Benjamín Solari Parravicini reveladas. Sus dibujos proféticos analizados en detalle por Canal Infinito.",
+    "tags": [
+     "parravincini",
+     "profecia",
+     "vidente"
+    ]
+   },
+   {
+    "id": "fFkCv52XVfc",
+    "title": "Magia del Amor: Magia Roja",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "desc": "Documental sobre magia roja, amarres y hechizos de amor. Las tradiciones esotéricas más poderosas para el amor.",
+    "tags": [
+     "magia",
+     "amor",
+     "esoterico"
+    ]
+   },
+   {
+    "id": "JLbdMyyAiro",
+    "title": "En Busca del Karma - Machu Picchu 2003",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "Viaje espiritual a Machu Picchu en busca del karma. Una travesía por los lugares sagrados de los incas.",
+    "tags": [
+     "karma",
+     "machu-picchu",
+     "espiritual"
+    ]
+   },
+   {
+    "id": "0ongfuCjrO4",
+    "title": "Mayas: Los Dueños del Tiempo",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "La fascinante civilización maya: su calendario, conocimientos astronómicos y la concepción del tiempo como ninguna otra cultura.",
+    "tags": [
+     "mayas",
+     "tiempo",
+     "civilizacion"
+    ]
+   },
+   {
+    "id": "kUlg7CLRvvY",
+    "title": "Tantra y Kamasutra: El yoga del Placer",
+    "programa": "Tantra",
+    "progId": "tantra",
+    "pub": "2004",
+    "desc": "Serie de TV de Canal Infinito sobre Tantra y Kamasutra. La unión del placer físico con la elevación espiritual.",
+    "tags": [
+     "tantra",
+     "kamasutra",
+     "sexualidad"
+    ]
+   },
+   {
+    "id": "_50ubsnATl4",
+    "title": "El Secreto de los Templarios",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "desc": "Los Caballeros Templarios: su tesoro perdido, sus rituales secretos y su influencia en la historia medieval.",
+    "tags": [
+     "templarios",
+     "medieval",
+     "misterio"
+    ]
+   },
+   {
+    "id": "i4DI5KIkO-Q",
+    "title": "OVNIS: El Enigma Pendiente",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2002",
+    "desc": "Compilación de la Revista Conozca Más: el fenómeno OVNI como el enigma más importante sin resolver de la humanidad.",
+    "tags": [
+     "ovnis",
+     "conozca-mas",
+     "enigma"
+    ]
+   },
+   {
+    "id": "Enlt-H6y5as",
+    "title": "El Misterio de los Estigmas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2000",
+    "desc": "Personas que desarrollan las heridas de la crucifixión sin causa aparente. Un fenómeno místico investigado por Canal Infinito.",
+    "tags": [
+     "estigmas",
+     "religion",
+     "misterio"
+    ]
+   },
+   {
+    "id": "ZXT39gNXoZA",
+    "title": "Maratón El Día Menos Pensado",
+    "programa": "El Día Menos Pensado",
+    "progId": "el-dia-menos-pensado",
+    "pub": "2000",
+    "desc": "Maratón de 3 horas del programa El Día Menos Pensado. Un viaje a través de los temas más fascinantes de Canal Infinito.",
+    "tags": [
+     "maraton",
+     "compilacion",
+     "misterio"
+    ]
+   },
+   {
+    "id": "4D-_bWHpsYs",
+    "title": "Serie de TV OVNI - Análisis Completo",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2000",
+    "desc": "Análisis completo de una serie de TV sobre OVNIs emitida en Canal Infinito. Casos, testigos y evidencia.",
+    "tags": [
+     "ovnis",
+     "serie",
+     "tv"
+    ]
+   },
+   {
+    "id": "wNTZIIT5UkQ",
+    "title": "Contacto con el Misterio: El Caso Pastén",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2003",
+    "desc": "El escalofriante caso Pastén: una historia de posesión, exorcismo y fenómenos paranormales en Chile.",
+    "tags": [
+     "pasten",
+     "chile",
+     "posesion"
+    ]
+   },
+   {
+    "id": "BbF0_-LsFkk",
+    "title": "Revista AÑO CERO - Serie Completa (+11 HORAS)",
+    "programa": "Revista Año Cero",
+    "progId": "revista-ano-cero",
+    "pub": "1999",
+    "desc": "Serie completa de Revista Año Cero: más de 11 horas de misterios del pasado, civilizaciones perdidas y arqueología prohibida.",
+    "tags": [
+     "año-cero",
+     "arqueologia",
+     "historia",
+     "serie"
+    ]
+   },
+   {
+    "id": "Jw6GN7i8mRA",
+    "title": "Historias de Fantasmas con Patrick Mcnee",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "1997",
+    "desc": "El actor Patrick Mcnee narra historias reales de fantasmas y apariciones. Un clásico documental de Canal Infinito.",
+    "tags": [
+     "fantasmas",
+     "patrick-mcnee",
+     "paranormal"
+    ]
+   },
+   {
+    "id": "qMsGkMmqsnk",
+    "title": "El Mundo de las Vidas Pasadas",
+    "programa": "Documental Infinito",
+    "progId": "documental-infinito",
+    "pub": "2001",
+    "desc": "La hipnosis regresiva y las vidas pasadas: personas que recuerdan sus existencias anteriores bajo hipnosis.",
+    "tags": [
+     "vidas-pasadas",
+     "reencarnacion",
+     "hipnosis"
+    ]
+   },
+   {
+    "id": "QnRPgn_uBvc",
+    "title": "Travesía Infinito: Buenos Aires a Machu Picchu",
+    "programa": "Travesía Infinito",
+    "progId": "travesia-infinito",
+    "pub": "2003",
+    "desc": "Un viaje épico desde Buenos Aires hasta Machu Picchu. Descubriendo los misterios y maravillas del camino.",
+    "tags": [
+     "viaje",
+     "machu-picchu",
+     "travesia"
+    ]
+   },
+   {
+    "id": "Oyc6Zu6WEic",
+    "title": "JJ Benítez: Zona Infinito",
+    "programa": "Zona Infinito",
+    "progId": "zona-infinito",
+    "pub": "2002",
+    "desc": "El reconocido investigador JJ Benítez presenta Zona Infinito: una mirada a sus investigaciones sobre OVNIs y fenómenos paranormales.",
+    "tags": [
+     "jj-benitez",
+     "zona-infinito",
+     "ovnis"
+    ]
+   },
+   {
+    "id": "btjyGln5eLE",
+    "title": "Encuentros Paranormales (1996) - Serie Completa",
+    "programa": "Encuentros Paranormales",
+    "progId": "encuentros-paranormales",
+    "pub": "1996",
+    "desc": "Serie completa de 1996 sobre encuentros paranormales. Más de una hora de casos documentados y testimonios impactantes.",
+    "tags": [
+     "paranormal",
+     "encuentros",
+     "serie"
+    ]
+   }
+  ],
+  "programInfo": {
+   "paranormal-guide": {
+    "name": "Paranormal Guide",
+    "desc": "Serie que documenta investigaciones paranormales con equipo técnico especializado."
+   },
+   "ufo-infinity": {
+    "name": "UFO Infinity",
+    "desc": "Serie dedicada al fenómeno OVNI con entrevistas a testigos e investigadores."
+   },
+   "fuera-de-ruta": {
+    "name": "Fuera de Ruta",
+    "desc": "Programa de viajes que recorre los destinos más remotos y fascinantes de Latinoamérica."
+   },
+   "casa-infinito": {
+    "name": "Casa Infinito",
+    "desc": "Serie que investiga casos reales de casas embrujadas y actividad poltergeist."
+   },
+   "aqui-se-respira-el-miedo": {
+    "name": "Aquí se Respira el Miedo",
+    "desc": "Serie de terror documental conducida por Juan Ramón Saenz sobre entidades y fenómenos inexplicables."
+   },
+   "neopilates": {
+    "name": "Neopilates",
+    "desc": "Programa de ejercicios y bienestar físico transmitido en Canal Infinito."
+   },
+   "naturalmente-yoga": {
+    "name": "Naturalmente Yoga",
+    "desc": "Serie dedicada a la práctica del yoga y la meditación."
+   },
+   "tantra": {
+    "name": "Tantra",
+    "desc": "Serie que explora las enseñanzas del Tantra y el Kamasutra."
+   },
+   "masones": {
+    "name": "Masones: Misterio y Poder",
+    "desc": "Trilogía documental sobre los secretos de la masonería."
+   },
+   "documental-infinito": {
+    "name": "Documental Infinito",
+    "desc": "Documentales emitidos por Canal Infinito sobre misterios, ciencia, historia y fenómenos paranormales."
+   },
+   "grandes-misterios": {
+    "name": "Grandes Misterios",
+    "desc": "Podcast que explora los enigmas más fascinantes de la historia."
+   },
+   "cortos-infinito": {
+    "name": "Cortos Infinito",
+    "desc": "Compilaciones de piezas breves y fragmentos recuperados de Canal Infinito."
+   },
+   "latinoamerica-historias-perdidas": {
+    "name": "Latinoamérica: Historias Perdidas",
+    "desc": "Serie documental que recorre Latinoamérica descubriendo historias sorprendentes y olvidadas."
+   },
+   "a-a-la-z-del-horror": {
+    "name": "A a la Z del Horror",
+    "desc": "Serie con Clive Barker sobre la historia del horror en el cine y la literatura."
+   },
+   "produccion-original": {
+    "name": "Producción Original Infinito",
+    "desc": "Producciones originales de Canal Infinito con investigación propia."
+   },
+   "expedicion": {
+    "name": "Expedición",
+    "desc": "Serie de aventura y exploración por los lugares más remotos del planeta."
+   },
+   "el-dia-menos-pensado": {
+    "name": "El Día Menos Pensado",
+    "desc": "Programa emblemático sobre misterio, ciencia y actualidad."
+   },
+   "revista-ano-cero": {
+    "name": "Revista Año Cero",
+    "desc": "Serie sobre civilizaciones perdidas, arqueología prohibida y grandes enigmas."
+   },
+   "travesia-infinito": {
+    "name": "Travesía Infinito",
+    "desc": "Programa de viajes y aventura por rutas emblemáticas de Latinoamérica."
+   },
+   "zona-infinito": {
+    "name": "Zona Infinito",
+    "desc": "Programa conducido por JJ Benítez sobre OVNIs y parapsicología."
+   },
+   "encuentros-paranormales": {
+    "name": "Encuentros Paranormales",
+    "desc": "Serie clásica de 1996 sobre encuentros con lo desconocido."
+   }
+  },
+  "programColors": {
+   "paranormal-guide": "#e0c96b",
+   "ufo-infinity": "#6bc96b",
+   "fuera-de-ruta": "#6b6be0",
+   "casa-infinito": "#6bb5e0",
+   "aqui-se-respira-el-miedo": "#c9c96b",
+   "neopilates": "#b5c96b",
+   "naturalmente-yoga": "#c98e6b",
+   "tantra": "#8ec96b",
+   "masones": "#6be08e",
+   "documental-infinito": "#c96bb5",
+   "grandes-misterios": "#6bc9b5",
+   "cortos-infinito": "#7ec96b",
+   "latinoamerica-historias-perdidas": "#8e6be0",
+   "a-a-la-z-del-horror": "#c9a84c",
+   "produccion-original": "#c96b8e",
+   "expedicion": "#b56bc9",
+   "el-dia-menos-pensado": "#e0a06b",
+   "revista-ano-cero": "#6bc9c9",
+   "travesia-infinito": "#c96be0",
+   "zona-infinito": "#c97b3a",
+   "encuentros-paranormales": "#6be0c9"
+  },
+  "progColorsMap": {
+   "paranormal-guide": "#e0c96b",
+   "ufo-infinity": "#6bc96b",
+   "fuera-de-ruta": "#6b6be0",
+   "casa-infinito": "#6bb5e0",
+   "aqui-se-respira-el-miedo": "#c9c96b",
+   "neopilates": "#b5c96b",
+   "naturalmente-yoga": "#c98e6b",
+   "tantra": "#8ec96b",
+   "masones": "#6be08e",
+   "documental-infinito": "#c96bb5",
+   "grandes-misterios": "#6bc9b5",
+   "cortos-infinito": "#7ec96b",
+   "latinoamerica-historias-perdidas": "#8e6be0",
+   "produccion-original": "#c96b8e",
+   "a-a-la-z-del-horror": "#c9a84c",
+   "expedicion": "#b56bc9",
+   "el-dia-menos-pensado": "#e0a06b",
+   "revista-ano-cero": "#6bc9c9",
+   "travesia-infinito": "#c96be0",
+   "zona-infinito": "#c97b3a",
+   "encuentros-paranormales": "#6be0c9"
+  }
+ },
+ "tv.html": {
+  "progNames": {
+   "documental-infinito": "Documental Infinito",
+   "paranormal-guide": "Paranormal Guide",
+   "ufo-infinity": "UFO Infinity",
+   "off-the-beaten-path-fuera-de-ruta": "Off the Beaten Path / Fuera de Ruta",
+   "casa-infinito": "Casa Infinito",
+   "fear-is-breathed-here-aqu-se-respira-el-miedo": "Fear Is Breathed Here / Aquí se Respira el Miedo",
+   "fear-is-breathed-here": "Fear Is Breathed Here",
+   "aqu-se-respira-el-miedo": "Aquí se Respira el Miedo",
+   "neopilates": "Neopilates",
+   "naturalmente-yoga": "Naturalmente Yoga",
+   "tantra": "Tantra",
+   "masones-misterio-y-poder": "Masones: Misterio y Poder",
+   "grandes-misterios": "Grandes Misterios",
+   "cortos-infinito": "Cortos Infinito",
+   "fuera-de-ruta": "Fuera de Ruta",
+   "latinoam-rica-historias-perdidas": "Latinoamérica: Historias Perdidas",
+   "producci-n-original-infinito": "Producción Original Infinito",
+   "a-a-la-z-del-horror": "A a la Z del Horror",
+   "expedici-n": "Expedición",
+   "el-d-a-menos-pensado": "El Día Menos Pensado",
+   "revista-a-o-cero": "Revista Año Cero",
+   "traves-a-infinito": "Travesía Infinito",
+   "zona-infinito": "Zona Infinito",
+   "encuentros-paranormales": "Encuentros Paranormales"
+  },
+  "progColors": {
+   "documental-infinito": "#c96bb5",
+   "paranormal-guide": "#e0c96b",
+   "ufo-infinity": "#6bc96b",
+   "off-the-beaten-path-fuera-de-ruta": "#6b6be0",
+   "casa-infinito": "#6bb5e0",
+   "fear-is-breathed-here-aqu-se-respira-el-miedo": "#c9c96b",
+   "fear-is-breathed-here": "#6b8ec9",
+   "aqu-se-respira-el-miedo": "#e06b6b",
+   "neopilates": "#b5c96b",
+   "naturalmente-yoga": "#c98e6b",
+   "tantra": "#8ec96b",
+   "masones-misterio-y-poder": "#6be08e",
+   "grandes-misterios": "#6bc9b5",
+   "cortos-infinito": "#7ec96b",
+   "fuera-de-ruta": "#e06b8e",
+   "latinoam-rica-historias-perdidas": "#8e6be0",
+   "producci-n-original-infinito": "#c96b8e",
+   "a-a-la-z-del-horror": "#c9a84c",
+   "expedici-n": "#b56bc9",
+   "el-d-a-menos-pensado": "#e0a06b",
+   "revista-a-o-cero": "#6bc9c9",
+   "traves-a-infinito": "#c96be0",
+   "zona-infinito": "#c97b3a",
+   "encuentros-paranormales": "#6be0c9"
+  },
+  "catalog": [
+   {
+    "id": "dxR2_l0Hda8",
+    "t": "Paranormal Guide - Contact With the Beyond",
+    "prog": "paranormal-guide"
+   },
+   {
+    "id": "PX77NX7FAw0",
+    "t": "Paranormal Guide - Ghost Detection Device",
+    "prog": "paranormal-guide"
+   },
+   {
+    "id": "x_h1N4qg9AI",
+    "t": "Paranormal Guide - Haunted Pub",
+    "prog": "paranormal-guide"
+   },
+   {
+    "id": "5LjFbmMSVNc",
+    "t": "Paranormal Guide - Ghosts in the Stable",
+    "prog": "paranormal-guide"
+   },
+   {
+    "id": "rO-TfxIGd9s",
+    "t": "UFO Infinity - UFO Contact Stories",
+    "prog": "ufo-infinity"
+   },
+   {
+    "id": "8XBwkOhp5YU",
+    "t": "Off the Beaten Path - Chiapas",
+    "prog": "off-the-beaten-path-fuera-de-ruta"
+   },
+   {
+    "id": "A9zGGvraqvg",
+    "t": "INFINITE HOUSE - Venier Poltergeist Case",
+    "prog": "casa-infinito"
+   },
+   {
+    "id": "DxuLu0iWQFE",
+    "t": "Fear Is Breathed Here - Premonition",
+    "prog": "fear-is-breathed-here-aqu-se-respira-el-miedo"
+   },
+   {
+    "id": "gTMBXIOtgNE",
+    "t": "Fear Is Breathed Here - The Spawn",
+    "prog": "fear-is-breathed-here"
+   },
+   {
+    "id": "sSP0JbUw9A4",
+    "t": "Fear Breathes Here - The Intruder",
+    "prog": "aqu-se-respira-el-miedo"
+   },
+   {
+    "id": "HlaP90_ZhUE",
+    "t": "Fear Is in the Air - The Return",
+    "prog": "aqu-se-respira-el-miedo"
+   },
+   {
+    "id": "l_XdR1pGycw",
+    "t": "Here the Fear is Breathed - The Shadows",
+    "prog": "aqu-se-respira-el-miedo"
+   },
+   {
+    "id": "hWTcHLQ5iwI",
+    "t": "Neopilates - Serie Completa CANAL INFINITO VHS RIP",
+    "prog": "neopilates"
+   },
+   {
+    "id": "KwAhblgi5Rc",
+    "t": "Naturalmente YOGA - Serie Completa CANAL INFINITO",
+    "prog": "naturalmente-yoga"
+   },
+   {
+    "id": "d4nuG5JHeWw",
+    "t": "Tantra - The Yoga of Love (Short)",
+    "prog": "tantra"
+   },
+   {
+    "id": "74UFl2R89LU",
+    "t": "Freemasons: Mystery and Power - Chapter III",
+    "prog": "masones-misterio-y-poder"
+   },
+   {
+    "id": "EsrrljAJ9s8",
+    "t": "Is there extraterrestrial life? INFINITE CHANNEL",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "EtpIPxSzcvg",
+    "t": "Masones: Misterio y Poder Capítulo II",
+    "prog": "masones-misterio-y-poder"
+   },
+   {
+    "id": "I8N1Zetmq1o",
+    "t": "Canal Infinito - Registros Sumerios del Planeta X",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "COjend2PDyo",
+    "t": "Masones: Misterio y Poder - Capitulo I",
+    "prog": "masones-misterio-y-poder"
+   },
+   {
+    "id": "dmt_Rp5C50o",
+    "t": "Grandes misterios de la Historia (Podcast)",
+    "prog": "grandes-misterios"
+   },
+   {
+    "id": "qjImMMxxKR0",
+    "t": "La Historia Secreta de Bogotá (RIP VHS)",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "C4DAdElt0gE",
+    "t": "Cortos del Canal Infinito #2",
+    "prog": "cortos-infinito"
+   },
+   {
+    "id": "ct9sJPpxPH8",
+    "t": "Cortos del Canal Infinito (Parcialmente Encontrados)",
+    "prog": "cortos-infinito"
+   },
+   {
+    "id": "3cK1ZJWmrQQ",
+    "t": "Fuera de Ruta - La Cultura Chichimeca (Chihuahua)",
+    "prog": "fuera-de-ruta"
+   },
+   {
+    "id": "b2mQKhGG2sI",
+    "t": "Fuera de Ruta - Compilación de Cortos",
+    "prog": "fuera-de-ruta"
+   },
+   {
+    "id": "kxMFslJivHg",
+    "t": "Aquí se Respira el Miedo - Naranja Dulce Limón Partido",
+    "prog": "aqu-se-respira-el-miedo"
+   },
+   {
+    "id": "FDXS3jIRWp0",
+    "t": "EL MISTERIO de la primera NAVIDAD - Documental Infinito",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "H-l4RR1m5pQ",
+    "t": "EL EXPERIMENTO PHILADELPHIA - Documental Infinito",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "EROZrNnmCYU",
+    "t": "OVNIS sobre BOGOTÁ - 11 de Noviembre de 2024",
+    "prog": "cortos-infinito"
+   },
+   {
+    "id": "Ibw0-RIH02Q",
+    "t": "CERCA DE LA MUERTE - Documental Infinito",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "xK51Pzu5YNE",
+    "t": "Misterios de Marte - Documental Canal Infinito",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "cZKMRstQVDY",
+    "t": "El Misterio del Proyecto HAARP",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "OGJMmzjKfOc",
+    "t": "Apariciones Marianas en Venezuela",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "rouETlXgHx4",
+    "t": "Misterios Naturales: La Fuerza Vital Humana",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "EHYVkS4o0So",
+    "t": "El Misterio de Los Rollos del Mar Muerto",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "Qrdas2nzum0",
+    "t": "La Vida Desconocida de Jesús",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "TpJkVc6IhV8",
+    "t": "Movimiento Raeliano y clonación (Canal Infinito)",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "VV1pbuRzgK0",
+    "t": "Latinoamerica: Historias Perdidas - El Pais De las Siete Luminarias",
+    "prog": "latinoam-rica-historias-perdidas"
+   },
+   {
+    "id": "jjkFWb4hONU",
+    "t": "La verdadera Historia del Exorcista",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "1Y3fCWLdOw8",
+    "t": "En Busca de Drácula - Documental Completo",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "FvarFkCfKKg",
+    "t": "El Salvador - Documental Canal Infinito",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "BDyvleFJHOc",
+    "t": "Ángeles - Documental Canal Infinito (Producción Original)",
+    "prog": "producci-n-original-infinito"
+   },
+   {
+    "id": "Q7ZI91UAz7o",
+    "t": "¿Qué pasa después de la Muerte?",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "9bRrZ5rIltw",
+    "t": "TANTRA: el yoga del amor - El Orgasmo",
+    "prog": "tantra"
+   },
+   {
+    "id": "iZZYj3bNOBc",
+    "t": "Criaturas Fantásticas - Gatos Míticos",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "gQSDe4scmWo",
+    "t": "La historia de la Secta Heavens Gate",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "nr4KPf2fbqA",
+    "t": "THE FEARMAKERS: TEXAS CHAINSAW MASSACRE",
+    "prog": "a-a-la-z-del-horror"
+   },
+   {
+    "id": "Lo_E0vg4Un0",
+    "t": "Expedición: Historia de Dos Océanos",
+    "prog": "expedici-n"
+   },
+   {
+    "id": "0aDXC8-rC94",
+    "t": "Latinoamérica: Historias Perdidas - Cosechas Gigantes",
+    "prog": "latinoam-rica-historias-perdidas"
+   },
+   {
+    "id": "4eBhtrp4mds",
+    "t": "Latinoamérica: Historias Perdidas - OVNIS II Parte",
+    "prog": "latinoam-rica-historias-perdidas"
+   },
+   {
+    "id": "VCbM9k1w6xY",
+    "t": "2PAC esta Vivo? La verdad de P Diddy",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "ioYJWaxMzOc",
+    "t": "Bob Marley y la Mística Rastafari",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "3z6DSQQO8vg",
+    "t": "Benajmin Solari Parravincini - Documental",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "sXbYlAwoQaE",
+    "t": "El Futuro de la Tierra: La Profecía Infinita",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "Nymnh2MxNmw",
+    "t": "Las 7 Profecías mayas - Canal Infinito",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "PpEDkUKQSkc",
+    "t": "Tarot: La Rueda de la Vida",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "1vutWV8UKHQ",
+    "t": "A a la Z del Horror con Clive Barker",
+    "prog": "a-a-la-z-del-horror"
+   },
+   {
+    "id": "w5WkSz4u7P0",
+    "t": "Rompiendo Límites: El Canal Infinito en 4K",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "iUgYhJ05VFE",
+    "t": "A a la Z del Horror: Zombies y Muertos Vivientes",
+    "prog": "a-a-la-z-del-horror"
+   },
+   {
+    "id": "nyzFM1orWYw",
+    "t": "Juegos de Rol en el Canal Infinito",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "qay6tDJkuBM",
+    "t": "Latinoamérica: Historias Perdidas - Chamanes",
+    "prog": "latinoam-rica-historias-perdidas"
+   },
+   {
+    "id": "eL9v3LNapWk",
+    "t": "Una Posibilidad: Prem Rawat",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "hsamYHp76aY",
+    "t": "Los Apostoles - Documental Completo",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "TvJTWpn7mWQ",
+    "t": "Secretos de la Hipnosis con Paul McKena",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "gBGL7Dg2_Jc",
+    "t": "El Zen en las Cárceles",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "TbDydZrzepc",
+    "t": "Área 51 Revelada: La Verdadera Historia",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "WeitAV9az9k",
+    "t": "Cerebros Místicos",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "CflIljmzT4o",
+    "t": "Ed Gein: El Monstruo de la Vida Real",
+    "prog": "a-a-la-z-del-horror"
+   },
+   {
+    "id": "EONPkqQOTYA",
+    "t": "El Enigma de los Cielos",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "GvVc-DMnJuM",
+    "t": "Uritorco: El Enigma Mágico",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "19Dwxwql7ng",
+    "t": "Benjamín Solari Parravicini Misterios",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "fFkCv52XVfc",
+    "t": "Magia del Amor: Magia Roja y Amarres",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "JLbdMyyAiro",
+    "t": "En Busca del Karma - Machu Picchu (2003)",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "0ongfuCjrO4",
+    "t": "Mayas: Los Dueños del Tiempo",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "kUlg7CLRvvY",
+    "t": "Tantra y Kamasutra: El yoga del Placer",
+    "prog": "tantra"
+   },
+   {
+    "id": "_50ubsnATl4",
+    "t": "El Secreto de los Templarios",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "i4DI5KIkO-Q",
+    "t": "OVNIS: El Enigma Pendiente",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "Enlt-H6y5as",
+    "t": "El Misterio de los Estigmas",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "ZXT39gNXoZA",
+    "t": "Maratón de Misterios: El Día Menos Pensado",
+    "prog": "el-d-a-menos-pensado"
+   },
+   {
+    "id": "4D-_bWHpsYs",
+    "t": "Serie de TV OVNI en VHS",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "wNTZIIT5UkQ",
+    "t": "Contacto con el Misterio: El Caso Pastén",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "BbF0_-LsFkk",
+    "t": "Revista AÑO CERO - Misterios del pasado",
+    "prog": "revista-a-o-cero"
+   },
+   {
+    "id": "Jw6GN7i8mRA",
+    "t": "Historias de Fantasmas con Patrick Mcnee",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "qMsGkMmqsnk",
+    "t": "El Mundo de las Vidas Pasadas",
+    "prog": "documental-infinito"
+   },
+   {
+    "id": "QnRPgn_uBvc",
+    "t": "Travesía Infinito: Buenos Aires a Machu Picchu",
+    "prog": "traves-a-infinito"
+   },
+   {
+    "id": "Oyc6Zu6WEic",
+    "t": "JJ Benítez: Zona Infinito",
+    "prog": "zona-infinito"
+   },
+   {
+    "id": "btjyGln5eLE",
+    "t": "Encuentros Paranormales (1996) - Serie Completa",
+    "prog": "encuentros-paranormales"
+   }
+  ]
+ }
+}

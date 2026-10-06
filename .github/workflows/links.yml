@@ -1,0 +1,139 @@
+name: Auditoria de enlaces
+
+# Sondea los enlaces externos de la enciclopedia una vez al dia.
+# El runner de GitHub tiene internet normal (a diferencia de un entorno de
+# desarrollo restringido), asi que esto resuelve en parte los enlaces que no se
+# pudieron verificar a mano.
+#
+# NO falla el pipeline por enlaces caidos: informa abriendo un issue, porque un
+# 404 de un tercero no es una regresion nuestra y no debe bloquear el despliegue.
+# Los que SI bloquean (404 de un recurso local) los detecta verify.mjs.
+
+on:
+  schedule:
+    # 06:17 UTC todos los dias. Minuto al azar para no coincidir con la avalancha
+    # de los workflows programados de GitHub.
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/js/render-enlaces.js'
+      - 'assets/js/render-logos.js'
+      - 'enlaces.html'
+      - 'logos.html'
+      - 'enciclopedia.html'
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: links
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Sondear enlaces
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Auditar
+        run: node scripts/audit-links.mjs --json > informe-enlaces.json
+
+      - name: Resumen
+        run: |
+          node -e '
+            const i = require("./informe-enlaces.json");
+            console.log(`| estado | URLs |`);
+            console.log(`| --- | --- |`);
+            console.log(`| ok | ${i.ok} |`);
+            console.log(`| bloqueado por bots | ${i.bloqueado} |`);
+            console.log(`| inaccesible (red) | ${i.inaccesible} |`);
+            console.log(`| caido (404/410) | ${i.caido} |`);
+            console.log(`| error 5xx | ${i.error} |`);
+            console.log("");
+            if (i.caido) console.log(":::warning:::" + i.caido + " enlace(s) caidos");
+            else console.log(":::notice::" + "sin enlaces caidos");
+          ' >> $GITHUB_STEP_SUMMARY
+
+      - name: Abrir o actualizar issue si hay enlaces caidos
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const informe = JSON.parse(fs.readFileSync('informe-enlaces.json', 'utf8'));
+            const titulo = '[auditoria] Enlaces caidos en la enciclopedia';
+
+            if (!informe.caido) {
+              // Cierra el issue abierto si lo hubiera.
+              const { data: abiertas } = await github.rest.issues.listForRepo({
+                owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'auditoria-enlaces',
+              });
+              for (const i of abiertas) {
+                await github.rest.issues.update({
+                  owner: context.repo.owner, repo: context.repo.repo, issue_number: i.number, state: 'closed',
+                });
+              }
+              core.notice('Sin enlaces caidos. Issue cerrado si habia uno abierto.');
+              return;
+            }
+
+            const filas = informe.resultados
+              .filter((r) => r.estado === 'caido')
+              .map((r) => `| ${r.codigo} | ${r.url} | ${r.en.join(', ')} |`)
+              .join('\n');
+
+            const cuerpo = [
+              'La auditoria diaria encontro enlaces que responden 404 o 410.',
+              '',
+              `Fecha: ${informe.generado}`,
+              `Total de URLs sondadas: ${informe.total} (ok ${informe.ok}, bloqueados ${informe.bloqueado}, inaccesibles ${informe.inaccesible})`,
+              '',
+              '| codigo | URL | aparece en |',
+              '| --- | --- | --- |',
+              filas,
+              '',
+              'Que hacer: buscar el recurso en la Wayback Machine, o marcarlo como',
+              'no verificable en el grupo correspondiente de `LINKS` (render-enlaces.js).',
+              '',
+              'NO son automaticamente una regresion nuestra: algunos sitios cambian',
+              'de URL o bloquean bots.',
+            ].join('\n');
+
+            const { data: abiertas } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'auditoria-enlaces',
+            });
+
+            if (abiertas.length) {
+              const issue = abiertas[0];
+              const yaEstaba = issue.body && issue.body.includes(cuerpo.split('\n')[2]);
+              if (yaEstaba) {
+                core.info('Sin cambios respecto al issue abierto.');
+                return;
+              }
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, body: cuerpo,
+              });
+              core.info('Issue actualizado: #' + issue.number);
+            } else {
+              const creado = await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo, title: titulo,
+                body: cuerpo, labels: ['auditoria-enlaces'],
+              });
+              core.info('Issue creado: #' + creado.data.number);
+            }
+
+      - name: Guardar el informe
+        uses: actions/upload-artifact@v4
+        with:
+          name: informe-enlaces
+          path: informe-enlaces.json
+          retention-days: 30

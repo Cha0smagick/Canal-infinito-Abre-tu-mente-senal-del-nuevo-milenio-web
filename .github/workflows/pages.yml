@@ -1,0 +1,87 @@
+name: Deploy Pages
+
+# Despliegue oficial de GitHub Pages.
+# A diferencia de "Deploy from a branch", aqui el sitio se construye en el runner:
+# se regenera el catalogo canonico y las paginas legacy, se verifica todo, y solo
+# entonces se publica. Si un check falla, NO se publica nada.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Nunca dos despliegues simultaneos. No se cancela el que ya esta en curso.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Construir y verificar
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Construir (1/3) catalogo canonico
+        # Regenera assets/js/data-lore.js desde programacion.json + data/*.json
+        run: node scripts/build-lore.mjs
+
+      - name: Construir (2/3) paginas legacy
+        # Regenera programas/videoteca/video/tv desde la plantilla + el catalogo canonico
+        run: node scripts/build-legacy.mjs
+
+      - name: Construir (3/3) el build debe ser reproducible
+        # Si el build cambia algun archivo, lo commiteado no estaba al dia.
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::El build genero archivos distintos de los commiteados:"
+            git --no-pager diff --stat
+            exit 1
+          fi
+          echo "OK: lo commiteado es exactamente lo que produce el build."
+
+      - name: Verificar (1/4) sin glifos CJK
+        run: node scripts/scan-cjk.mjs
+
+      - name: Verificar (2/4) auditoria de paginas
+        run: node scripts/verify.mjs
+
+      - name: Verificar (3/4) clases CSS definidas
+        run: |
+          node scripts/check-classes.mjs \
+            index.html enciclopedia.html logos.html enlaces.html canal.html \
+            programas.html videoteca.html video.html tv.html 404.html
+
+      - name: Verificar (4/4) reproducibilidad del catalogo
+        run: node scripts/check-reproducible.mjs
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy:
+    name: Publicar
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
