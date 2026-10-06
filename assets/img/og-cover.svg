@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0d060"/>
+      <stop offset="1" stop-color="#c9a84c"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#c9a84c" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0a0f"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <ellipse cx="600" cy="265" rx="470" ry="330" fill="url(#halo)"/>
+
+  <g transform="translate(600 232)">
+    <g fill="none" stroke="url(#gold)" stroke-width="5">
+      <circle r="86"/>
+      <ellipse rx="38" ry="86" stroke-width="3.4"/>
+      <path d="M-86 0H86M-78 -30h156M-78 30h156" stroke-width="3.4" opacity=".72"/>
+    </g>
+    <circle r="17" fill="url(#gold)"/>
+  </g>
+
+  <text x="600" y="392" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+        font-size="86" font-weight="700" fill="#e8e0d0">Canal Infinito</text>
+  <text x="600" y="446" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+        font-size="44" font-style="italic" fill="#f0d060">Abre tu mente</text>
+  <rect x="520" y="474" width="160" height="4" fill="url(#gold)" opacity=".85"/>
+  <text x="600" y="528" text-anchor="middle" font-family="Helvetica,Arial,sans-serif"
+        font-size="24" letter-spacing="7" fill="#8a7c6a">1994 &#8212; 2015 &#183; ENCICLOPEDIA</text>
+</svg>

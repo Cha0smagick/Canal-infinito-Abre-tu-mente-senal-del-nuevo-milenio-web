@@ -3,10 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Canal Infinito — El Canal</title>
+<meta name="description" content="Historia, propiedad, locutores y eslóganes del canal argentino Canal Infinito (1994-2015): de Imagen Satelital a Turner Broadcasting.">
+<meta name="theme-color" content="#0a0a0f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/theme.css">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{
@@ -96,8 +100,9 @@ footer .footer-tagline{font-family:'Playfair Display',serif;font-style:italic;co
 }
 </style>
 </head>
-<body>
-<nav>
+<body data-page="canal">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<nav><a id="contenido"></a>
   <a href="index.html" class="nav-logo">
     <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
       <path d="M30,30 C30,11 54,8 60,27 C66,8 90,11 90,30 C90,49 66,52 60,33 C54,52 30,49 30,30 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
@@ -107,6 +112,9 @@ footer .footer-tagline{font-family:'Playfair Display',serif;font-style:italic;co
   <button class="nav-toggle" aria-label="Menú">☰</button>
   <ul class="nav-links">
     <li><a href="index.html">Inicio</a></li>
+    <li><a href="enciclopedia.html">Enciclopedia</a></li>
+    <li><a href="logos.html">Logos</a></li>
+    <li><a href="enlaces.html">Enlaces</a></li>
     <li><a href="canal.html" class="active">El Canal</a></li>
     <li><a href="programas.html">Programas</a></li>
     <li><a href="videoteca.html">Videoteca</a></li>
@@ -183,10 +191,26 @@ footer .footer-tagline{font-family:'Playfair Display',serif;font-style:italic;co
 </section>
 
 <footer>
-  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#7a6c5a">Canal Infinito</p>
-  <p class="footer-tagline">"Realidad que supera la ficción"</p>
-  <p style="margin:6px 0 16px">1994 — 2015</p>
-  <p style="font-size:0.75rem;color:#3a2c1a">Sitio tributo sin fines de lucro</p>
+  <div class="footer-map">
+    <div>
+      <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#7a6c5a">Canal Infinito</p>
+      <p class="footer-tagline">"Realidad que supera la ficción"</p>
+      <p style="margin:6px 0 16px">1994 — 2015</p>
+      <p style="font-size:0.75rem;color:#3a2c1a">Sitio tributo sin fines de lucro</p>
+    </div>
+    <nav aria-label="Mapa del sitio">
+      <ul class="footer-links">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="enciclopedia.html">Enciclopedia completa</a></li>
+  <li><a href="canal.html">El canal</a></li>
+  <li><a href="programas.html">Programas</a></li>
+  <li><a href="videoteca.html">Videoteca</a></li>
+  <li><a href="logos.html">Logos y archivo gráfico</a></li>
+  <li><a href="enlaces.html">Enlaces relacionados</a></li>
+  <li><a href="tv.html">Señor de TV</a></li>
+      </ul>
+    </nav>
+  </div>
 </footer>
 
 <script>

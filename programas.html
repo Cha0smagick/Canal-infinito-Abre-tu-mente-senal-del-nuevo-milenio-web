@@ -3,10 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Canal Infinito — Programas</title>
+<meta name="description" content="Catálogo completo de Canal Infinito: programas originales y adquiridos, bloques de programación y detalle de cada emisión.">
+<meta name="theme-color" content="#0a0a0f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/theme.css">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',sans-serif;background:#0a0a0f;color:#e8e0d0;line-height:1.7;overflow-x:hidden}
@@ -107,8 +111,9 @@ footer p{color:#3a2c1a;font-size:.78rem}
 }
 </style>
 </head>
-<body>
-<nav>
+<body data-page="programas">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<nav><a id="contenido"></a>
   <a href="index.html" class="nav-logo">
     <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
       <path d="M30,30 C30,11 54,8 60,27 C66,8 90,11 90,30 C90,49 66,52 60,33 C54,52 30,49 30,30 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
@@ -118,6 +123,9 @@ footer p{color:#3a2c1a;font-size:.78rem}
   <button class="nav-toggle" aria-label="Menú">☰</button>
   <ul class="nav-links">
     <li><a href="index.html">Inicio</a></li>
+    <li><a href="enciclopedia.html">Enciclopedia</a></li>
+    <li><a href="logos.html">Logos</a></li>
+    <li><a href="enlaces.html">Enlaces</a></li>
     <li><a href="canal.html">El Canal</a></li>
     <li><a href="programas.html" class="active">Programas</a></li>
     <li><a href="videoteca.html">Videoteca</a></li>
@@ -144,7 +152,28 @@ footer p{color:#3a2c1a;font-size:.78rem}
     <div class="modal-b"><span class="modal-status" id="mStatus"></span><h2 id="mTitle"></h2><div class="m-meta" id="mMeta"></div><div class="m-desc" id="mDesc"></div><div class="m-detail" id="mDetail"></div><div class="m-videos" id="mVideos"><h4>📹 Videos del programa</h4><div class="m-vid-grid" id="mVidGrid"></div></div><div class="m-related"><h4>Más programas del mismo género</h4><div class="m-related-grid" id="mRel"></div></div></div>
   </div>
 </div>
-<footer><p style="font-family:'Playfair Display',serif;font-size:1rem;color:#5a4c3a">Canal Infinito</p><p style="font-size:.75rem;color:#2a1c0a;margin-top:4px">Sitio tributo sin fines de lucro • 1994 — 2015</p></footer>
+<footer>
+  <div class="footer-map">
+    <div>
+      <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#7a6c5a">Canal Infinito</p>
+      <p class="footer-tagline">"Realidad que supera la ficción"</p>
+      <p style="margin:6px 0 16px">1994 — 2015</p>
+      <p style="font-size:0.75rem;color:#3a2c1a">Sitio tributo sin fines de lucro</p>
+    </div>
+    <nav aria-label="Mapa del sitio">
+      <ul class="footer-links">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="enciclopedia.html">Enciclopedia completa</a></li>
+  <li><a href="canal.html">El canal</a></li>
+  <li><a href="programas.html">Programas</a></li>
+  <li><a href="videoteca.html">Videoteca</a></li>
+  <li><a href="logos.html">Logos y archivo gráfico</a></li>
+  <li><a href="enlaces.html">Enlaces relacionados</a></li>
+  <li><a href="tv.html">Señor de TV</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 <script>
 const orig = [
   {n:"Zona Infinito",g:"Paranormal / Misterio",e:"1999-2008",d:"El programa emblemático del canal. Horacio Embón viajaba por Latinoamérica investigando fenómenos paranormales, OVNIs y misterios sin resolver. Un referente del periodismo esotérico.",vid:"Oyc6Zu6WEic",st:"ok",det:"Horacio Embón • 1999-2008 • Grabó en Chile, México y Argentina. +20 episodios documentados. Algunos episodios preservados en YouTube y archivos de fans."},

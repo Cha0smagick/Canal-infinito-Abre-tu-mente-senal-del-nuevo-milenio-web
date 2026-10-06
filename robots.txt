@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sin páginas privadas ni áreas restringidas en este repositorio.
+# El archivo canónico del sitio es https://<usuario>.github.io/<repo>/programacion.json

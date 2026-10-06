@@ -1,0 +1,11 @@
+# Estado interno del agente (no forma parte del sitio)
+.omo/
+
+# Temporales de auditoría / capturas del canal
+_*.txt
+_*.json
+youtube-data.txt
+youtube-snapshot.txt
+
+# Node (no hay build, pero por si se instala algo)
+node_modules/
