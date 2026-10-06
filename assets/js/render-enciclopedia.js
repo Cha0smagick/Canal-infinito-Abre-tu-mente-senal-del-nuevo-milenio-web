@@ -40,7 +40,7 @@
     $$('[data-render="esloganes"]').forEach(function (host) {
       if (!items.length) return empty(host, 'Sin eslóganes registrados.');
       host.innerHTML = items
-        .map(function (s, i) {
+        .map(function (s) {
           var texto = s.eslogan || s.texto || s.nombre || '';
           var periodo = s.periodo || s.anios || '';
           var oficial = s.periodo === '2004-2008';
@@ -48,13 +48,9 @@
             '<article class="card" data-search="' +
             esc(norm(periodo + ' ' + texto + ' eslogan lema canal infinito')) +
             '">' +
-            '<div class="flex" style="justify-content:space-between;align-items:flex-start">' +
-            '<p class="kicker" style="margin:0">' + esc(periodo) + '</p>' +
-            (oficial
-              ? '<span class="chip chip--ok">Eslogan oficial</span>'
-              : '<span class="chip chip--muted">' + String(i + 1).padStart(2, '0') + '</span>') +
-            '</div>' +
-            '<p class="quote" style="margin:.55rem 0 .5rem">«' + esc(texto) + '»</p>' +
+            '<p class="vcard__prog">' + esc(periodo) +
+            (oficial ? ' · eslogan oficial' : '') + '</p>' +
+            '<p class="quote" style="margin:.35rem 0 0">«' + esc(texto) + '»</p>' +
             '</article>'
           );
         })
@@ -102,12 +98,10 @@
           var nombre = b.nombre || '';
           var desc = b.descripcion || '';
           return (
-            '<article class="card" data-search="' + esc(norm(nombre + ' ' + desc + ' bloque programacion')) + '">' +
-            '<div class="flex" style="justify-content:space-between;align-items:flex-start">' +
-            '<h4 style="margin:0">' + esc(nombre) + '</h4>' +
-            '<span class="chip chip--muted">' + String(i + 1).padStart(2, '0') + '</span>' +
-            '</div>' +
-            '<p style="margin-top:.45rem">' + esc(desc) + '</p>' +
+            '<article class="card card--sm" data-search="' + esc(norm(nombre + ' ' + desc + ' bloque programacion')) + '">' +
+            '<p class="vcard__prog">Bloque ' + String(i + 1).padStart(2, '0') + '</p>' +
+            '<h4 class="card__t">' + esc(nombre) + '</h4>' +
+            '<p>' + esc(desc) + '</p>' +
             '</article>'
           );
         })
@@ -124,9 +118,9 @@
         .map(function (d) {
           var nombre = typeof d === 'string' ? d : d.nombre || '';
           return (
-            '<span class="chip chip--purple" data-search="' +
-            esc(norm(nombre + ' devocion favorito icónico')) +
-            '">' + esc(nombre) + '</span>'
+            '<li class="chip" data-search="' +
+            esc(norm(nombre + ' devocion favorito iconic')) +
+            '">' + esc(nombre) + '</li>'
           );
         })
         .join('');

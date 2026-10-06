@@ -1,11 +1,22 @@
 # Estado interno del agente (no forma parte del sitio)
 .omo/
+.opencode/
+.playwright-mcp/
+.codegraph/
+.firecrawl/
+undefined/
 
 # Temporales de auditoría / capturas del canal
 _*.txt
 _*.json
 youtube-data.txt
 youtube-snapshot.txt
+
+# Scripts de diagnóstico puntual (no forman parte del sitio)
+scripts/classes-used.mjs
+scripts/classes-js.mjs
+scripts/legacy-slop-rules.mjs
+scripts/add-deslop-link.mjs
 
 # Node (no hay build, pero por si se instala algo)
 node_modules/

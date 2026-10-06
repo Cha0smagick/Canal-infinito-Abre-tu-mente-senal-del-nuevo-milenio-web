@@ -5,7 +5,7 @@
      <body data-page="enciclopedia">     -> marca la nav activa
      <div data-nav></div>               -> nav inyectada
      <div data-footer></div>            -> pie inyectado
-     <div data-stat="videos"></div>     -> número con ThousandSeparator
+     <div data-stat="videos"></div>     -> número con separador de miles
    ========================================================================== */
 (function () {
   'use strict';
@@ -36,15 +36,14 @@
     { href: 'tv.html', label: 'Señor de TV' },
   ];
 
+  /* Marca mínima: un globo meridianado en trazo dorado, sin degradados. */
   const LOGO_SVG =
     '<svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">' +
-    '<defs><linearGradient id="cg" x1="0" y1="0" x2="1" y2="1">' +
-    '<stop offset="0" stop-color="#f0d060"/><stop offset="1" stop-color="#c9a84c"/>' +
-    '</linearGradient></defs>' +
-    '<circle cx="16" cy="16" r="14" fill="none" stroke="url(#cg)" stroke-width="1.5"/>' +
-    '<ellipse cx="16" cy="16" rx="6" ry="14" fill="none" stroke="url(#cg)" stroke-width="1"/>' +
-    '<path d="M2 16h28M4 9.5h24M4 22.5h24" stroke="url(#cg)" stroke-width="1" opacity=".65"/>' +
-    '<circle cx="16" cy="16" r="2.6" fill="url(#cg)"/></svg>';
+    '<g fill="none" stroke="#c9a84c" stroke-width="1.4">' +
+    '<circle cx="16" cy="16" r="14"/>' +
+    '<ellipse cx="16" cy="16" rx="6" ry="14" stroke-width="1"/>' +
+    '<path d="M2.5 16h27M5 9.5h22M5 22.5h22" stroke-width="1" opacity=".6"/>' +
+    '</g></svg>';
 
   function slugify(s) {
     return norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -62,27 +61,27 @@
     host.innerHTML =
       `<div class="nav__inner">` +
       `<a class="nav__brand" href="index.html">${LOGO_SVG}` +
-      `<span>Canal Infinito<small>Abre tu mente</small></span></a>` +
-      `<button class="nav__burger" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Abrir menú">☰</button>` +
+      `<span>Canal Infinito <small>Abre tu mente</small></span></a>` +
+      `<button class="nav__burger" type="button" aria-expanded="false" aria-controls="navlinks">Menú</button>` +
       `<div class="nav__links" id="navlinks">${links}</div>` +
       `</div>`;
 
     const burger = $('.nav__burger', host);
     const menu = $('.nav__links', host);
-    burger.addEventListener('click', () => {
-      const open = menu.hasAttribute('hidden');
-      if (open) menu.removeAttribute('hidden');
-      else menu.setAttribute('hidden', '');
+    const setOpen = (open) => {
+      menu.toggleAttribute('hidden', !open);
       burger.setAttribute('aria-expanded', String(open));
-      burger.textContent = open ? '✕' : '☰';
-    });
+      burger.textContent = open ? 'Cerrar' : 'Menú';
+    };
+    setOpen(false);
+    burger.addEventListener('click', () =>
+      setOpen(burger.getAttribute('aria-expanded') !== 'true')
+    );
     /* Cierra el menú al navegar y al pulsar Escape */
-    $$('a', menu).forEach((a) => a.addEventListener('click', () => menu.setAttribute('hidden', '')));
+    $$('a', menu).forEach((a) => a.addEventListener('click', () => setOpen(false)));
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !menu.hasAttribute('hidden')) {
-        menu.setAttribute('hidden', '');
-        burger.setAttribute('aria-expanded', 'false');
-        burger.textContent = '☰';
+      if (e.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
         burger.focus();
       }
     });
@@ -91,7 +90,6 @@
   function renderFooter() {
     const host = $('[data-footer]');
     if (!host) return;
-    const v = (D.videos || []).length;
     host.className = 'footer';
     host.innerHTML =
       `<div class="wrap">` +
@@ -120,81 +118,7 @@
       `</div></div>`;
   }
 
-  /* ------------------------------------------------- CANVAS DE PARTÍCULAS */
-  function particles(canvas) {
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    let w = 0;
-    let h = 0;
-    let pts = [];
-    const resize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      w = canvas.clientWidth;
-      h = canvas.clientHeight;
-      canvas.width = Math.round(w * dpr);
-      canvas.height = Math.round(h * dpr);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const n = Math.max(24, Math.min(70, Math.round((w * h) / 26000)));
-      pts = Array.from({ length: n }, () => ({
-        x: Math.random() * w,
-        y: Math.random() * h,
-        vx: (Math.random() - 0.5) * 0.16,
-        vy: (Math.random() - 0.5) * 0.16,
-        r: Math.random() * 1.5 + 0.4,
-      }));
-    };
-    const loop = () => {
-      ctx.clearRect(0, 0, w, h);
-      for (const p of pts) {
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0) p.x = w;
-        if (p.x > w) p.x = 0;
-        if (p.y < 0) p.y = h;
-        if (p.y > h) p.y = 0;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, 6.2832);
-        ctx.fillStyle = 'rgba(201,168,76,.5)';
-        ctx.fill();
-      }
-      /* enlaces sutiles entre partículas cercanas */
-      ctx.strokeStyle = 'rgba(201,168,76,.10)';
-      for (let i = 0; i < pts.length; i++) {
-        for (let j = i + 1; j < pts.length; j++) {
-          const dx = pts[i].x - pts[j].x;
-          const dy = pts[i].y - pts[j].y;
-          const d2 = dx * dx + dy * dy;
-          if (d2 < 12000) {
-            ctx.beginPath();
-            ctx.moveTo(pts[i].x, pts[i].y);
-            ctx.lineTo(pts[j].x, pts[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-      requestAnimationFrame(loop);
-    };
-    resize();
-    window.addEventListener('resize', resize, { passive: true });
-    requestAnimationFrame(loop);
-  }
-
-  /* ------------------------------------------------- BARRA DE PROGRESO + TOC */
-  function progressBar() {
-    const bar = document.createElement('div');
-    bar.className = 'progress';
-    bar.setAttribute('aria-hidden', 'true');
-    document.body.prepend(bar);
-    const upd = () => {
-      const h = document.documentElement.scrollHeight - window.innerHeight;
-      bar.style.width = (h > 0 ? Math.min(100, (window.scrollY / h) * 100) : 0) + '%';
-    };
-    window.addEventListener('scroll', upd, { passive: true });
-    upd();
-  }
-
+  /* --------------------------------------------------- INDICE ANCLADO ACTIVO */
   function scrollSpy() {
     const links = $$('.toc a[href^="#"]');
     if (!links.length || !('IntersectionObserver' in window)) return;
@@ -207,11 +131,9 @@
       (entries) => {
         entries.forEach((en) => {
           const a = map.get(en.target);
-          if (!a) return;
-          if (en.isIntersecting) {
-            links.forEach((l) => l.classList.remove('is-active'));
-            a.classList.add('is-active');
-          }
+          if (!a || !en.isIntersecting) return;
+          links.forEach((l) => l.classList.remove('is-active'));
+          a.classList.add('is-active');
         });
       },
       { rootMargin: '-15% 0px -70% 0px', threshold: 0 }
@@ -219,85 +141,81 @@
     map.forEach((_, el) => io.observe(el));
   }
 
-  /* --------------------------------------------------------- TARJETA VIDEO */
+  /* ------------------------------------------- FICHA DE FILMOGRAFIA (fila) */
   const thumbUrl = (id) => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
 
   function videoCard(v) {
-    const dur = v.dur ? `<span class="vthumb__dur">${esc(v.dur)}</span>` : '';
-    const mem = v.miembros ? `<span class="vthumb__mem">★ Solo miembros</span>` : '';
-    const tags = (v.tags || [])
-      .map((t) => `<span class="chip chip--muted">${esc(t)}</span>`)
-      .join('');
-    const ph = `<div class="vthumb vthumb--ph">▶</div>`;
+    const tags = (v.tags || []).map((t) => `<span>${esc(t)}</span>`).join('');
+    const meta = [v.dur ? esc(v.dur) : '', v.miembros ? 'solo miembros' : '']
+      .filter(Boolean)
+      .join(' · ');
+    const href = `video.html?id=${encodeURIComponent(v.id)}`;
     return (
       `<article class="vcard" data-search="${esc(norm(v.titulo + ' ' + v.programa + ' ' + (v.tags || []).join(' ')))}">` +
-      `<a class="vthumb" href="video.html?id=${encodeURIComponent(v.id)}" aria-label="Ver ${esc(v.titulo)}">` +
-      `<img src="${thumbUrl(v.id)}" alt="" loading="lazy" decoding="async" width="320" height="180" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'vthumb vthumb--ph',textContent:'▶'}))">` +
-      `<span class="vthumb__play" aria-hidden="true">▶</span>${mem}${dur}</a>` +
+      `<a class="vthumb" href="${href}" tabindex="-1" aria-hidden="true">` +
+      `<img src="${thumbUrl(v.id)}" alt="" loading="lazy" decoding="async" width="320" height="180" ` +
+      `onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'vthumb vthumb--ph',textContent:'—'}))">` +
+      `</a>` +
       `<div class="vcard__body">` +
-      `<span class="vcard__prog">${esc(v.programa)}</span>` +
-      `<h3 class="vcard__title"><a href="video.html?id=${encodeURIComponent(v.id)}">${esc(v.titulo)}</a></h3>` +
-      `<div class="vcard__tags chips">${tags}</div>` +
-      `</div></article>`
+      `<p class="vcard__prog">${esc(v.programa)}</p>` +
+      `<h3 class="vcard__title"><a href="${href}">${esc(v.titulo)}</a></h3>` +
+      (tags ? `<p class="vcard__tags">${tags}</p>` : '') +
+      `</div>` +
+      (meta ? `<p class="vcard__meta">${meta}</p>` : '') +
+      `</article>`
     );
   }
 
-  /* Filtros + buscador genéricos sobre un contenedor de tarjetas.
-    Uso:  <div data-videogrid data-facet="programa"></div>            */
+  /* Filtros + buscador genericos sobre un contenedor de fichas.
+     Uso:  <div data-videogrid data-facet="programa"></div>            */
   function videogrids() {
     $$('[data-videogrid]').forEach((host) => {
       const facet = host.dataset.facet || 'programa';
       const state = { q: '', facet: 'todos', soloMiembros: false };
       const bar = host.parentNode.querySelector('[data-vgrid-controls]');
       const counter = bar && bar.querySelector('[data-vgrid-count]');
-
-      const facetValues = [...new Set(D.videos.map((v) => (facet === 'programa' ? v.programa : facet === 'tags' ? (v.tags || []).join('|') : v[facet])))].filter(
-        Boolean
-      );
+      const key = (v) => (facet === 'programa' ? v.programa : facet === 'tags' ? (v.tags || []).join('|') : v[facet]);
 
       const render = () => {
         const q = norm(state.q).trim();
         const list = D.videos.filter((v) => {
-          if (state.facet !== 'todos') {
-            const val = facet === 'programa' ? v.programa : facet === 'tags' ? (v.tags || []).join('|') : v[facet];
-            if (val !== state.facet) return false;
-          }
+          if (state.facet !== 'todos' && key(v) !== state.facet) return false;
           if (state.soloMiembros && !v.miembros) return false;
           if (!q) return true;
           return norm(v.titulo + ' ' + v.programa + ' ' + (v.tags || []).join(' ')).includes(q);
         });
         host.innerHTML = list.length
           ? list.map(videoCard).join('')
-          : `<p class="empty" style="grid-column:1/-1">Ningún video coincide con «${esc(state.q)}».</p>`;
+          : `<p class="empty">Ningún video coincide con «${esc(state.q)}».</p>`;
         if (counter) counter.textContent = `${nf.format(list.length)} de ${nf.format(D.videos.length)} videos`;
         if (typeof window.updateVgridCount === 'function') window.updateVgridCount(list.length);
       };
 
       if (bar) {
-        const chips = [`<button class="chip chip--muted chip-btn" type="button" data-f="todos" aria-pressed="true">Todos</button>`]
+        const values = [...new Set(D.videos.map(key))].filter(Boolean);
+        const chips = [`<button class="chip chip-btn is-active" type="button" data-f="todos" aria-pressed="true">Todos</button>`]
           .concat(
-            facetValues.map(
-              (f) => `<button class="chip chip--muted chip-btn" type="button" data-f="${esc(f)}" aria-pressed="false">${esc(f)}</button>`
+            values.map(
+              (f) => `<button class="chip chip-btn" type="button" data-f="${esc(f)}" aria-pressed="false">${esc(f)}</button>`
             )
           )
           .join('');
         bar.innerHTML =
           `<div class="searchbar">` +
-          `<input type="search" data-vgrid-q placeholder="Buscar en el archivo…" aria-label="Buscar videos">` +
-          `<button class="chip chip--muted chip-btn" type="button" data-vgrid-mem aria-pressed="false">★ Solo miembros</button>` +
+          `<input type="search" data-vgrid-q placeholder="Buscar en el archivo" aria-label="Buscar videos">` +
+          `<button class="chip chip-btn" type="button" data-vgrid-mem aria-pressed="false">Solo miembros</button>` +
           `<span class="searchbar__count" data-vgrid-count></span>` +
           `</div>` +
-          `<div class="filters" style="margin-top:.7rem"><span class="filters__label">Filtrar</span>${chips}</div>`;
+          `<div class="filters"><span class="filters__label">Filtrar por programa</span>${chips}</div>`;
 
-        const input = bar.querySelector('[data-vgrid-q]');
-        input.addEventListener('input', () => {
-          state.q = input.value;
+        bar.querySelector('[data-vgrid-q]').addEventListener('input', (e) => {
+          state.q = e.currentTarget.value;
           render();
         });
         bar.querySelector('[data-vgrid-mem]').addEventListener('click', (e) => {
           state.soloMiembros = !state.soloMiembros;
           e.currentTarget.setAttribute('aria-pressed', String(state.soloMiembros));
-          e.currentTarget.classList.toggle('chip--gold', state.soloMiembros);
+          e.currentTarget.classList.toggle('is-active', state.soloMiembros);
           render();
         });
         bar.addEventListener('click', (e) => {
@@ -305,9 +223,9 @@
           if (!b) return;
           state.facet = b.dataset.f;
           $$('[data-f]', bar).forEach((x) => {
-            x.setAttribute('aria-pressed', String(x === b));
-            x.classList.toggle('chip--gold', x === b);
-            x.classList.toggle('chip--muted', x !== b);
+            const on = x === b;
+            x.setAttribute('aria-pressed', String(on));
+            x.classList.toggle('is-active', on);
           });
           render();
         });
@@ -321,34 +239,34 @@
   function lists() {
     $$('[data-list]').forEach((host) => {
       const items = D[host.dataset.list] || [];
-      const cols = host.dataset.columns === '1' ? '' : 'grid-2';
       if (!items.length) {
         host.innerHTML = `<p class="empty">Sin datos.</p>`;
         return;
       }
       host.innerHTML = items
-        .map((it, i) => {
+        .map((it) => {
           const title = it.nombre || it.name || '';
-          const meta = [it.era, it.genero].filter(Boolean).map((m) => `<span class="chip chip--muted">${esc(m)}</span>`).join('');
           const desc = it.descripcion || it.d || '';
           const extra = it.detalle || it.det || '';
+          const meta = [it.era, it.genero].filter(Boolean).join(' · ');
+          const st = it.estado && it.estado !== 'nd' ? it.estado : '';
           const link = it.video
-            ? `<a class="btn btn--ghost btn--sm" href="video.html?id=${encodeURIComponent(it.video)}">Ver</a>`
+            ? `<a class="btn btn--ghost btn--sm" href="video.html?id=${encodeURIComponent(it.video)}">Ver la pieza</a>`
             : '';
-          const st = it.estado && it.estado !== 'nd' ? `<span class="chip chip--info">${esc(it.estado)}</span>` : '';
           return (
-            `<article class="card" data-search="${esc(norm(title + ' ' + desc + ' ' + (it.genero || '')))}">` +
-            `<div class="flex" style="justify-content:space-between;align-items:flex-start">` +
-            `<h4 style="margin:0">${esc(title)}</h4>${st}</div>` +
-            (meta ? `<div class="chips" style="margin:.45rem 0">${meta}</div>` : '') +
+            `<article class="card" data-search="${esc(norm(title + ' ' + desc + ' ' + (it.genero || '') + ' ' + (it.era || '')))}">` +
+            `<h4 class="card__t">${esc(title)}</h4>` +
+            (meta ? `<p class="vcard__prog">${esc(meta)}</p>` : '') +
             `<p>${esc(desc)}</p>` +
-            (extra ? `<p class="small muted" style="margin-top:.5rem">${esc(extra)}</p>` : '') +
+            (st ? `<p class="small muted">Estado del archivo: ${esc(st)}</p>` : '') +
+            (extra ? `<p class="small muted">${esc(extra)}</p>` : '') +
             (link ? `<div style="margin-top:.7rem">${link}</div>` : '') +
             `</article>`
           );
         })
         .join('');
-      if (cols) host.classList.add('grid', cols);
+      if (host.dataset.columns === '1') host.classList.add('prose--list');
+      else host.classList.add('grid-2');
     });
   }
 
@@ -384,7 +302,8 @@
     input.addEventListener('search', run);
     run();
     document.addEventListener('keydown', (e) => {
-      if (e.key === '/' && document.activeElement !== input && !/^(INPUT|TEXTAREA|SELECT)$/.test((document.activeElement || {}).tagName || '')) {
+      const tag = (document.activeElement || {}).tagName || '';
+      if (e.key === '/' && document.activeElement !== input && !/^(INPUT|TEXTAREA|SELECT)$/.test(tag)) {
         e.preventDefault();
         input.focus();
       }
@@ -393,19 +312,19 @@
 
   /* ------------------------------------------------------ NÚMEROS DINÁMICOS */
   function stats() {
+    const map = {
+      videos: (D.videos || []).length,
+      conDuracion: (D.videos || []).filter((v) => v.dur).length,
+      miembros: (D.videos || []).filter((v) => v.miembros).length,
+      esloganes: (D.esloganes || []).length,
+      bloques: (D.bloques || []).length,
+      originales: (D.originales || []).length,
+      adquiridos: (D.adquiridos || []).length,
+      devociones: (D.devociones || []).length,
+      hallazgos: (D.hallazgos || []).length,
+      programas: new Set((D.videos || []).map((v) => v.programa)).size,
+    };
     $$('[data-stat]').forEach((el) => {
-      const map = {
-        videos: (D.videos || []).length,
-        conDuracion: (D.videos || []).filter((v) => v.dur).length,
-        miembros: (D.videos || []).filter((v) => v.miembros).length,
-        esloganes: (D.esloganes || []).length,
-        bloques: (D.bloques || []).length,
-        originales: (D.originales || []).length,
-        adquiridos: (D.adquiridos || []).length,
-        devociones: (D.devociones || []).length,
-        hallazgos: (D.hallazgos || []).length,
-        programas: new Set((D.videos || []).map((v) => v.programa)).size,
-      };
       const v = map[el.dataset.stat];
       if (v != null) el.textContent = nf.format(v);
     });
@@ -419,10 +338,7 @@
     lists();
     videogrids();
     globalSearch();
-    progressBar();
     scrollSpy();
-    particles($('#particle-canvas'));
-    /* currYear */
     $$('[data-year]').forEach((el) => (el.textContent = new Date().getFullYear()));
   }
 

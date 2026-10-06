@@ -80,10 +80,10 @@
           var e = ETAPAS[nombre] || { eslogan: '—', nota: '', lockup: '' };
           return (
             '<article class="card" data-search="' + esc(norm(per + ' ' + nombre + ' etapa marca propiedad eslogan')) + '">' +
-            '<p class="kicker" style="margin:0">' + esc(per) + '</p>' +
+            '<p class="vcard__prog">' + esc(per) + '</p>' +
             '<h4 class="card__t">' + esc(nombre) + '</h4>' +
             '<p class="quote" style="margin:.4rem 0 .6rem">«' + esc(e.eslogan) + '»</p>' +
-            '<div class="chips" style="margin-bottom:.6rem"><span class="chip chip--muted">' + esc(e.lockup) + '</span></div>' +
+            '<p class="vcard__prog">' + esc(e.lockup) + '</p>' +
             '<p>' + esc(e.nota) + '</p>' +
             '</article>'
           );
@@ -273,11 +273,12 @@
 
     host.innerHTML = LOGOS.map(function (L) {
       var src = L.thumb || L.img;
-      var chips = [
-        '<span class="chip chip--ok">' + esc(L.lic) + '</span>',
-        '<span class="chip chip--muted">' + esc(L.etapa) + '</span>',
-        (L.oficial ? '<span class="chip chip--gold">logotipo del canal</span>' : ''),
-      ].join('');
+      var ficha = [
+        L.dim + ' · ' + L.anio,
+        L.aut,
+        'licencia: ' + L.lic,
+        L.oficial ? 'logotipo del propio canal' : null,
+      ].filter(Boolean).join(' · ');
       return (
         '<article class="card card--sm logo-card' + (L.chico ? ' logo-card--tiny' : '') + '" data-search="' +
         esc(norm(L.nombre + ' ' + L.anio + ' ' + L.etapa + ' ' + L.lic + ' ' + L.aut + ' logotipo logo ' + L.ficha)) + '">' +
@@ -285,8 +286,7 @@
         '<img class="mark" src="' + esc(src) + '" alt="Logotipo de ' + esc(L.nombre) + '" loading="lazy" decoding="async" width="480" height="160">' +
         '</div>' +
         '<h4 class="card__t" style="margin-top:.7rem">' + esc(L.nombre) + '</h4>' +
-        '<p class="faint small" style="margin:.15rem 0 .5rem">' + esc(L.dim) + ' · ' + esc(L.anio) + ' · ' + esc(L.aut) + '</p>' +
-        '<div class="chips chips-wrap" style="margin-bottom:.55rem">' + chips + '</div>' +
+        '<p class="faint small" style="margin:.15rem 0 .5rem">' + esc(ficha) + '</p>' +
         '<p class="small">' + esc(L.nota) + '</p>' +
         '<p class="extlink__credit small" style="margin-top:.6rem">' +
         'Ficha: <a href="' + esc(L.commons) + '" rel="noopener">' + esc(L.ficha) + '</a> en Wikimedia Commons' +
@@ -355,12 +355,9 @@
       host.innerHTML = FUENTES.map(function (f) {
         return (
           '<div class="extlink" data-search="' + esc(norm(f.t + ' ' + f.k + ' ' + f.d)) + '">' +
-          '<span class="extlink__icon" aria-hidden="true">◈</span>' +
-          '<div>' +
           '<a class="t" href="' + esc(f.u) + '" rel="noopener">' + esc(f.t) + '</a>' +
           '<small>' + esc(f.k) + '</small>' +
           '<p>' + esc(f.d) + '</p>' +
-          '</div>' +
           '</div>'
         );
       }).join('');

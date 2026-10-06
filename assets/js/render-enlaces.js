@@ -227,17 +227,11 @@
     var ft = f.ft || (function (u) {
       try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; }
     })(f.u);
-    var thumb = f.yid
-      ? '<span class="extlink__icon extlink__icon--yt" aria-hidden="true">▶</span>'
-      : '<span class="extlink__icon" aria-hidden="true">◈</span>';
     return (
       '<div class="extlink" data-search="' + esc(norm(f.t + ' ' + f.k + ' ' + f.d + ' ' + f.u)) + '">' +
-      thumb +
-      '<div>' +
       '<a class="t" href="' + esc(f.u) + '" rel="noopener">' + esc(f.t) + '</a>' +
       '<small>' + esc(f.k) + ' · ' + esc(ft) + '</small>' +
       '<p>' + esc(f.d) + '</p>' +
-      '</div>' +
       '</div>'
     );
   }

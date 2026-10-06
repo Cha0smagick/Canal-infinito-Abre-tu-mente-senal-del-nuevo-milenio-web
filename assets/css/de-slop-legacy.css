@@ -1,0 +1,519 @@
+/* ==========================================================================
+   de-slop-legacy.css  —  capa de sobriedad para las 5 páginas heredadas
+   (canal · programas · videoteca · video · tv)
+
+   Se carga DESPUÉS del <style> inline de cada página, de modo que sus reglas
+   ganan por orden de cascada a igual especificidad. Los <script> de esas
+   páginas NO se tocan: dependen de sus clases y de su lógica.
+
+   Criterio (el mismo que theme.css ya aplica):
+     · 0 box-shadow          · 0 backdrop-filter
+     · 0 gradientes salvo textura funcional (scanlines, ruido de CRT)
+     · radios 0–2 px         · 0 transiciones de transform
+     · sin glows ni pills    · estados de hover que solo cambian filete/color
+   Excepciones deliberadas y comentadas: las scanlines y el ruido del tubo de
+   tv.html son parte del aparato simulado, no decoración de plantilla.
+   ========================================================================== */
+
+:root {
+  --slop-rule: rgba(201, 168, 76, 0.22);
+  --slop-rule-soft: rgba(232, 224, 208, 0.12);
+  --slop-ink: #e8e0d0;
+  --slop-dim: #8a7c6a;
+  --slop-bg: #0a0a0f;
+}
+
+/* ---------- 1. Anulación global de los efectos de plantilla ---------------- */
+*,
+*::before,
+*::after {
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  text-shadow: none !important;
+  transition-property: color, background-color, border-color, opacity !important;
+}
+
+/* ---------- 2. Navegación ---------------------------------------------------- */
+nav {
+  background: var(--slop-bg);
+  backdrop-filter: none;
+  border-bottom: 1px solid var(--slop-rule);
+  padding: 0 24px;
+  height: 62px;
+}
+
+nav .nav-links a {
+  color: var(--slop-dim);
+  border-radius: 0;
+  padding: 4px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid transparent;
+}
+
+nav .nav-links a:hover {
+  color: var(--slop-rule, #c9a84c);
+  color: #c9a84c;
+  border-bottom-color: var(--slop-rule);
+}
+
+/* el menú desplegable móvil deja de usar cristal esmerilado */
+@media (max-width: 860px) {
+  nav .nav-links {
+    background: var(--slop-bg);
+    backdrop-filter: none;
+    border-bottom: 1px solid var(--slop-rule);
+  }
+}
+
+/* ---------- 3. Filetes y líneas decorativas --------------------------------- */
+.page-divider {
+  width: 56px;
+  height: 1px;
+  background: #c9a84c;
+  margin: 22px auto;
+  border: 0;
+}
+
+.timeline-line {
+  width: 1px;
+  background: var(--slop-rule-soft);
+  opacity: 1;
+}
+
+.timeline-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #c9a84c;
+  top: 10px;
+}
+
+/* ---------- 4. canal.html : línea de tiempo --------------------------------- */
+.timeline-item {
+  opacity: 1;
+  transform: none;
+}
+
+.timeline-content {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--slop-rule);
+  border-radius: 0;
+  padding: 18px 0;
+  backdrop-filter: none;
+  width: 100%;
+  max-width: 640px;
+}
+
+.timeline-content h3,
+.timeline-content h4 {
+  color: var(--slop-ink);
+}
+
+/* ---------- 5. programas.html : catálogo ----------------------------------- */
+.p-card {
+  border-radius: 0;
+  opacity: 1;
+  transform: none;
+  border-top: 1px solid var(--slop-rule);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  background: transparent;
+  padding: 16px 0;
+}
+
+.p-card:hover {
+  transform: none;
+  border-top-color: #c9a84c;
+}
+
+.p-meta span,
+.p-badge {
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+  border-radius: 0;
+  color: var(--slop-dim);
+  padding: 1px 7px;
+}
+
+.p-card h3,
+.p-card .p-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+/* buscador y pestañas de filtro: sin píldora */
+.search-box input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid var(--slop-rule-soft);
+  background: transparent;
+  padding: 8px 2px;
+}
+
+.search-box input:focus {
+  border-bottom-color: #c9a84c;
+}
+
+.filter-tab {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid var(--slop-rule-soft);
+  padding: 5px 2px;
+  margin-right: 14px;
+}
+
+.filter-tab:hover,
+.filter-tab.active {
+  color: #c9a84c;
+  border-bottom-color: #c9a84c;
+  background: transparent;
+}
+
+/* modal */
+.modal-overlay {
+  background: rgba(10, 10, 15, 0.97);
+  backdrop-filter: none;
+}
+
+.modal-c {
+  background: #0e0e14;
+  border-radius: 0;
+  border: 1px solid var(--slop-rule);
+  animation: none;
+}
+
+.modal-x {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+.modal-no-vid {
+  background: #0e0e14;
+  border-bottom: 1px solid var(--slop-rule-soft);
+}
+
+.modal-b .m-meta span {
+  border-radius: 0;
+  background: transparent;
+}
+
+.m-rel-item,
+.m-vid-item {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--slop-rule-faint, rgba(232, 224, 208, 0.06));
+}
+
+.m-vid-item:hover {
+  transform: none;
+  border-top-color: #c9a84c;
+}
+
+.m-vid-item .mv-badge,
+.modal-status {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+/* ---------- 6. videoteca.html : tarjetas de video -------------------------- */
+.filter-btn {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--slop-rule-soft);
+  padding: 6px 2px;
+  margin-right: 16px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  color: #c9a84c;
+  border-bottom-color: #c9a84c;
+}
+
+.video-card {
+  border-radius: 0;
+  opacity: 1;
+  transform: none;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--slop-rule);
+  padding: 14px 0;
+}
+
+.video-card:hover {
+  transform: none;
+  border-top-color: #c9a84c;
+}
+
+.video-thumb {
+  border: 1px solid var(--slop-rule-soft);
+  border-radius: 0;
+}
+
+.video-thumb img {
+  transition: none;
+  filter: saturate(0.72) contrast(1.04);
+}
+
+.video-card:hover .video-thumb img {
+  transform: none;
+}
+
+.video-thumb-overlay {
+  background: rgba(10, 10, 15, 0.32);
+  transition: opacity 0.15s;
+}
+
+.video-thumb-overlay span {
+  width: 46px;
+  height: 46px;
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid #c9a84c;
+  color: #c9a84c;
+  font-size: 1.1rem;
+  transition: none;
+}
+
+.video-thumb-overlay span:hover {
+  transform: none;
+  background: #c9a84c;
+  color: var(--slop-bg);
+}
+
+.video-badge {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+  color: var(--slop-dim);
+}
+
+.modal-content {
+  background: #0e0e14;
+  border-radius: 0;
+  border: 1px solid var(--slop-rule);
+  animation: none;
+}
+
+.modal-close {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+.related-item {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--slop-rule-faint, rgba(232, 224, 208, 0.06));
+}
+
+.related-item:hover {
+  transform: none;
+  border-top-color: #c9a84c;
+}
+
+/* ---------- 7. video.html : reproductor ------------------------------------ */
+.player-section {
+  border-radius: 0;
+  background: #050508;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+.player-scanlines {
+  /* textura de tubo: se conserva */
+  opacity: 0.7;
+}
+
+.video-badge {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+  color: var(--slop-dim);
+}
+
+.video-prog-id {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-faint, rgba(232, 224, 208, 0.06));
+  color: var(--slop-dim);
+}
+
+.program-card {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--slop-rule);
+  padding: 16px 0;
+}
+
+.tag {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+  color: var(--slop-dim);
+}
+
+.action-btn {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid #c9a84c;
+  color: #c9a84c;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  padding: 9px 18px;
+}
+
+.action-btn:hover {
+  background: #c9a84c;
+  color: var(--slop-bg);
+}
+
+.related-card {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--slop-rule-faint, rgba(232, 224, 208, 0.06));
+}
+
+.related-card:hover {
+  transform: none;
+  border-top-color: #c9a84c;
+}
+
+.related-card .rel-thumb img {
+  transition: none;
+  filter: saturate(0.72);
+}
+
+.related-card .rel-badge {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+.loading-state svg {
+  animation: none;
+  opacity: 0.5;
+}
+
+/* ---------- 8. tv.html : el aparato --------------------------------------- */
+.tv-stats span {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+  color: var(--slop-dim);
+}
+
+/* el televisor deja de ser un objeto 3D: pasa a marco plano */
+.tv-set {
+  border-radius: 0;
+  border: 1px solid var(--slop-rule-soft);
+  background: #0e0e14;
+  padding: 0;
+}
+
+.tv-screen {
+  border-radius: 0;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+.scanlines {
+  /* textura de tubo: se conserva */
+  opacity: 0.7;
+}
+
+.static-overlay {
+  background: #050508;
+}
+
+.static-overlay::after {
+  /* ruido de tubo: se conserva (es el aparato, no la plantilla) */
+  opacity: 0.85;
+  animation: none;
+}
+
+.tv-power-led .led {
+  border-radius: 50%;
+  background: #c9a84c;
+  animation: none;
+  opacity: 0.8;
+}
+
+.tv-channel-info,
+.tv-upnext,
+.tv-countdown {
+  background: rgba(10, 10, 15, 0.94);
+  border-radius: 0;
+  border-left: 1px solid var(--slop-rule);
+  backdrop-filter: none;
+}
+
+.tv-channel-info .ch-badge {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+.tv-channel-info .ch-progress,
+.tv-channel-info .ch-progress-bar {
+  border-radius: 0;
+  background: rgba(232, 224, 208, 0.14);
+}
+
+.tv-channel-info .ch-progress-bar {
+  background: #c9a84c;
+}
+
+.tv-btn {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid #c9a84c;
+  color: #c9a84c;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+}
+
+.tv-btn:hover {
+  background: #c9a84c;
+  color: var(--slop-bg);
+}
+
+.tv-btn-icon {
+  border-radius: 0;
+  border: 1px solid var(--slop-rule-soft);
+}
+
+.tv-help {
+  background: rgba(10, 10, 15, 0.97);
+  backdrop-filter: none;
+}
+
+.tv-help-box {
+  border-radius: 0;
+  background: #0e0e14;
+  border: 1px solid var(--slop-rule);
+}
+
+.tv-help-box kbd {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--slop-rule-soft);
+  color: #c9a84c;
+}
+
+.tv-idle svg {
+  animation: none;
+  opacity: 0.5;
+}
